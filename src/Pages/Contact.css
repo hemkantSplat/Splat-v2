@@ -1,0 +1,128 @@
+.contact-center {
+  padding: 3rem 0;
+}
+
+.contact-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  background: red;
+}
+
+.main-map {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.contact-info p {
+  line-height: 1.4;
+}
+
+.contact-info p:first-child {
+  width: 33rem;
+  margin: 0 auto 1.5rem 0;
+}
+
+.contact-info > p > span {
+  font-weight: 600;
+}
+
+.contact-mail-info {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.mail-info {
+  border-right: 1px solid #ffffff;
+  padding: 0 8rem;
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.mail-info:last-child {
+  padding: 0;
+  border: transparent;
+}
+
+.social-icons-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 20%;
+  margin: 5rem auto 0 auto;
+  column-gap: 0.5rem;
+}
+
+.social-icons-container > a {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+
+.icon {
+  font-size: 25px;
+  color: #141414;
+}
+
+.social-icons-container > a:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 540px) and (max-width: 1200px) {
+  .contact-header {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .contact-mail-info {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    row-gap: 1rem;
+  }
+
+  .mail-info {
+    border: none;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 540px) {
+  .contact-header {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .contact-mail-info {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    row-gap: 1rem;
+  }
+
+  .mail-info {
+    border: none;
+    text-align: center;
+  }
+  .contact-info p:first-child {
+    width: 100%;
+  }
+
+  .social-icons-container {
+    width: 100%;
+  }
+}

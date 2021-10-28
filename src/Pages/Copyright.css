@@ -1,0 +1,18 @@
+.copyrights {
+  padding: 5rem 0;
+}
+
+.copyright-center {
+  width: 70vw;
+  display: grid;
+  row-gap: 5rem;
+}
+
+.copyright {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.copyright p {
+  line-height: 1.5;
+}

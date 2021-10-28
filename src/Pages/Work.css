@@ -1,0 +1,176 @@
+.work {
+  height: calc(100vh - 80px);
+}
+
+.work-center {
+  display: grid;
+  grid-template-columns: 350px auto;
+}
+
+.filter-container {
+  height: calc(100vh - 80px);
+  /* background: turquoise; */
+  padding: 4rem 2rem;
+  position: fixed;
+  left: 4%;
+  /* display: flex; */
+}
+
+.filters {
+  margin-top: 1rem;
+}
+
+.filter {
+  outline: none;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+  display: block;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.filter:hover {
+  border: 1px solid var(--primary);
+}
+
+.projects {
+  width: 100%;
+  padding: 4rem 0 10rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10rem;
+  column-gap: 0rem;
+}
+
+.project {
+  width: 420px;
+  height: 300px;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.project h2 {
+  font-size: 20px;
+}
+
+
+.mobile-filter-container{
+  position: relative;
+
+  padding:0.75rem 0;
+  text-align: center;
+  display: none;
+  overflow: hidden;
+}
+
+.filter-btn{
+  background: none;
+  outline: none;
+  border: none;
+  color:#ffffff;
+  font-size:18px;
+  font-weight:600;
+  cursor: ponter;
+  position: relative;
+}
+
+.filter-down{
+  position: absolute;
+  top:10%;
+  margin-left: 10%;
+}
+
+.mobile-filters{
+  display: grid;
+  margin-top: 1.5rem;
+/* justify-content: center; */
+row-gap: 0.5rem;
+width: 100%;
+display: none;
+}
+
+.mobile-filter{
+  display: block;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  background: transparent;
+  border: none;
+  color:#ffffff;
+  font-size: 16px;
+  padding: 0.3rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+ 
+}
+
+@media screen and (min-width:768px) and (max-width:1100px){
+  .work-center {
+    display: grid;
+    grid-template-columns: 350px auto;
+  }
+
+  
+.projects {
+  grid-template-columns: 1fr;
+}
+
+.project{
+  width: 100%;
+}
+
+.project h2 {
+  font-size: 18px;
+}
+}
+
+@media screen and (min-width:1100px) and (max-width:1400px) {
+  .project{
+    width: 330px;
+  }
+  .project h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width:300px) and (max-width:768px){
+  .work-center {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .filter-container{
+    display: none;
+  }
+
+.projects{
+  grid-template-columns: 1fr;
+  row-gap: 6rem;
+  padding-top: 2rem;
+}
+
+  .project{
+    width: 100%;
+  }
+
+  .project h2 {
+    font-size: 14px;
+  }
+
+  .mobile-filter-container{
+    display: block;
+  }
+
+.active{
+  display: block;
+}
+}
