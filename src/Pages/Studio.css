@@ -206,7 +206,7 @@ h3 {
   gap: 0.2rem;
 }
 
-img {
+team > img {
   width: 100%;
   border-radius: 50%;
 }

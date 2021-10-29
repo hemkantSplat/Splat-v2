@@ -37,6 +37,7 @@
   height: 100%;
   filter: opacity(0.7);
   transition: all 0.3s linear;
+  border-radius: 10px;
 }
 
 .show-reels > .title {
