@@ -20,25 +20,25 @@ function App() {
           <Home />
         </Route>
         <div>
-          <Route path='/work'>
+          <Route exact path='/work'>
             <Work />
           </Route>
-          <Route path='/studio'>
+          <Route exact path='/studio'>
             <Studio />
           </Route>
-          <Route path='/reels'>
+          <Route exact path='/reels'>
             <Reel />
           </Route>
-          <Route path='/careers'>
+          <Route exact path='/careers'>
             <Carrers />
           </Route>
-          <Route path='/contact'>
+          <Route exact path='/contact'>
             <Contact />
           </Route>
-          <Route path='/work/:id'>
+          <Route exact path='/work/:id'>
             <ProjectTemplates />
           </Route>
-          <Route path='/copyright'>
+          <Route exact path='/copyright'>
             <Copyright />
           </Route>
           <Footer />
