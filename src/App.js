@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
@@ -10,11 +10,15 @@ import Contact from './Pages/Contact'
 import ProjectTemplates from './Pages/ProjectTemplates'
 import Copyright from './Pages/Copyright'
 import Footer from './Components/Footer'
+import Sidebar from './Components/Sidebar'
 
 function App() {
+  const [toggleOpen, setToggleOpen] = useState(false)
+
   return (
     <>
-      <Navbar />
+      <Navbar setToggleOpen={setToggleOpen} toggleOpen={toggleOpen} />
+      <Sidebar toggleOpen={toggleOpen} setToggleOpen={setToggleOpen} />
       <Switch>
         <Route exact path='/'>
           <Home />
