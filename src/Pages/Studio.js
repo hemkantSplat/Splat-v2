@@ -191,12 +191,14 @@ const Studio = () => {
   return (
     <div className='container studio'>
       <div className='studio-header'>
-        {/* <img src={Home} alt="" /> */}
-        <h1>INNOVATORS : EXPERIENCE DESIGNERS : STORYTELLERS</h1>
-        <h3>
-          We create unforgettable experiences by combining technology with
-          spaces
-        </h3>
+        <div className='container-center studio-header-center'>
+          {/* <img src={Home} alt="" /> */}
+          <h1>INNOVATORS : EXPERIENCE DESIGNERS : STORYTELLERS</h1>
+          <h3>
+            We create unforgettable experiences by combining technology with
+            spaces
+          </h3>
+        </div>
       </div>
       <div className='container-center studio-center'>
         <div className='studio-about'>
