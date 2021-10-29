@@ -1,8 +1,9 @@
 footer {
   position: fixed;
   bottom: 0;
-  left: 5%;
+  left: 0;
   padding: 0.5rem 0;
+  width: 100%;
 }
 
 .footer-center {
@@ -59,7 +60,7 @@ footer {
   }
   .footer-links h5:first-child {
     padding-right: 4px;
-    border-right: 1px solid #ffffff;
+    /* border-right: 1px solid #ffffff; */
   }
 
   .footer-links h5:last-child {

@@ -29,6 +29,24 @@
   margin-bottom: 1rem;
 }
 
+.tags {
+  display: flex;
+  align-items: flex-start;
+}
+
+.pills {
+  margin-left: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 0.75rem;
+}
+
+.tag {
+  background: var(--accent) !important;
+  color: #ffffff !important;
+  font-weight: 400 !important;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1300px) {
   .projects-detail-container {
     grid-template-columns: 1fr;

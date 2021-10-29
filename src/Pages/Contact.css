@@ -1,5 +1,19 @@
 .contact-center {
-  padding: 3rem 0;
+  padding: 5rem 0;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 48px;
+}
+
+.map {
+  width: 100%;
+}
+.leaflet-container {
+  width: 100%;
+  height: 100%;
 }
 
 .contact-header {
@@ -46,7 +60,7 @@
 }
 
 .mail-info {
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid var(--accent);
   padding: 0 8rem;
   display: grid;
   row-gap: 0.5rem;
@@ -57,12 +71,17 @@
   border: transparent;
 }
 
+.social-icons-wrapper {
+  text-align: center;
+  margin-top: 5rem;
+}
+
 .social-icons-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   width: 20%;
-  margin: 5rem auto 0 auto;
   column-gap: 0.5rem;
+  margin: 1rem auto 0 auto;
 }
 
 .social-icons-container > a {
@@ -97,7 +116,9 @@
   }
 
   .mail-info {
-    border: none;
+    border-right: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1rem;
     text-align: center;
   }
 }
@@ -115,9 +136,12 @@
   }
 
   .mail-info {
-    border: none;
+    border-right: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1rem;
     text-align: center;
   }
+
   .contact-info p:first-child {
     width: 100%;
   }

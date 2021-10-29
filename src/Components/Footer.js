@@ -17,9 +17,6 @@ const Footer = () => {
           <h5>
             <a href='/copyright'>Copyright</a>
           </h5>
-          {/* <h5>
-            <a href='/disclaimer'>Disclaimer</a>
-          </h5> */}
         </div>
         <div className='footer-name'>
           <h4>&copy; Splat Media Pvt Ltd 2021</h4>

@@ -1,16 +1,16 @@
 .copyrights {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .copyright-center {
   width: 70vw;
   display: grid;
-  row-gap: 5rem;
+  row-gap: 2rem;
 }
 
 .copyright {
   display: grid;
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .copyright p {

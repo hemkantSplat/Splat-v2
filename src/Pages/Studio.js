@@ -1,5 +1,7 @@
 import React from 'react'
 import './Studio.css'
+import VisibilitySensor from 'react-visibility-sensor'
+import CountUp, { startAnimation } from 'react-countup'
 import ImageGrid from 'react-image-grid-animator'
 import Logo1 from '../Assets/Client Logos/Logo1.png'
 import Logo2 from '../Assets/Client Logos/Logo2.png'
@@ -50,51 +52,51 @@ const Studio = () => {
   const snapshotData = [
     {
       title: 'Year Founded',
-      content: '2014',
+      content: 2014,
     },
     {
       title: 'Spatial Design Projects',
-      content: '5+',
+      content: 5,
     },
     {
       title: 'Live Events & Projection Shows',
-      content: '55+',
+      content: 55,
     },
     {
       title: 'Experiential Technology Projects',
-      content: '50+',
+      content: 50,
     },
     {
       title: 'Virtual Events',
-      content: '10+',
+      content: 10,
     },
     {
       title: 'Visual Effects Films & Projects',
-      content: '18+',
+      content: 18,
     },
     {
       title: 'Documentary & Films',
-      content: '75+',
+      content: 75,
     },
     {
       title: 'National & International Recognition',
-      content: '6+',
+      content: 6,
     },
     {
       title: 'Audio Described Films',
-      content: '35+',
+      content: 35,
     },
     {
       title: 'Years Of Collective Team Experience',
-      content: '200',
+      content: 200,
     },
     {
       title: 'Tonnes Of Data Flow',
-      content: '3000',
+      content: 3000,
     },
     {
       title: 'Workhours',
-      content: '6000',
+      content: 6000,
     },
   ]
 
@@ -176,7 +178,7 @@ const Studio = () => {
     Logo39,
     Logo40,
   ]
-
+  const [focus, setFocus] = React.useState(false)
   return (
     <div className='container studio'>
       <div className='studio-header'>
@@ -209,16 +211,240 @@ const Studio = () => {
       <div className='studio-snapshot-wrapper'>
         <div className='studio-snapshot-container'>
           <h1>SPLAT STUDIO SNAPSHOT</h1>
-          <div className='studio-snapshots'>
-            {snapshotData.map((item, index) => {
+          <VisibilitySensor
+            onChange={(isVisible) => {
+              if (isVisible) {
+                setFocus(true)
+              }
+            }}
+          >
+            <div className='studio-snapshots'>
+              {/* {snapshotData.map((item, index) => {
               return (
                 <article className='snapshot' key={index}>
                   <h5>{item.title}</h5>
                   <h1>{item.content}</h1>
                 </article>
               )
-            })}
-          </div>
+            })} */}
+              <article className='snapshot'>
+                <h5>Year Founded</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={2014}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} />
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot'>
+                <h5>Spatial Design Projects</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={5}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} /> +
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot'>
+                <h5>Live Events & Projection Shows</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={55}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} /> +
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot'>
+                <h5>Experential Technology Projects</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={50}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} /> +
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot'>
+                <h5>Virtual Events</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={10}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} /> +
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot'>
+                <h5>Visual Effects Films & Projects</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={18}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} /> +
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot'>
+                <h5>Documentary & Films</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={75}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} /> +
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot'>
+                <h5>National & International Recognitions</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={6}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} /> +
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot'>
+                <h5>Audio Described Films</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={35}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} /> +
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot'>
+                <h5>Years Of Collective Team Experience</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={200}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} />
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot'>
+                <h5>Tonnes of Data Flow</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={3000}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} />
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot'>
+                <h5>Workhours</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={6000}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} />
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+            </div>
+          </VisibilitySensor>
         </div>
       </div>
       <div className='services-wrapper'>
@@ -248,10 +474,10 @@ const Studio = () => {
             })} */}
             <ImageGrid
               images={ClientsData}
-              visibleCount={32}
+              visibleCount={30}
               interval={2000}
-              animationItemcount={5}
-              transitionType={'SCALE'}
+              animationItemcount={3}
+              transitionType={'SCALE_AND_FADE'}
               transitionDuration={1000}
               isActive={true}
             />
@@ -293,7 +519,7 @@ const Studio = () => {
               <h2>Co-Founder</h2>
             </article>
           </div>
-          <div className='employees'>
+          {/* <div className='employees'>
             <img src={Team1} alt='' />
             <img src={Team1} alt='' />
             <img src={Team1} alt='' />
@@ -322,7 +548,7 @@ const Studio = () => {
             <img src={Team1} alt='' />
             <img src={Team1} alt='' />
             <img src={Team1} alt='' />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
