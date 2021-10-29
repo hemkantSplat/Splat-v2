@@ -48,6 +48,12 @@ import Logo40 from '../Assets/Client Logos/Logo40.png'
 
 import Team1 from '../Assets/Hemkant Tripathi.jpg'
 
+// services
+
+import Service1 from '../Assets/Services /Design.png'
+import Service2 from '../Assets/Services /Production.png'
+import Service3 from '../Assets/Services /Technology.png'
+
 const Studio = () => {
   const snapshotData = [
     {
@@ -103,6 +109,7 @@ const Studio = () => {
   const ServicesData = [
     {
       title: 'DESIGN',
+      img: Service1,
       content: [
         'Spatial Design',
         'Content Creation',
@@ -114,6 +121,7 @@ const Studio = () => {
     },
     {
       title: 'PRODUCTION',
+      img: Service2,
       content: [
         'Live Events',
         'Projection Mapping Show',
@@ -125,6 +133,7 @@ const Studio = () => {
     },
     {
       title: 'DEVELOPMENT',
+      img: Service3,
       content: [
         '2D & 3D Animation',
         'Sterioscopic 3D Content',
@@ -451,13 +460,28 @@ const Studio = () => {
         <div className='services-container'>
           <h1>OUR SERVICES</h1>
           <div className='services'>
-            {ServicesData.map((item, index) => {
+            {/* {ServicesData.map((item, index) => {
               return (
                 <article className='service' key={index}>
                   <h2>{item.title}</h2>
                   {item.content.map((content, index) => {
                     return <h4 key={index}>{content}</h4>
                   })}
+                </article>
+              )
+            })} */}
+            {ServicesData.map((item, index) => {
+              return (
+                <article className='service' key={index}>
+                  <div className='service-title'>
+                    <img src={item.img} alt='' />
+                    <h2>{item.title}</h2>
+                  </div>
+                  <div className='service-content'>
+                    {item.content.map((content, index) => {
+                      return <h3 key={index}>{content}</h3>
+                    })}
+                  </div>
                 </article>
               )
             })}
