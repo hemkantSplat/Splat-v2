@@ -45,8 +45,11 @@ import Logo39 from '../Assets/Client Logos/Logo39.png'
 import Logo40 from '../Assets/Client Logos/Logo40.png'
 
 // teams
-
-import Team1 from '../Assets/Hemkant Tripathi.jpg'
+import Team3 from '../Assets/Team Photos/Hemkant Tripathi (1080x1080px).jpg'
+import Team2 from '../Assets/Team Photos/Ayush Nagpal (1080x1080px).jpg'
+import Team1 from '../Assets/Team Photos/Hitesh Kumar (1080x1080px).jpg'
+import Team4 from '../Assets/Team Photos/Narendra Joshi (1080x1080px).JPG'
+import Team5 from '../Assets/Team Photos/Shohna Dwivedi (1080x1080px).JPG'
 
 // services
 
@@ -187,6 +190,40 @@ const Studio = () => {
     Logo39,
     Logo40,
   ]
+
+  const TeamsData = [
+    {
+      name: 'Hitesh Kumar',
+      Designation: 'Managing Director & Creative Director, Splat Studio',
+      img: Team1,
+    },
+    {
+      name: 'Hemkant Tripathi',
+      Designation: 'Director & CTO, Splat Studio',
+      img: Team3,
+    },
+    {
+      name: 'Sobhna Dwivedi',
+      Designation: 'Chief Financial Officer, Splat Studio',
+      img: Team5,
+    },
+    {
+      name: 'Narendra Joshi',
+      Designation: 'CEO, TOC Combine Pvt. Ltd',
+      img: Team4,
+    },
+    {
+      name: 'Ayush Nagpal',
+      Designation: 'Director, Tangio Brand Solutions Pvt. Ltd',
+      img: Team2,
+    },
+    {
+      name: 'Arun Samrah',
+      Designation: 'Director, Howwl Design',
+      img: Team3,
+    },
+  ]
+
   const [focus, setFocus] = React.useState(false)
   return (
     <div className='container studio'>
@@ -514,7 +551,16 @@ const Studio = () => {
         <div className='teams-container'>
           <h1>OUR TEAM</h1>
           <div className='teams'>
-            <article className='team'>
+            {TeamsData.map((item, index) => {
+              return (
+                <article className='team'>
+                  <img src={item.img} alt={item.name} />
+                  <h2>{item.name}</h2>
+                  <h3>{item.Designation}</h3>
+                </article>
+              )
+            })}
+            {/* <article className='team'>
               <img src={Team1} alt='team' />
               <h2>Hemkant Tripathi</h2>
               <h2>Co-Founder</h2>
@@ -543,7 +589,7 @@ const Studio = () => {
               <img src={Team1} alt='team' />
               <h2>Hemkant Tripathi</h2>
               <h2>Co-Founder</h2>
-            </article>
+            </article> */}
           </div>
           {/* <div className='employees'>
             <img src={Team1} alt='' />
