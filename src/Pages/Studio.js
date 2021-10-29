@@ -267,15 +267,15 @@ const Studio = () => {
             }}
           >
             <div className='studio-snapshots'>
-              {/* {snapshotData.map((item, index) => {
-              return (
-                <article className='snapshot' key={index}>
-                  <h5>{item.title}</h5>
-                  <h1>{item.content}</h1>
-                </article>
-              )
-            })} */}
-              <article className='snapshot'>
+              {snapshotData.map((item, index) => {
+                return (
+                  <article className='snapshot mobile-snapshot' key={index}>
+                    <h5>{item.title}</h5>
+                    <h1>{item.content}</h1>
+                  </article>
+                )
+              })}
+              <article className='snapshot desktop-snapshot'>
                 <h5>Year Founded</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
@@ -293,7 +293,7 @@ const Studio = () => {
                   </CountUp>
                 </h1>
               </article>
-              <article className='snapshot'>
+              <article className='snapshot desktop-snapshot'>
                 <h5>Spatial Design Projects</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
@@ -311,7 +311,7 @@ const Studio = () => {
                   </CountUp>
                 </h1>
               </article>
-              <article className='snapshot'>
+              <article className='snapshot desktop-snapshot'>
                 <h5>Live Events & Projection Shows</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
@@ -329,7 +329,7 @@ const Studio = () => {
                   </CountUp>
                 </h1>
               </article>
-              <article className='snapshot'>
+              <article className='snapshot desktop-snapshot'>
                 <h5>Experential Technology Projects</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
@@ -347,7 +347,7 @@ const Studio = () => {
                   </CountUp>
                 </h1>
               </article>
-              <article className='snapshot'>
+              <article className='snapshot desktop-snapshot'>
                 <h5>Virtual Events</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
@@ -365,7 +365,7 @@ const Studio = () => {
                   </CountUp>
                 </h1>
               </article>
-              <article className='snapshot'>
+              <article className='snapshot desktop-snapshot'>
                 <h5>Visual Effects Films & Projects</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
@@ -383,7 +383,7 @@ const Studio = () => {
                   </CountUp>
                 </h1>
               </article>
-              <article className='snapshot'>
+              <article className='snapshot desktop-snapshot'>
                 <h5>Documentary & Films</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
@@ -401,7 +401,7 @@ const Studio = () => {
                   </CountUp>
                 </h1>
               </article>
-              <article className='snapshot'>
+              <article className='snapshot desktop-snapshot'>
                 <h5>National & International Recognitions</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
@@ -419,7 +419,7 @@ const Studio = () => {
                   </CountUp>
                 </h1>
               </article>
-              <article className='snapshot'>
+              <article className='snapshot desktop-snapshot'>
                 <h5>Audio Described Films</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
@@ -437,7 +437,7 @@ const Studio = () => {
                   </CountUp>
                 </h1>
               </article>
-              <article className='snapshot'>
+              <article className='snapshot desktop-snapshot'>
                 <h5>Years Of Collective Team Experience</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
@@ -455,7 +455,7 @@ const Studio = () => {
                   </CountUp>
                 </h1>
               </article>
-              <article className='snapshot'>
+              <article className='snapshot desktop-snapshot'>
                 <h5>Tonnes of Data Flow</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
@@ -473,7 +473,7 @@ const Studio = () => {
                   </CountUp>
                 </h1>
               </article>
-              <article className='snapshot'>
+              <article className='snapshot desktop-snapshot'>
                 <h5>Workhours</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>

@@ -206,9 +206,13 @@ h3 {
   gap: 0.2rem;
 }
 
-team > img {
+.team > img {
   width: 100%;
   border-radius: 50%;
+}
+
+.mobile-snapshot {
+  display: none;
 }
 
 @media screen and (min-width: 540px) and (max-width: 1200px) {
@@ -226,6 +230,14 @@ team > img {
 
   .teams {
     grid-template-columns: repeat(2, auto);
+  }
+
+  .mobile-snapshot {
+    display: block;
+  }
+
+  .desktop-snapshot {
+    display: none;
   }
 }
 
@@ -271,5 +283,13 @@ team > img {
 
   .studio-header {
     background-size: cover;
+  }
+
+  .mobile-snapshot {
+    display: block;
+  }
+
+  .desktop-snapshot {
+    display: none;
   }
 }
