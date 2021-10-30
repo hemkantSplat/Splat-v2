@@ -239,11 +239,32 @@ h3 {
   .desktop-snapshot {
     display: none;
   }
+
+  .studio-header-center h1 {
+    text-align: center;
+  }
+
+  .service-content h3 {
+    text-align: center;
+  }
+  .team > h3 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 540px) {
+  .studio > h1 {
+    font-size: 28px;
+  }
+
   .studio-center {
     width: 90vw;
+  }
+
+  .studio-header-center h1,
+  h3 {
+    text-align: left;
+    margin-top: 0.5rem;
   }
 
   .studio-snapshot-container {
@@ -281,6 +302,13 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .team {
+    width: 100%;
+  }
+  .team > h3 {
+    text-align: center;
+  }
+
   .studio-header {
     background-size: cover;
   }
@@ -291,5 +319,9 @@ h3 {
 
   .desktop-snapshot {
     display: none;
+  }
+
+  .service-content h3 {
+    text-align: center;
   }
 }

@@ -1,22 +1,68 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router'
 import './ProjectTemplate.css'
 import Chip from '@mui/material/Chip'
 import Stack from '@mui/material/Stack'
+import WorkData from '../Data/WorkData'
 
 const ProjectTemplates = () => {
   const pills = ['Live Event & Projection Shows', 'Testing', 'Testing2']
+  const { id } = useParams()
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    const filteredData = WorkData.filter((item) => item.slug === id)
+    console.log(filteredData)
+    setData(filteredData[0])
+  }, [])
 
   return (
     <div className='container projects-container'>
       <div className='container-center projects-center'>
-        <h1>IN5: The Golden Temple Experium</h1>
+        {data && (
+          <>
+            <h1>{data.title}</h1>
+            <div className='projects-detail-container'>
+              <iframe
+                width='100%'
+                height='400px'
+                src={data.video}
+                title='YouTube video player'
+                frameBorder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowFullScreen
+              ></iframe>
+              <div className='project-content'>
+                <p>{data.description}</p>
+                <h4>Client: {data.client}</h4>
+                <h4>Location: {data.location}</h4>
+                <h4 className='tags'>
+                  Tags:{' '}
+                  <Stack
+                    className='pills'
+                    direction='row'
+                    spacing={1}
+                    style={{ flexWrap: 'wrap' }}
+                  >
+                    {data.tags &&
+                      data.tags.map((item) => {
+                        return <Chip label={item} className='tag' />
+                      })}
+                  </Stack>
+                </h4>
+              </div>
+            </div>
+          </>
+        )}
+
+        {/* <h1>IN5: The Golden Temple Experium</h1>
         <div className='projects-detail-container'>
           <iframe
             width='100%'
             height='400px'
             src='https://www.youtube.com/embed/pw6hzF_F4XY'
             title='YouTube video player'
-            frameborder='0'
+            frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowfullscreen
           ></iframe>
@@ -35,16 +81,6 @@ const ProjectTemplates = () => {
               communication solutions give multi sensory experience to the
               visitors.
             </p>
-            {/* <p>
-              We designed & produced the experiences like a unique 360°
-              audiovisual immersive holographic show with revolving audience
-              seating, which narrated India's Swachhata Story, Immersive LED
-              zones, Interactive Dome projection, Immersive 270-degree
-              projections, Holographic screen installations, a series of
-              captivating sensor-based interactive projections, interactive
-              games through touchless sensor-based interactions, mobile apps, a
-              website and much more.
-            </p> */}
             <h4>Client: Project Client</h4>
             <h4>Location: Project Location</h4>
             <h4 className='tags'>
@@ -61,7 +97,7 @@ const ProjectTemplates = () => {
               </Stack>
             </h4>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import './Reel.css'
 import { FaTimes } from 'react-icons/fa'
 import Hero from '../Assets/Reels/Spatial Design Showreel.jpg'
+import ReelsData from '../Data/ReelsData'
 
 const Reel = () => {
   const [data, setData] = useState('')
@@ -45,7 +46,20 @@ const Reel = () => {
         </div>
       </div>
       <div className='container-center reels-center'>
-        <div
+        {ReelsData.map((item, index) => {
+          return (
+            <div
+              key={index}
+              class='show-reels'
+              data-id={item.url}
+              onClick={(e) => Click(e)}
+            >
+              <img src={item.thumbnail} alt='' />
+              <div class='title'>{item.name}</div>
+            </div>
+          )
+        })}
+        {/* <div
           class='show-reels'
           value='1'
           data-id='https://www.youtube.com/embed/-oFeFsxnQrE'
@@ -81,7 +95,7 @@ const Reel = () => {
         <div class='show-reels' data-id=''>
           <img src={Hero} alt='' />
           <div class='title'>VFX and CGI</div>
-        </div>
+        </div> */}
       </div>
       <div
         className={`${active ? 'modal-show-reel active' : 'modal-show-reel'}`}

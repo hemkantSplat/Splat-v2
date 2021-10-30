@@ -65,6 +65,10 @@
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
+  .career-center h1 {
+    font-size: 40px;
+  }
+
   .career-container {
     width: 90vw;
   }
@@ -74,11 +78,13 @@
   }
   .career-title h3 {
     font-size: 16px;
+    text-align: left;
   }
 
   .career-title > div {
     margin-top: 1rem;
     display: flex;
+    width: 90vw;
     align-items: center;
     justify-content: space-between;
   }
