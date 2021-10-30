@@ -1,15 +1,91 @@
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
 .home {
   width: 100%;
   height: calc(100vh - 80px);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../Assets/home.jpg) no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .home-center {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* background: red; */
 }
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  /* margin: 0 auto; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: var(--secondary);
+  font-size: 68px;
+  line-height: 1.1;
+  font-weight: 400;
+  /* background: red; */
+}
+
+.gradient {
+  background-image: radial-gradient(
+    circle at 36% 48%,
+    #000000,
+    rgba(11, 39, 65, 0.32) 87%,
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 99;
+}
+
+@media screen and (min-width: 540px) and (max-width: 1200px) {
+  .hero-title {
+    font-size: 55px;
+    top: 50%;
+    left: 50%;
+  }
+  /* 
+  #myVideo {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 450px) {
+  /* #myVideo {
+    display: none;
+  } */
+
+  .hero-title {
+    font-size: 38px;
+    left: 50%;
+    top: 50%;
+  }
+
+  .home {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../Assets/home.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+/* @media screen and (min-width: 300px) and (max-width: 370px) {
+  .hero-title {
+    font-size: 30px;
+    width: 70%;
+    left: 10%;
+    top: 30%;
+  }
+} */
