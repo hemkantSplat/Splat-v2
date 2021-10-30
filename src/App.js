@@ -23,31 +23,29 @@ function App() {
         <Route exact path='/'>
           <Home />
         </Route>
-        <div>
-          <Route exact path='/work'>
-            <Work />
-          </Route>
-          <Route exact path='/studio'>
-            <Studio />
-          </Route>
-          <Route exact path='/reels'>
-            <Reel />
-          </Route>
-          <Route exact path='/careers'>
-            <Carrers />
-          </Route>
-          <Route exact path='/contact'>
-            <Contact />
-          </Route>
-          <Route exact path='/work/:id'>
-            <ProjectTemplates />
-          </Route>
-          <Route exact path='/copyright'>
-            <Copyright />
-          </Route>
-          <Footer />
-        </div>
+        <Route exact path='/work'>
+          <Work />
+        </Route>
+        <Route exact path='/studio'>
+          <Studio />
+        </Route>
+        <Route exact path='/reels'>
+          <Reel />
+        </Route>
+        <Route exact path='/careers'>
+          <Carrers />
+        </Route>
+        <Route exact path='/contact'>
+          <Contact />
+        </Route>
+        <Route exact path='/work/:id'>
+          <ProjectTemplates />
+        </Route>
+        <Route exact path='/copyright'>
+          <Copyright />
+        </Route>
       </Switch>
+      <Footer />
     </>
   )
 }
