@@ -1,8 +1,8 @@
-import Spatial from '../Assets/Reels/Spatial Design Showreel.jpg'
-import Animation from '../Assets/Reels/Animation Showreel.jpg'
-import Live from '../Assets/Reels/Live and Virtual Events Showreel.jpg'
-import Product from '../Assets/Reels/Product Design.jpg'
-import VFX from '../Assets/Reels/VFX _ CGI Showreel.jpg'
+import Spatial from '../Assets/Reels/spatial.jpg'
+import VFX from '../Assets/Reels/vfx.jpg'
+import Product from '../Assets/Reels/product.jpg'
+import Live from '../Assets/Reels/live.jpg'
+import Animation from '../Assets/Reels/animation.jpg'
 
 const ReelsData = [
   {

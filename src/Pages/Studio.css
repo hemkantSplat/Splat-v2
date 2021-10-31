@@ -37,19 +37,16 @@
   margin-bottom: 2rem;
 }
 
-.studio-about h1 {
-  margin-bottom: 1rem;
-}
-
 .studio-about p {
   line-height: 1.6;
-  font-size: 20px;
-  margin-top: 5rem;
+  font-size: 22px;
+  margin-top: 3rem;
 }
 
 .studio-about p > span {
-  font-weight: 600;
+  font-weight: 300;
   color: var(--accent);
+  font-size: 26px;
 }
 
 .studio-snapshots {

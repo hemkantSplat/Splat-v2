@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import './Reel.css'
 import { FaTimes } from 'react-icons/fa'
-import Hero from '../Assets/Reels/Spatial Design Showreel.jpg'
+// import Hero from '../Assets/Reels/Spatial Design Showreel.jpg'
 import ReelsData from '../Data/ReelsData'
 
 const Reel = () => {
@@ -37,7 +37,7 @@ const Reel = () => {
     <div className='container reels'>
       <div className='container-center'>
         <div className='reels-title'>
-          <h1>Showreels</h1>
+          <h1>SHOWREELS</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
             et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
