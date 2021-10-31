@@ -1,20 +1,50 @@
 const CareersData = [
   {
     title: 'Executive Producer (Multimedia Large Scale Projects)',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio velit molestias perferendis nobis harum, ipsa a eaque, temporibus rerum, aspernatur necessitatibus aliquid. Atque unde accusantium soluta assumenda sapiente, explicabo labore officiis minima, repudiandae magnam commodi facere, ad blanditiis consectetur. Quaerat illo itaque possimus nesciunt rerum, voluptatibus corporis consequatur eos illum necessitatibus quam voluptatem atque. Quo doloremque optio exercitationem minima ab. Suscipit iste libero fuga aperiam aspernatur dolorum quibusdam culpa accusamus veniam possimus vel quis illo facere tempore autem quaerat totam deleniti doloribus harum dolore officiis rem, quod laudantium asperiores! Ex tenetur harum soluta eos veniam odit repellat rem distinctio.',
+    description: [
+      'Cultivating solid relationships with clients through the provision of exceptional after-sales service.',
+      'Creating a positive onboarding experience for new clients.',
+      'Regularly interacting with clients through telephone calls, email communications, or face-to-face meetings.',
+      "Identifying ways to overcome clients' initial dislike of company products.",
+      ' Maintaining an accurate record of all existing and potential clients.',
+      'Responding to client inquiries in a timely and professional manner.',
+      "Certifications may act in place of a bachelor's degree where applicable",
+      'Prior experience working as a production coordinator in the media industry is mandatory',
+      ' Strong understanding of industry market and conditions',
+      'Working knowledge of technical software that is specific to the industry',
+    ],
     link: '',
   },
   {
     title: 'Executive Producer (Multimedia Large Scale Projects)',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio velit molestias perferendis nobis harum, ipsa a eaque, temporibus rerum, aspernatur necessitatibus aliquid. Atque unde accusantium soluta assumenda sapiente, explicabo labore officiis minima, repudiandae magnam commodi facere, ad blanditiis consectetur. Quaerat illo itaque possimus nesciunt rerum, voluptatibus corporis consequatur eos illum necessitatibus quam voluptatem atque. Quo doloremque optio exercitationem minima ab. Suscipit iste libero fuga aperiam aspernatur dolorum quibusdam culpa accusamus veniam possimus vel quis illo facere tempore autem quaerat totam deleniti doloribus harum dolore officiis rem, quod laudantium asperiores! Ex tenetur harum soluta eos veniam odit repellat rem distinctio.',
+    description: [
+      'Cultivating solid relationships with clients through the provision of exceptional after-sales service.',
+      'Creating a positive onboarding experience for new clients.',
+      'Regularly interacting with clients through telephone calls, email communications, or face-to-face meetings.',
+      "Identifying ways to overcome clients' initial dislike of company products.",
+      ' Maintaining an accurate record of all existing and potential clients.',
+      'Responding to client inquiries in a timely and professional manner.',
+      "Certifications may act in place of a bachelor's degree where applicable",
+      'Prior experience working as a production coordinator in the media industry is mandatory',
+      ' Strong understanding of industry market and conditions',
+      'Working knowledge of technical software that is specific to the industry',
+    ],
     link: '',
   },
   {
     title: 'Executive Producer (Multimedia Large Scale Projects) ',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio velit molestias perferendis nobis harum, ipsa a eaque, temporibus rerum, aspernatur necessitatibus aliquid. Atque unde accusantium soluta assumenda sapiente, explicabo labore officiis minima, repudiandae magnam commodi facere, ad blanditiis consectetur. Quaerat illo itaque possimus nesciunt rerum, voluptatibus corporis consequatur eos illum necessitatibus quam voluptatem atque. Quo doloremque optio exercitationem minima ab. Suscipit iste libero fuga aperiam aspernatur dolorum quibusdam culpa accusamus veniam possimus vel quis illo facere tempore autem quaerat totam deleniti doloribus harum dolore officiis rem, quod laudantium asperiores! Ex tenetur harum soluta eos veniam odit repellat rem distinctio.',
+    description: [
+      'Cultivating solid relationships with clients through the provision of exceptional after-sales service.',
+      'Creating a positive onboarding experience for new clients.',
+      'Regularly interacting with clients through telephone calls, email communications, or face-to-face meetings.',
+      "Identifying ways to overcome clients' initial dislike of company products.",
+      ' Maintaining an accurate record of all existing and potential clients.',
+      'Responding to client inquiries in a timely and professional manner.',
+      "Certifications may act in place of a bachelor's degree where applicable",
+      'Prior experience working as a production coordinator in the media industry is mandatory',
+      ' Strong understanding of industry market and conditions',
+      'Working knowledge of technical software that is specific to the industry',
+    ],
     link: '',
   },
 ]

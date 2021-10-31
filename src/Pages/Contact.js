@@ -49,16 +49,29 @@ const Contact = () => {
               </Popup> */}
             </Map>
           </div>
-          <div className='contact-info'>
-            <p>
-              <span>Office Address:</span> Splat Studio, Behind Triveni
-              Commercial Complex, B-103, Fourth, Khirki Ext Rd, Panchsheel
-              Vihar, Sheikh Sarai Village, Malviya Nagar, New Delhi, Delhi
-              110017
-            </p>
-            <p>
-              <span>Contact Number:</span> +91 98712 19992, +91 98106 09992
-            </p>
+          <div className='contacts'>
+            <div className='contact-info'>
+              <p>
+                <span>Delhi Studio:</span> Splat Studio, Behind Triveni
+                Commercial Complex, B-103, Fourth, Khirki Ext Rd, Panchsheel
+                Vihar, Sheikh Sarai Village, Malviya Nagar, New Delhi, Delhi
+                110017
+              </p>
+              {/* <p>
+                <span>Contact Number:</span> +91 98712 19992, +91 98106 09992
+              </p> */}
+            </div>
+            <div className='contact-info'>
+              <p>
+                <span>Bengaluru Studio:</span> Splat Studio, Behind Triveni
+                Commercial Complex, B-103, Fourth, Khirki Ext Rd, Panchsheel
+                Vihar, Sheikh Sarai Village, Malviya Nagar, New Delhi, Delhi
+                110017
+              </p>
+              <p>
+                <span>Contact Number:</span> +91 98712 19992, +91 98106 09992
+              </p>
+            </div>
           </div>
         </div>
         <div className='contact-mail-info'>

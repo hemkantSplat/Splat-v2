@@ -57,6 +57,13 @@ import Service1 from '../Assets/Services /Design.png'
 import Service2 from '../Assets/Services /Production.png'
 import Service3 from '../Assets/Services /Technology.png'
 
+// splat group
+
+import Group1 from '../Assets/Splat Group Logos/Splat_studio.png'
+import Group2 from '../Assets/Splat Group Logos/Tangio_Yellow.png'
+import Group3 from '../Assets/Splat Group Logos/TOC logo_V02.png'
+import Group4 from '../Assets/Splat Group Logos/Howwl Design Logo White.png'
+
 const Studio = () => {
   const snapshotData = [
     {
@@ -532,10 +539,10 @@ const Studio = () => {
           <h1>CLIENTS</h1>
 
           <div className='clients'>
-            {/* {ClientsData.map((item, index) => {
+            {ClientsData.map((item, index) => {
               return <img src={item} key={index} alt='' />
-            })} */}
-            <ImageGrid
+            })}
+            {/* <ImageGrid
               images={ClientsData}
               visibleCount={30}
               interval={2000}
@@ -543,7 +550,7 @@ const Studio = () => {
               transitionType={'SCALE_AND_FADE'}
               transitionDuration={1000}
               isActive={true}
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -591,36 +598,17 @@ const Studio = () => {
               <h2>Co-Founder</h2>
             </article> */}
           </div>
-          {/* <div className='employees'>
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-            <img src={Team1} alt='' />
-          </div> */}
+        </div>
+      </div>
+      <div className='groups-container'>
+        <div className='groups-center'>
+          <h1>And we have more</h1>
+          <div className='groups'>
+            <img src={Group1} alt='' />
+            <img src={Group2} alt='' />
+            <img src={Group3} alt='' />
+            <img src={Group4} alt='' />
+          </div>
         </div>
       </div>
     </div>

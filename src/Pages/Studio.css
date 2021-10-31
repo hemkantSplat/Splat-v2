@@ -61,8 +61,14 @@
   text-align: center;
   width: 200px;
 }
+
 .snapshot h1 {
   margin-top: 0.5rem;
+  font-size: 32px;
+}
+
+.snapshot h5 {
+  font-size: 18px;
 }
 
 .studio-snapshot-wrapper {
@@ -142,7 +148,7 @@
 .clients {
   margin-top: 5rem;
   display: grid;
-  /* grid-template-columns: repeat(8, 1fr); */
+  grid-template-columns: repeat(8, 1fr);
   row-gap: 2rem;
   column-gap: 2rem;
 }
@@ -211,6 +217,38 @@ h3 {
   display: none;
 }
 
+.groups-container {
+  margin-bottom: 5rem;
+}
+
+.groups-center {
+  width: 70vw;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.groups {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.groups img {
+  width: 150px;
+}
+
+.groups img:last-child {
+  width: 100px;
+}
+
+.groups-center h1 {
+  text-align: center;
+  margin-bottom: -2rem;
+}
+
 @media screen and (min-width: 540px) and (max-width: 1200px) {
   .service-title h2 {
     font-size: 18px;
@@ -245,6 +283,10 @@ h3 {
   }
   .team > h3 {
     text-align: center;
+  }
+
+  .team {
+    width: 100%;
   }
 }
 
@@ -319,5 +361,28 @@ h3 {
 
   .service-content h3 {
     text-align: center;
+  }
+
+  .groups {
+    grid-template-columns: 1fr;
+    height: auto;
+    place-items: center;
+  }
+
+  .groups img {
+    width: 100px;
+  }
+
+  .groups img:last-child {
+    width: 80px;
+  }
+
+  .groups-center {
+    width: 90vw;
+    row-gap: 1.5rem;
+  }
+
+  .groups-container {
+    margin-bottom: 2rem;
   }
 }
