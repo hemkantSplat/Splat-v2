@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router'
+import { useParams, Link } from 'react-router-dom'
+import { BsChevronLeft } from 'react-icons/bs'
+
 import './ProjectTemplate.css'
 import Chip from '@mui/material/Chip'
 import Stack from '@mui/material/Stack'
@@ -19,6 +21,9 @@ const ProjectTemplates = () => {
   return (
     <div className='container projects-container'>
       <div className='container-center projects-center'>
+        <Link to='/work'>
+          <BsChevronLeft className='back-btn' />
+        </Link>
         {data && (
           <>
             <h1>{data.title}</h1>

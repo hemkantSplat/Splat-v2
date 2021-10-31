@@ -18,6 +18,17 @@ footer {
   justify-content: space-between;
 }
 
+/* .footer-links > h5,
+h4 {
+  font-weight: 300;
+  font-size: 18px;
+} */
+
+.footer-links > h5 > a {
+  font-weight: 300;
+  font-size: 16px;
+}
+
 .footer-links h5:first-child {
   padding-right: 7px;
   /* border-right: 1px solid #ffffff; */

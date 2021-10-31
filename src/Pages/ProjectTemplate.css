@@ -1,6 +1,23 @@
 .projects-center {
-  padding-top: 5rem;
+  padding-top: 6rem;
   padding-bottom: 3rem;
+}
+
+.projects-center h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.back-btn {
+  margin-bottom: 2rem;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .projects-detail-container {
@@ -20,13 +37,14 @@
 } */
 
 .project-content p {
-  line-height: 1.5;
+  line-height: 1.4;
   margin-bottom: 1rem;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .project-content h4 {
   margin-bottom: 1rem;
+  font-size: 20px;
 }
 
 .tags {

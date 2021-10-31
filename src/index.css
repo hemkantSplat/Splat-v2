@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Zen+Maru+Gothic:wght@300&display=swap');
 
+@font-face {
+  font-family: 'Futura';
+  src: url(./Assets/Futura/FuturaPTLight.otf);
+}
+
+@font-face {
+  font-family: 'FuturaBold';
+  src: url(./Assets/Futura/FuturaPTBold.otf);
+}
+
+@font-face {
+  font-family: 'FuturaSemi';
+  src: url(./Assets/Futura/FuturaPTMedium.otf);
+}
+
+@font-face {
+  font-family: 'Trump';
+  src: url(./Assets/font/TrumpGothicPro-Medium.ttf);
+}
 :root {
   --background: #141414;
   --primary: #ffffff;
@@ -13,15 +33,30 @@
 }
 
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Futura', sans-serif;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: 'Futura', sans-serif;
+  font-weight: 300;
   background: #141414;
+
   font-size: 16px;
   color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-family: 'FuturaSemi';
+  font-weight: 500;
+}
+
+p {
+  font-size: 20px;
 }
 
 ul {

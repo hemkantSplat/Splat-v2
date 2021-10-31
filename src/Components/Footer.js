@@ -15,7 +15,7 @@ const Footer = () => {
       <div className='container-center footer-center'>
         <div className='footer-links'>
           <h5>
-            <a href='/copyright'>Copyright</a>
+            <a href='/copyright'>COPYRIGHT</a>
           </h5>
         </div>
         <div className='footer-name'>

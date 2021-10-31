@@ -135,7 +135,7 @@ const Studio = () => {
       ],
     },
     {
-      title: 'DEVELOPMENT',
+      title: 'TECHNOLOGY',
       img: Service3,
       content: [
         '2D & 3D Animation',
@@ -203,7 +203,7 @@ const Studio = () => {
       img: Team3,
     },
     {
-      name: 'Sobhna Dwivedi',
+      name: 'Shobhna Dwivedi',
       Designation: 'Chief Financial Officer, Splat Studio',
       img: Team5,
     },
@@ -497,7 +497,7 @@ const Studio = () => {
       </div>
       <div className='services-wrapper'>
         <div className='services-container'>
-          <h1>OUR SERVICES</h1>
+          <h1>SERVICES</h1>
           <div className='services'>
             {/* {ServicesData.map((item, index) => {
               return (
@@ -529,7 +529,7 @@ const Studio = () => {
       </div>
       <div className='clients-wrapper'>
         <div className='clients-container'>
-          <h1>OUR CLIENTS</h1>
+          <h1>CLIENTS</h1>
 
           <div className='clients'>
             {/* {ClientsData.map((item, index) => {
@@ -549,7 +549,7 @@ const Studio = () => {
       </div>
       <div className='teams-wrapper'>
         <div className='teams-container'>
-          <h1>OUR TEAM</h1>
+          <h1>TEAM</h1>
           <div className='teams'>
             {TeamsData.map((item, index) => {
               return (
