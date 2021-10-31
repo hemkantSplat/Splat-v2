@@ -33,7 +33,7 @@
   height: 100%;
 }
 
-.contacts {
+.contact {
   align-self: center;
 }
 
@@ -162,5 +162,9 @@
 
   .social-icons-container {
     width: 100%;
+  }
+  .contact-info:last-child p:last-child {
+    width: 100%;
+    margin-top: 1rem;
   }
 }

@@ -49,7 +49,7 @@ const Contact = () => {
               </Popup> */}
             </Map>
           </div>
-          <div className='contacts'>
+          <div className='contact'>
             <div className='contact-info'>
               <p>
                 <span>Delhi Studio:</span> Splat Studio, Behind Triveni

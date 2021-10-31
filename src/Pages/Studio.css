@@ -262,6 +262,10 @@ h3 {
     column-gap: 2rem;
   }
 
+  .clients {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
   .teams {
     grid-template-columns: repeat(2, auto);
   }
@@ -336,6 +340,11 @@ h3 {
   .service-title > img {
     margin-right: 0;
   }
+
+  .clients {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .teams {
     grid-template-columns: 1fr;
   }
