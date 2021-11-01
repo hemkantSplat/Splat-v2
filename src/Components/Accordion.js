@@ -1,6 +1,7 @@
 import '../Pages/Careers.js'
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 
 const Accordion = ({ item }) => {
   const [open, setOpen] = useState(false)
@@ -26,14 +27,14 @@ const Accordion = ({ item }) => {
         </div>
       </div>
       {open && (
-        <div className='career-content'>
+        <motion.div className='career-content'>
           <h3>Roles & Requirements</h3>
           <ul className='roles'>
             {item.description.map((content, index) => {
               return <li key={index}>{content}</li>
             })}
           </ul>
-        </div>
+        </motion.div>
       )}
     </div>
   )

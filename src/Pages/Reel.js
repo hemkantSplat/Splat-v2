@@ -3,6 +3,7 @@ import './Reel.css'
 import { FaTimes } from 'react-icons/fa'
 // import Hero from '../Assets/Reels/Spatial Design Showreel.jpg'
 import ReelsData from '../Data/ReelsData'
+import { motion } from 'framer-motion'
 
 const Reel = () => {
   const [data, setData] = useState('')
@@ -33,6 +34,26 @@ const Reel = () => {
     }
   }, [])
 
+  const ContainerVariant = {
+    initial: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: { ease: 'easeIn', duration: 0.5, staggerChildren: 0.35 },
+    },
+  }
+
+  const ItemVariant = {
+    initial: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: { ease: 'easeIn' },
+    },
+  }
+
   return (
     <div className='container reels'>
       <div className='container-center'>
@@ -45,18 +66,24 @@ const Reel = () => {
           </p>
         </div>
       </div>
-      <div className='container-center reels-center'>
+      <motion.div
+        className='container-center reels-center'
+        variants={ContainerVariant}
+        initial='initial'
+        animate='show'
+      >
         {ReelsData.map((item, index) => {
           return (
-            <div
+            <motion.div
               key={index}
               class='show-reels'
               data-id={item.url}
               onClick={(e) => Click(e)}
+              variants={ItemVariant}
             >
               <img src={item.thumbnail} alt='' />
               <div class='title'>{item.name}</div>
-            </div>
+            </motion.div>
           )
         })}
         {/* <div
@@ -96,7 +123,7 @@ const Reel = () => {
           <img src={Hero} alt='' />
           <div class='title'>VFX and CGI</div>
         </div> */}
-      </div>
+      </motion.div>
       <div
         className={`${active ? 'modal-show-reel active' : 'modal-show-reel'}`}
       >

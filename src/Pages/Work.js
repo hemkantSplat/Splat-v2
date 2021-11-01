@@ -9,6 +9,7 @@ import Diwas from '../Assets/projects/Rajasthan Diwas Projection Mapping Show 20
 import Lakme from '../Assets/projects/Lakme Fashion Week, Projection Mapping for Rohit Bal 2016.png'
 import Mysuru from '../Assets/projects/Mysuru Townhall Projection Mapping Show 2018.png'
 import WorkData from '../Data/WorkData'
+import { motion } from 'framer-motion'
 
 const Work = () => {
   const [open, setOpen] = useState(false)
@@ -34,6 +35,26 @@ const Work = () => {
       const filter = WorkData.filter((i) => i.category === item)
       setData(filter)
     }
+  }
+
+  const ContainerVariant = {
+    initial: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: { ease: 'easeIn', duration: 0.5, staggerChildren: 0.35 },
+    },
+  }
+
+  const ItemVariant = {
+    initial: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: { ease: 'easeIn' },
+    },
   }
 
   return (
@@ -100,15 +121,20 @@ const Work = () => {
           </div>
         </div>
         <div></div>
-        <div className='projects'>
+        <motion.div
+          className='projects'
+          variants={ContainerVariant}
+          initial='initial'
+          animate='show'
+        >
           {data.map((item, index) => {
             return (
-              <article className='project'>
+              <motion.article className='project' variants={ItemVariant}>
                 <Link to={`/work/${item.slug}`}>
                   <img src={item.thumbnail} alt={item.title} />
                   <h2>{item.title}</h2>
                 </Link>
-              </article>
+              </motion.article>
             )
           })}
           {/* <article className='project'>
@@ -149,7 +175,7 @@ const Work = () => {
               <h2>Rajasthan Diwas Projection Mapping Show 2016</h2>
             </Link>
           </article> */}
-        </div>
+        </motion.div>
       </div>
     </div>
   )
