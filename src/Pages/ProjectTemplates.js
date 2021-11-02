@@ -39,10 +39,16 @@ const ProjectTemplates = () => {
               ></iframe>
               <div className='project-content'>
                 <p>{data.description}</p>
-                <h4>Client: {data.client}</h4>
-                <h4>Location: {data.location}</h4>
+                <h4>
+                  <span>CLIENT: </span>
+                  {data.client}
+                </h4>
+                <h4>
+                  <span>LOCATION: </span>
+                  {data.location}
+                </h4>
                 <h4 className='tags'>
-                  Tags:{' '}
+                  <span>TAGS: </span>
                   <Stack
                     className='pills'
                     direction='row'

@@ -5,9 +5,9 @@
 
 .career-center h1 {
   text-align: center;
-  font-weight: 600;
+  font-family: 'Trump';
   margin-bottom: 5rem;
-  font-size: 35px;
+  font-size: 50px;
 }
 
 .career-container {
@@ -57,6 +57,8 @@
 
 .career-content h3 {
   text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
 }
 
 .down-btn {
@@ -74,7 +76,7 @@
 }
 
 .roles > li {
-  list-style-type: disc;
+  list-style-type: none;
   font-size: 20px;
   margin-bottom: 0.5rem;
 }

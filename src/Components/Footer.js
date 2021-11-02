@@ -13,13 +13,15 @@ const Footer = () => {
   return (
     <footer>
       <div className='container-center footer-center'>
-        <div className='footer-links'>
+        {/* <div className='footer-links'>
           <h5>
             <a href='/copyright'>COPYRIGHT</a>
           </h5>
-        </div>
+        </div> */}
         <div className='footer-name'>
-          <h4>&copy; Splat Media Pvt Ltd 2021</h4>
+          <h4>
+            <a href='/copyright'>&copy; Splat Media Pvt Ltd 2021</a>
+          </h4>
         </div>
         <div className='footer-social-links'>
           <a

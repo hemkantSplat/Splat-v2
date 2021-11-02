@@ -265,7 +265,7 @@ const Studio = () => {
       </div>
       <div className='studio-snapshot-wrapper'>
         <div className='studio-snapshot-container'>
-          <h1>SPLAT STUDIO SNAPSHOT</h1>
+          <h1 className='studio-title'>STUDIO SNAPSHOT</h1>
           <VisibilitySensor
             onChange={(isVisible) => {
               if (isVisible) {

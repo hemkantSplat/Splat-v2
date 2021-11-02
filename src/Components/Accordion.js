@@ -31,7 +31,12 @@ const Accordion = ({ item }) => {
           <h3>Roles & Requirements</h3>
           <ul className='roles'>
             {item.description.map((content, index) => {
-              return <li key={index}>{content}</li>
+              return (
+                <li key={index}>
+                  <span>- </span>
+                  {content}
+                </li>
+              )
             })}
           </ul>
         </motion.div>

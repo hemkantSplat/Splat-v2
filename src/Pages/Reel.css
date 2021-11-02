@@ -8,8 +8,9 @@
 }
 .reels-title h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 50px;
   margin-bottom: 0.5rem;
+  font-family: 'Trump';
 }
 .reels-title > p {
   text-align: center;

@@ -52,7 +52,7 @@ const Contact = () => {
           <div className='contact'>
             <div className='contact-info'>
               <p>
-                <span>Delhi Studio:</span> Splat Studio, Behind Triveni
+                <span>DELHI STUDIO:</span> Splat Studio, Behind Triveni
                 Commercial Complex, B-103, Fourth, Khirki Ext Rd, Panchsheel
                 Vihar, Sheikh Sarai Village, Malviya Nagar, New Delhi, Delhi
                 110017
@@ -63,28 +63,28 @@ const Contact = () => {
             </div>
             <div className='contact-info'>
               <p>
-                <span>Bengaluru Studio:</span> Splat Studio, Behind Triveni
+                <span>BENGALURU STUDIO:</span> Splat Studio, Behind Triveni
                 Commercial Complex, B-103, Fourth, Khirki Ext Rd, Panchsheel
                 Vihar, Sheikh Sarai Village, Malviya Nagar, New Delhi, Delhi
                 110017
               </p>
               <p>
-                <span>Contact Number:</span> +91 98712 19992, +91 98106 09992
+                <span>CONTACT NUMBER:</span> +91 98712 19992, +91 98106 09992
               </p>
             </div>
           </div>
         </div>
         <div className='contact-mail-info'>
           <div className='mail-info'>
-            <h4>General Information</h4>
+            <h4>GENERAL INFORMATION</h4>
             <p>info@splatstudio.in</p>
           </div>
           <div className='mail-info'>
-            <h4>New Business</h4>
+            <h4>NEW BUSINESS</h4>
             <p>biz@splatstudio.in</p>
           </div>
           <div className='mail-info'>
-            <h4>Job Enquiry</h4>
+            <h4>JOB ENQUIRY</h4>
             <p> jobs.splatstudio@gmail.com</p>
           </div>
         </div>
