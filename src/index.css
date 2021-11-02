@@ -20,6 +20,12 @@
   font-family: 'Trump';
   src: url(./Assets/font/TrumpGothicPro-Medium.ttf);
 }
+
+@font-face {
+  font-family: 'TrumpBold';
+  src: url(./Assets/font/TrumpGothicPro-Bold.woff2);
+}
+
 :root {
   --background: #141414;
   --primary: #ffffff;

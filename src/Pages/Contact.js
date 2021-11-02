@@ -3,7 +3,7 @@ import './Contact.css'
 import GoogleMapReact from 'google-map-react'
 import {
   FaInstagram,
-  FaLinkedin,
+  FaLinkedinIn,
   FaFacebookF,
   FaTwitter,
   FaYoutube,
@@ -113,7 +113,7 @@ const Contact = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <FaLinkedin className='icon' />
+              <FaLinkedinIn className='icon' />
             </a>
             <a
               href='https://twitter.com/studiosplat'

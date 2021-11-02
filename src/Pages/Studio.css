@@ -38,17 +38,20 @@
 }
 
 .studio-about {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .studio-about h1 {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(167, 165, 165);
+  font-size: 16px;
+  margin-bottom: 2.5rem;
 }
 
 .studio-about p {
   line-height: 1.6;
-  font-size: 22px;
-  margin-top: 3rem;
+  font-size: 24px;
+  margin-top: 1rem;
+  font-family: 'Futura';
 }
 
 .studio-about p > span {
@@ -58,15 +61,16 @@
 }
 
 .studio-snapshots {
-  margin-top: 5rem;
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
-  row-gap: 1.5rem;
+  row-gap: 3rem;
 }
 
 .studio-title {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(167, 165, 165);
+  font-size: 16px;
 }
 
 .snapshot {
@@ -76,8 +80,12 @@
 
 .snapshot h1 {
   margin-top: 0.5rem;
-  font-size: 32px;
+  font-size: 35px;
 }
+
+/* .first {
+  margin-top: 2rem !important;
+} */
 
 .snapshot h5 {
   font-size: 18px;
@@ -104,8 +112,9 @@
 }
 
 .services-container h1 {
-  margin-bottom: 5rem;
-  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 3rem;
+  color: rgb(167, 165, 165);
+  font-size: 16px;
 }
 
 .services {
@@ -159,8 +168,19 @@
   margin: 0 auto;
 }
 
+.clients-container h1 {
+  color: rgb(167, 165, 165);
+  font-size: 16px;
+  margin-bottom: 3rem;
+}
+
+.clients-carousel {
+  background: #242324;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
 .clients {
-  margin-top: 5rem;
+  /* margin-top: 3rem; */
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   row-gap: 2rem;
@@ -181,8 +201,13 @@
   margin: 0 auto;
 }
 
+.teams-container h1 {
+  color: rgb(167, 165, 165);
+  font-size: 16px;
+}
+
 .teams {
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 1.2rem;
@@ -214,6 +239,10 @@
 .team h2,
 h3 {
   text-align: center;
+}
+
+.team h3 {
+  color: rgb(167, 165, 165);
 }
 
 .employees {
@@ -260,7 +289,7 @@ h3 {
 
 .groups-center h1 {
   text-align: center;
-  margin-bottom: -2rem;
+  margin-bottom: 0rem;
 }
 
 @media screen and (min-width: 540px) and (max-width: 1200px) {

@@ -11,6 +11,7 @@ import ProjectTemplates from './Pages/ProjectTemplates'
 import Copyright from './Pages/Copyright'
 import Footer from './Components/Footer'
 import Sidebar from './Components/Sidebar'
+import ScrollToTop from './Components/ScrollToTop'
 
 function App() {
   const [toggleOpen, setToggleOpen] = useState(false)
@@ -19,6 +20,7 @@ function App() {
     <>
       <Navbar setToggleOpen={setToggleOpen} toggleOpen={toggleOpen} />
       <Sidebar toggleOpen={toggleOpen} setToggleOpen={setToggleOpen} />
+      <ScrollToTop />
       <Switch>
         <Route exact path='/'>
           <Home />

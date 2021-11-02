@@ -61,7 +61,7 @@
 }
 
 .project {
-  /* width: 420px; */
+  width: 450px;
   height: 300px;
   transform: scale(0.9);
   transition: all 0.3s linear;
@@ -79,10 +79,10 @@
 }
 
 .project h2 {
-  font-size: 35px;
+  font-size: 28px;
   /* font-weight: 300; */
   text-transform: uppercase;
-  font-family: 'Trump';
+  font-family: 'TrumpBold';
 }
 
 .mobile-filter-container {

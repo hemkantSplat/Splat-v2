@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Studio.css'
 import VisibilitySensor from 'react-visibility-sensor'
 import CountUp, { startAnimation } from 'react-countup'
@@ -50,6 +50,7 @@ import Team2 from '../Assets/Team Photos/Ayush Nagpal (1080x1080px).jpg'
 import Team1 from '../Assets/Team Photos/Hitesh Kumar (1080x1080px).jpg'
 import Team4 from '../Assets/Team Photos/Narendra Joshi (1080x1080px).JPG'
 import Team5 from '../Assets/Team Photos/Shohna Dwivedi (1080x1080px).JPG'
+import Team6 from '../Assets/Team Photos/Arun Samrah (1080x1080px).jpg'
 
 // services
 
@@ -69,6 +70,18 @@ const Studio = () => {
     {
       title: 'Year Founded',
       content: 2014,
+    },
+    {
+      title: 'Years Of Collective Team Experience',
+      content: 200,
+    },
+    {
+      title: 'Tonnes Of Data Flow',
+      content: 3000,
+    },
+    {
+      title: 'Workhours',
+      content: 6000,
     },
     {
       title: 'Spatial Design Projects',
@@ -101,18 +114,6 @@ const Studio = () => {
     {
       title: 'Audio Described Films',
       content: 35,
-    },
-    {
-      title: 'Years Of Collective Team Experience',
-      content: 200,
-    },
-    {
-      title: 'Tonnes Of Data Flow',
-      content: 3000,
-    },
-    {
-      title: 'Workhours',
-      content: 6000,
     },
   ]
 
@@ -198,6 +199,55 @@ const Studio = () => {
     Logo40,
   ]
 
+  const ClientCarouselData = [
+    [
+      Logo1,
+      Logo2,
+      Logo3,
+      Logo4,
+      Logo5,
+      Logo6,
+      Logo7,
+      Logo8,
+      Logo9,
+      Logo10,
+      Logo11,
+      Logo12,
+      Logo13,
+      Logo14,
+    ],
+    [
+      Logo17,
+      Logo18,
+      Logo19,
+      Logo20,
+      Logo21,
+      Logo22,
+      Logo23,
+      Logo24,
+      Logo25,
+      Logo26,
+      Logo27,
+      Logo28,
+      Logo29,
+      Logo30,
+    ],
+    [
+      Logo33,
+      Logo34,
+      Logo35,
+      Logo36,
+      Logo37,
+      Logo38,
+      Logo39,
+      Logo40,
+      Logo15,
+      Logo16,
+      Logo31,
+      Logo32,
+    ],
+  ]
+
   const TeamsData = [
     {
       name: 'Hitesh Kumar',
@@ -227,11 +277,26 @@ const Studio = () => {
     {
       name: 'Arun Samrah',
       Designation: 'Director, Howwl Design',
-      img: Team3,
+      img: Team6,
     },
   ]
 
   const [focus, setFocus] = React.useState(false)
+  const [carousel, setCarousel] = useState(0)
+
+  useEffect(() => {
+    setInterval(() => {
+      setCarousel((old) => {
+        const n = old + 1
+        if (n >= ClientCarouselData.length - 1) {
+          return old
+        } else {
+          return n
+        }
+      })
+    }, 1000)
+  }, [carousel])
+
   return (
     <div className='container studio'>
       <div className='studio-header'>
@@ -257,7 +322,7 @@ const Studio = () => {
             our mission - designed to make your idea/concept/content sing
             through well-informed content strategy, research-backed design, and
             forward-thinking development that excludes no one.
-            <br /> <br />
+            <br />
             With an integrated workflow from Idea-Concept-Design-Solution we’ll
             help you craft your message.
           </p>
@@ -285,7 +350,7 @@ const Studio = () => {
               <article className='snapshot desktop-snapshot'>
                 <h5>Year Founded</h5>
                 {/* <h1>{item.content}</h1> */}
-                <h1>
+                <h1 className='first' style={{ marginTop: '2rem' }}>
                   <CountUp
                     start={focus ? 0 : null}
                     end={2014}
@@ -301,9 +366,63 @@ const Studio = () => {
                 </h1>
               </article>
               <article className='snapshot desktop-snapshot'>
-                <h5>Spatial Design Projects</h5>
+                <h5>Years Of Collective Team Experience</h5>
                 {/* <h1>{item.content}</h1> */}
                 <h1>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={200}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} />
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot desktop-snapshot'>
+                <h5>Tonnes of Data Flow</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1 className='first' style={{ marginTop: '2rem' }}>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={3000}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} />
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot desktop-snapshot'>
+                <h5>Workhours</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1 className='first' style={{ marginTop: '2rem' }}>
+                  <CountUp
+                    start={focus ? 0 : null}
+                    end={6000}
+                    duration={2}
+                    redraw={true}
+                  >
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} />
+                      </div>
+                    )}
+                  </CountUp>
+                </h1>
+              </article>
+              <article className='snapshot desktop-snapshot'>
+                <h5>Spatial Design Projects</h5>
+                {/* <h1>{item.content}</h1> */}
+                <h1 className='first' style={{ marginTop: '2rem' }}>
                   <CountUp
                     start={focus ? 0 : null}
                     end={5}
@@ -357,7 +476,7 @@ const Studio = () => {
               <article className='snapshot desktop-snapshot'>
                 <h5>Virtual Events</h5>
                 {/* <h1>{item.content}</h1> */}
-                <h1>
+                <h1 className='first' style={{ marginTop: '2rem' }}>
                   <CountUp
                     start={focus ? 0 : null}
                     end={10}
@@ -393,7 +512,7 @@ const Studio = () => {
               <article className='snapshot desktop-snapshot'>
                 <h5>Documentary & Films</h5>
                 {/* <h1>{item.content}</h1> */}
-                <h1>
+                <h1 className='first' style={{ marginTop: '2rem' }}>
                   <CountUp
                     start={focus ? 0 : null}
                     end={75}
@@ -429,7 +548,7 @@ const Studio = () => {
               <article className='snapshot desktop-snapshot'>
                 <h5>Audio Described Films</h5>
                 {/* <h1>{item.content}</h1> */}
-                <h1>
+                <h1 className='first' style={{ marginTop: '2rem' }}>
                   <CountUp
                     start={focus ? 0 : null}
                     end={35}
@@ -439,60 +558,6 @@ const Studio = () => {
                     {({ countUpRef }) => (
                       <div>
                         <span ref={countUpRef} /> +
-                      </div>
-                    )}
-                  </CountUp>
-                </h1>
-              </article>
-              <article className='snapshot desktop-snapshot'>
-                <h5>Years Of Collective Team Experience</h5>
-                {/* <h1>{item.content}</h1> */}
-                <h1>
-                  <CountUp
-                    start={focus ? 0 : null}
-                    end={200}
-                    duration={2}
-                    redraw={true}
-                  >
-                    {({ countUpRef }) => (
-                      <div>
-                        <span ref={countUpRef} />
-                      </div>
-                    )}
-                  </CountUp>
-                </h1>
-              </article>
-              <article className='snapshot desktop-snapshot'>
-                <h5>Tonnes of Data Flow</h5>
-                {/* <h1>{item.content}</h1> */}
-                <h1>
-                  <CountUp
-                    start={focus ? 0 : null}
-                    end={3000}
-                    duration={2}
-                    redraw={true}
-                  >
-                    {({ countUpRef }) => (
-                      <div>
-                        <span ref={countUpRef} />
-                      </div>
-                    )}
-                  </CountUp>
-                </h1>
-              </article>
-              <article className='snapshot desktop-snapshot'>
-                <h5>Workhours</h5>
-                {/* <h1>{item.content}</h1> */}
-                <h1>
-                  <CountUp
-                    start={focus ? 0 : null}
-                    end={6000}
-                    duration={2}
-                    redraw={true}
-                  >
-                    {({ countUpRef }) => (
-                      <div>
-                        <span ref={countUpRef} />
                       </div>
                     )}
                   </CountUp>
@@ -537,11 +602,17 @@ const Studio = () => {
       <div className='clients-wrapper'>
         <div className='clients-container'>
           <h1>CLIENTS</h1>
-
+          {/* <div className='clients-carousel'>
+            <div className='clients'>
+              {ClientCarouselData[carousel].map((item) => {
+                return <img src={item} alt='' />
+              })}
+            </div>
+          </div> */}
           <div className='clients'>
             {ClientsData.map((item, index) => {
               return <img src={item} key={index} alt='' />
-            })}
+            })}{' '}
             {/* <ImageGrid
               images={ClientsData}
               visibleCount={30}
@@ -550,7 +621,7 @@ const Studio = () => {
               transitionType={'SCALE_AND_FADE'}
               transitionDuration={1000}
               isActive={true}
-            /> */}
+            />  */}
           </div>
         </div>
       </div>
@@ -602,12 +673,23 @@ const Studio = () => {
       </div>
       <div className='groups-container'>
         <div className='groups-center'>
-          <h1>And we have more</h1>
+          <h1>And we have more ...</h1>
           <div className='groups'>
-            <img src={Group1} alt='' />
-            <img src={Group2} alt='' />
-            <img src={Group3} alt='' />
-            <img src={Group4} alt='' />
+            <a href='/'>
+              {' '}
+              <img src={Group1} alt='' />
+            </a>
+            <a href='https://tangio.in'>
+              {' '}
+              <img src={Group2} alt='' />
+            </a>
+            <a href='https://toccombine.in'>
+              <img src={Group3} alt='' />
+            </a>
+            <a href='https://www.howwldesign.com'>
+              {' '}
+              <img src={Group4} alt='' />
+            </a>
           </div>
         </div>
       </div>

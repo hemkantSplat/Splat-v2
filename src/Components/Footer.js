@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   FaInstagram,
-  FaLinkedin,
+  FaLinkedinIn,
   FaFacebookF,
   FaTwitter,
   FaYoutube,
@@ -44,7 +44,7 @@ const Footer = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <FaLinkedin className='footer-icon' />
+            <FaLinkedinIn className='footer-icon' />
           </a>
           <a
             href='https://twitter.com/studiosplat'
