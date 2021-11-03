@@ -17,7 +17,7 @@ const Work = () => {
   const [selected, setSelected] = useState(0)
 
   const filters = [
-    'All',
+    'All Projects',
     'Spatial Design',
     'Live Events & Projection Shows',
     'Experential Technology',

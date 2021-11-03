@@ -8,7 +8,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 5rem;
 }
 
 .studio-header-center {
@@ -215,8 +214,8 @@
 
 .team {
   width: 280px;
-  display: grid;
-  row-gap: 0.5rem;
+  /* display: grid;
+  row-gap: 0.5rem; */
   cursor: pointer;
   transform: scale(0.9);
   transition: all 0.1s linear;
@@ -230,6 +229,7 @@
   width: 100%;
   filter: grayscale(100%);
   transition: all 0.3s linear;
+  margin-bottom: 2.5rem;
 }
 
 .team:hover > img {
@@ -242,6 +242,7 @@ h3 {
 }
 
 .team h3 {
+  margin-top: 1rem;
   color: rgb(167, 165, 165);
 }
 
@@ -272,20 +273,36 @@ h3 {
 }
 
 .groups {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 120px;
 }
 
-.groups img {
-  width: 150px;
-}
-
-.groups img:last-child {
+.group-img {
   width: 100px;
 }
+.group-first {
+  width: 200px;
+  margin-right: 1.2rem;
+}
+
+.group-second {
+  width: 90px;
+}
+
+.group-third {
+  width: 130px;
+  margin-left: 1.5rem;
+}
+
+.group-fourth {
+  width: 130px;
+}
+
+/* .groups img:last-child {
+  width: 100px;
+} */
 
 .groups-center h1 {
   text-align: center;

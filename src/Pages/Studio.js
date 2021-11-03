@@ -677,18 +677,18 @@ const Studio = () => {
           <div className='groups'>
             <a href='/'>
               {' '}
-              <img src={Group1} alt='' />
-            </a>
-            <a href='https://tangio.in'>
-              {' '}
-              <img src={Group2} alt='' />
-            </a>
-            <a href='https://toccombine.in'>
-              <img src={Group3} alt='' />
+              <img src={Group1} alt='' className='group-img group-first' />
             </a>
             <a href='https://www.howwldesign.com'>
               {' '}
-              <img src={Group4} alt='' />
+              <img src={Group4} alt='' className='group-img group-second' />
+            </a>
+            <a href='https://tangio.in'>
+              {' '}
+              <img src={Group2} alt='' className='group-img group-third' />
+            </a>
+            <a href='https://toccombine.in'>
+              <img src={Group3} alt='' className='group-img group-fourth' />
             </a>
           </div>
         </div>
