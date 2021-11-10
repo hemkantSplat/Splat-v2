@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import './Reel.css'
+import MetaTitle from '../Components/MetaTitle'
 import { FaTimes } from 'react-icons/fa'
 // import Hero from '../Assets/Reels/Spatial Design Showreel.jpg'
 import ReelsData from '../Data/ReelsData'
@@ -55,38 +56,40 @@ const Reel = () => {
   }
 
   return (
-    <div className='container reels'>
-      <div className='container-center'>
-        <div className='reels-title'>
-          <h1>SHOWREELS</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-            et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-            exercitationem vero optio neque quia quam!
-          </p>
+    <>
+      <MetaTitle title='Splat Studio | Reels' />
+      <div className='container reels'>
+        <div className='container-center'>
+          <div className='reels-title'>
+            <h1>SHOWREELS</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+              exercitationem vero optio neque quia quam!
+            </p>
+          </div>
         </div>
-      </div>
-      <motion.div
-        className='container-center reels-center'
-        variants={ContainerVariant}
-        initial='initial'
-        animate='show'
-      >
-        {ReelsData.map((item, index) => {
-          return (
-            <motion.div
-              key={index}
-              class='show-reels'
-              data-id={item.url}
-              onClick={(e) => Click(e)}
-              variants={ItemVariant}
-            >
-              <img src={item.thumbnail} alt='' />
-              <div class='title'>{item.name}</div>
-            </motion.div>
-          )
-        })}
-        {/* <div
+        <motion.div
+          className='container-center reels-center'
+          variants={ContainerVariant}
+          initial='initial'
+          animate='show'
+        >
+          {ReelsData.map((item, index) => {
+            return (
+              <motion.div
+                key={index}
+                class='show-reels'
+                data-id={item.url}
+                onClick={(e) => Click(e)}
+                variants={ItemVariant}
+              >
+                <img src={item.thumbnail} alt='' />
+                <div class='title'>{item.name}</div>
+              </motion.div>
+            )
+          })}
+          {/* <div
           class='show-reels'
           value='1'
           data-id='https://www.youtube.com/embed/-oFeFsxnQrE'
@@ -123,26 +126,27 @@ const Reel = () => {
           <img src={Hero} alt='' />
           <div class='title'>VFX and CGI</div>
         </div> */}
-      </motion.div>
-      <div
-        className={`${active ? 'modal-show-reel active' : 'modal-show-reel'}`}
-      >
-        <div className='modal-content'>
-          <button className='close' onClick={() => setActive(false)}>
-            <FaTimes />
-          </button>
-          <iframe
-            ref={node}
-            className='frame'
-            title='YouTube video player'
-            frameBorder='0'
-            src={data}
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            allowFullScreen
-          ></iframe>
+        </motion.div>
+        <div
+          className={`${active ? 'modal-show-reel active' : 'modal-show-reel'}`}
+        >
+          <div className='modal-content'>
+            <button className='close' onClick={() => setActive(false)}>
+              <FaTimes />
+            </button>
+            <iframe
+              ref={node}
+              className='frame'
+              title='YouTube video player'
+              frameBorder='0'
+              src={data}
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

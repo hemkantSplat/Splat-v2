@@ -2,7 +2,7 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   width: 100%;
   z-index: 99;
 }
@@ -13,7 +13,7 @@ footer {
 }
 
 .footer-name > h4 {
-  font-size: 11px;
+  font-size: 13.75px;
 }
 
 .footer-links {
@@ -49,8 +49,8 @@ h4 {
 }
 
 .footer-social-links > a {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border: 1px solid #ffffff;
   display: grid;
   place-items: center;
@@ -59,7 +59,7 @@ h4 {
 }
 
 .footer-icon {
-  font-size: 10px;
+  font-size: 12px;
   color: #ffffff;
 }
 

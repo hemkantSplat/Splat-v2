@@ -29,9 +29,9 @@
   overflow-y: hidden;
 }
 
-.projects-detail-container > iframe {
+/* .projects-detail-container > iframe {
   border-radius: 10px;
-}
+} */
 
 /* .project-content {
   overflow-y: scroll;
@@ -48,17 +48,27 @@
   font-size: 20px;
 }
 
-.project-content h4 > span {
+.project-content h4 > span:first-child {
   color: rgb(167, 165, 165);
+  margin-right: 0.2rem;
+  font-size: 16px;
+}
+
+.location {
+  display: flex;
+}
+
+.location > span:first-child {
+  transform: translateY(4%);
 }
 
 .tags {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .pills {
-  margin-left: 15px;
+  margin-left: 5px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   row-gap: 0.75rem;

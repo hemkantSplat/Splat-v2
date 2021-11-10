@@ -75,6 +75,7 @@
 .snapshot {
   text-align: center;
   width: 200px;
+  display: grid;
 }
 
 .snapshot h1 {

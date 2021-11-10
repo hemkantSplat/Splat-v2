@@ -1,13 +1,13 @@
 import '../Pages/Careers.js'
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
 import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const Accordion = ({ item }) => {
   const [open, setOpen] = useState(false)
   return (
-    <div className='career'>
-      <div className='career-title' onClick={() => setOpen(!open)}>
+    <div className='career' layout>
+      <div className='career-title' onClick={() => setOpen(!open)} layout>
         <h2>
           {' '}
           {open ? (
@@ -26,21 +26,29 @@ const Accordion = ({ item }) => {
           </button>
         </div>
       </div>
-      {open && (
-        <motion.div className='career-content'>
-          <h3>Roles & Requirements</h3>
-          <ul className='roles'>
-            {item.description.map((content, index) => {
-              return (
-                <li key={index}>
-                  <span>- </span>
-                  {content}
-                </li>
-              )
-            })}
-          </ul>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            className='career-content'
+            layout
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <h3>Roles & Requirements</h3>
+            <ul className='roles'>
+              {item.description.map((content, index) => {
+                return (
+                  <li key={index}>
+                    <span>- </span>
+                    {content}
+                  </li>
+                )
+              })}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

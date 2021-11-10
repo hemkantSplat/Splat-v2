@@ -14,47 +14,47 @@ const Navbar = ({ setToggleOpen, toggleOpen }) => {
         <ul className='nav-links'>
           <li>
             <NavLink
-              className='nav-link'
-              activeStyle={{ color: '#ee7739' }}
+              className='nav-link flip-animate-1'
+              activeStyle={{ borderBottom: '1px solid #ee7739' }}
               to='/work'
             >
-              Work
+              <span data-hover='Work'>Work</span>
             </NavLink>
           </li>
           <li>
             <NavLink
-              className='nav-link'
-              activeStyle={{ color: '#ee7739' }}
+              className='nav-link flip-animate-1'
+              activeStyle={{ borderBottom: '1px solid #ee7739' }}
               to='/studio'
             >
-              Studio
+              <span data-hover='Studio'> Studio</span>
             </NavLink>
           </li>
           <li>
             <NavLink
-              className='nav-link'
-              activeStyle={{ color: '#ee7739' }}
+              className='nav-link flip-animate-1'
+              activeStyle={{ borderBottom: '1px solid #ee7739' }}
               to='/reels'
             >
-              Reels
+              <span data-hover='Reels'>Reels</span>
             </NavLink>
           </li>
           <li>
             <NavLink
-              className='nav-link'
-              activeStyle={{ color: '#ee7739' }}
+              className='nav-link flip-animate-1'
+              activeStyle={{ borderBottom: '1px solid #ee7739' }}
               to='/careers'
             >
-              Careers
+              <span data-hover='Careers'>Careers</span>
             </NavLink>
           </li>
           <li>
             <NavLink
-              className='nav-link'
-              activeStyle={{ color: '#ee7739' }}
+              className='nav-link flip-animate-1'
+              activeStyle={{ borderBottom: '1px solid #ee7739' }}
               to='/contact'
             >
-              Contact
+              <span data-hover='Contact'>Contact</span>
             </NavLink>
           </li>
         </ul>

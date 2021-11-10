@@ -38,9 +38,9 @@ nav {
   font-size: 11.7556px;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
   color: var(--accent);
-}
+} */
 
 .toggle {
   color: #ffffff;
@@ -52,6 +52,43 @@ nav {
 
 .toggle:hover {
   color: var(--accent);
+}
+
+.flip-animate-1 {
+  perspective: 1000px;
+  /* font-family: 'TrumpBold'; */
+  letter-spacing: 1.2px;
+}
+
+.flip-animate-1 span {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  transition: transform 0.3s;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+}
+.flip-animate-1 span:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  content: attr(data-hover);
+  transition: color 0.3s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  /* text-align: center; */
+}
+.flip-animate-1:hover span,
+.flip-animate-1:focus span {
+  transform: rotateX(90deg) translateY(-22px);
+}
+.flip-animate-1:hover span:before,
+.flip-animate-1:focus span:before {
+  color: #ee7739;
+  opacity: 1;
 }
 
 @media screen and (min-width: 450px) and (max-width: 1300px) {

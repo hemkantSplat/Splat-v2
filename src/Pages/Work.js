@@ -10,6 +10,7 @@ import Lakme from '../Assets/projects/Lakme Fashion Week, Projection Mapping for
 import Mysuru from '../Assets/projects/Mysuru Townhall Projection Mapping Show 2018.png'
 import WorkData from '../Data/WorkData'
 import { motion } from 'framer-motion'
+import MetaTitle from '../Components/MetaTitle'
 
 const Work = () => {
   const [open, setOpen] = useState(false)
@@ -29,7 +30,7 @@ const Work = () => {
 
   const handleFilter = (item, index) => {
     setSelected(index)
-    if (item === 'All') {
+    if (item === 'All Projects') {
       setData(WorkData)
     } else {
       const filter = WorkData.filter((i) => i.category === item)
@@ -45,6 +46,12 @@ const Work = () => {
       opacity: 1,
       transition: { ease: 'easeIn', duration: 0.5, staggerChildren: 0.35 },
     },
+    exit: {
+      opacity: 0,
+      transition: {
+        ease: 'easeOut',
+      },
+    },
   }
 
   const ItemVariant = {
@@ -55,34 +62,39 @@ const Work = () => {
       opacity: 1,
       transition: { ease: 'easeIn' },
     },
+    exit: {
+      opacity: 0,
+    },
   }
 
   return (
-    <div className='container work'>
-      <div className='container-center work-center'>
-        <div className='mobile-filter-container'>
-          <button className='filter-btn' onClick={() => setOpen(!open)}>
-            Filter By <BsChevronDown className='filter-down' />
-          </button>
-          <div
-            className={`${open ? 'mobile-filters active' : 'mobile-filters'}`}
-          >
-            {filters.map((item, index) => {
-              return (
-                <button
-                  key={index}
-                  className={`${
-                    index === selected
-                      ? 'mobile-filter mobile-filter-active'
-                      : 'mobile-filter'
-                  }`}
-                  onClick={() => handleFilter(item, index)}
-                >
-                  {item}
-                </button>
-              )
-            })}
-            {/* <button className='mobile-filter'>All</button>
+    <>
+      <MetaTitle title='Splat Studio | Work' />
+      <div className='container work'>
+        <div className='container-center work-center'>
+          <div className='mobile-filter-container'>
+            <button className='filter-btn' onClick={() => setOpen(!open)}>
+              Filter By <BsChevronDown className='filter-down' />
+            </button>
+            <div
+              className={`${open ? 'mobile-filters active' : 'mobile-filters'}`}
+            >
+              {filters.map((item, index) => {
+                return (
+                  <button
+                    key={index}
+                    className={`${
+                      index === selected
+                        ? 'mobile-filter mobile-filter-active'
+                        : 'mobile-filter'
+                    }`}
+                    onClick={() => handleFilter(item, index)}
+                  >
+                    {item}
+                  </button>
+                )
+              })}
+              {/* <button className='mobile-filter'>All</button>
             <button className='mobile-filter'>Spatial Design</button>
             <button className='mobile-filter'>
               Live Events & Projection Shows
@@ -92,25 +104,25 @@ const Work = () => {
             <button className='mobile-filter'>Visual Effects</button>
             <button className='mobile-filter'>2D & 3D Animation</button>
             <button className='mobile-filter'>Documentary and Films</button> */}
+            </div>
           </div>
-        </div>
-        <div className='filter-container'>
-          <h4>FILTER BY</h4>
-          <div className='filters'>
-            {filters.map((item, index) => {
-              return (
-                <button
-                  key={index}
-                  className={`${
-                    index === selected ? 'filter filter-active' : 'filter'
-                  }`}
-                  onClick={() => handleFilter(item, index)}
-                >
-                  {item}
-                </button>
-              )
-            })}
-            {/* <button className='filter'>All</button>
+          <div className='filter-container'>
+            <h4>FILTER BY</h4>
+            <div className='filters'>
+              {filters.map((item, index) => {
+                return (
+                  <button
+                    key={index}
+                    className={`${
+                      index === selected ? 'filter filter-active' : 'filter'
+                    }`}
+                    onClick={() => handleFilter(item, index)}
+                  >
+                    {item}
+                  </button>
+                )
+              })}
+              {/* <button className='filter'>All</button>
             <button className='filter'>Spatial Design</button>
             <button className='filter'>Live Events & Projection Shows</button>
             <button className='filter'>Experiential Technology</button>
@@ -118,26 +130,32 @@ const Work = () => {
             <button className='filter'>Visual Effects</button>
             <button className='filter'>2D & 3D Animation</button>
             <button className='filter'>Documentary and Films</button> */}
+            </div>
           </div>
-        </div>
-        <div></div>
-        <motion.div
-          className='projects'
-          variants={ContainerVariant}
-          initial='initial'
-          animate='show'
-        >
-          {data.map((item, index) => {
-            return (
-              <motion.article className='project' variants={ItemVariant}>
-                <Link to={`/work/${item.slug}`}>
-                  <img src={item.thumbnail} alt={item.title} />
-                  <h2>{item.title}</h2>
-                </Link>
-              </motion.article>
-            )
-          })}
-          {/* <article className='project'>
+          <div></div>
+          <motion.div
+            className='projects'
+            variants={ContainerVariant}
+            initial='initial'
+            animate='show'
+            exit='exit'
+          >
+            {data.map((item, index) => {
+              return (
+                <motion.article className='project' variants={ItemVariant}>
+                  <Link to={`/work/${item.slug}`} className='work-image'>
+                    {' '}
+                    <img src={item.thumbnail} alt={item.title} />
+                  </Link>
+                  <h2>
+                    <Link to={`/work/${item.slug}`} className='flip-animate'>
+                      <span data-hover={item.title}>{item.title}</span>
+                    </Link>
+                  </h2>
+                </motion.article>
+              )
+            })}
+            {/* <article className='project'>
             <Link to='/work/Hero'>
               <img src={Hero} alt='' />
               <h2>
@@ -175,9 +193,10 @@ const Work = () => {
               <h2>Rajasthan Diwas Projection Mapping Show 2016</h2>
             </Link>
           </article> */}
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

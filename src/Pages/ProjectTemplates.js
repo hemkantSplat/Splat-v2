@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { BsChevronLeft } from 'react-icons/bs'
-
+import { motion } from 'framer-motion'
 import './ProjectTemplate.css'
 import Chip from '@mui/material/Chip'
 import Stack from '@mui/material/Stack'
 import WorkData from '../Data/WorkData'
+import MetaTitle from '../Components/MetaTitle'
 
 const ProjectTemplates = () => {
   const pills = ['Live Event & Projection Shows', 'Testing', 'Testing2']
@@ -18,55 +19,100 @@ const ProjectTemplates = () => {
     setData(filteredData[0])
   }, [])
 
-  return (
-    <div className='container projects-container'>
-      <div className='container-center projects-center'>
-        <Link to='/work'>
-          <BsChevronLeft className='back-btn' />
-        </Link>
-        {data && (
-          <>
-            <h1>{data.title}</h1>
-            <div className='projects-detail-container'>
-              <iframe
-                width='100%'
-                height='400px'
-                src={data.video}
-                title='YouTube video player'
-                frameBorder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                allowFullScreen
-              ></iframe>
-              <div className='project-content'>
-                <p>{data.description}</p>
-                <h4>
-                  <span>CLIENT: </span>
-                  {data.client}
-                </h4>
-                <h4>
-                  <span>LOCATION: </span>
-                  {data.location}
-                </h4>
-                <h4 className='tags'>
-                  <span>TAGS: </span>
-                  <Stack
-                    className='pills'
-                    direction='row'
-                    spacing={1}
-                    style={{ flexWrap: 'wrap' }}
-                  >
-                    {data.tags &&
-                      data.tags.map((item) => {
-                        return <Chip label={item} className='tag' />
-                      })}
-                  </Stack>
-                </h4>
-              </div>
-            </div>
-          </>
-        )}
+  const ContainerVariant = {
+    initial: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: { ease: 'easeIn', staggerChildren: 0.1 },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        ease: 'easeOut',
+      },
+    },
+  }
 
-        {/* <h1>IN5: The Golden Temple Experium</h1>
+  const ItemVariant = {
+    initial: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: { ease: 'easeIn' },
+    },
+    exit: {
+      opacity: 0,
+    },
+  }
+
+  return (
+    <>
+      <MetaTitle title={`Splat Studio | ${data.title}`} />
+      <div className='container projects-container'>
+        <div className='container-center projects-center'>
+          <Link to='/work'>
+            <BsChevronLeft className='back-btn' />
+          </Link>
+          {data && (
+            <>
+              <motion.h1
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ ease: 'easeIn', delay: 0.05, duration: 0.2 }}
+              >
+                {data.title}
+              </motion.h1>
+              <div className='projects-detail-container'>
+                <iframe
+                  width='100%'
+                  height='400px'
+                  src={data.video}
+                  title='YouTube video player'
+                  frameBorder='0'
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                  allowFullScreen
+                ></iframe>
+                <motion.div
+                  className='project-content'
+                  variants={ContainerVariant}
+                  initial='initial'
+                  animate='show'
+                >
+                  <motion.p variants={ItemVariant}>{data.description}</motion.p>
+                  <motion.h4 variants={ItemVariant}>
+                    <span>CLIENT: </span>
+                    <span>{data.client}</span>
+                  </motion.h4>
+                  <motion.h4 variants={ItemVariant} className='location'>
+                    <span>LOCATION: </span>
+                    <span>{data.location}</span>
+                  </motion.h4>
+                  <motion.h4 className='tags' variants={ItemVariant}>
+                    <span>TAGS: </span>
+                    <span>
+                      {' '}
+                      <Stack
+                        className='pills'
+                        direction='row'
+                        spacing={1}
+                        style={{ flexWrap: 'wrap' }}
+                      >
+                        {data.tags &&
+                          data.tags.map((item) => {
+                            return <Chip label={item} className='tag' />
+                          })}
+                      </Stack>
+                    </span>
+                  </motion.h4>
+                </motion.div>
+              </div>
+            </>
+          )}
+
+          {/* <h1>IN5: The Golden Temple Experium</h1>
         <div className='projects-detail-container'>
           <iframe
             width='100%'
@@ -109,8 +155,9 @@ const ProjectTemplates = () => {
             </h4>
           </div>
         </div> */}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
