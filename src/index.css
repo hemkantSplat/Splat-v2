@@ -40,8 +40,8 @@
 
 html {
   font-family: 'Futura', sans-serif;
-  background: url('./Assets/bg_works_list.jpg.webp') no-repeat fixed;
-  background-size: cover;
+  /* background: url('./Assets/bg_works_list.jpg.webp') no-repeat fixed;
+  background-size: cover; */
 }
 
 body {
@@ -54,11 +54,15 @@ body {
 
 .main-wrapper {
   position: fixed;
+  width: 100%;
+  min-height: 100vh;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  overflow: scroll;
+  /* overflow: scroll; */
+  background: url('./Assets/bg_works_list.jpg.webp') no-repeat fixed;
+  background-size: cover;
 }
 
 h1,
@@ -98,10 +102,10 @@ button {
   max-width: 1492px;
   margin: 0 auto;
 }
-
+/* 
 @media screen and (max-width: 450px) {
-  html {
-    background: url(./Assets/bg_works_list.jpg.webp) no-repeat fixed;
+  .main-wrapper {
+    background: url(./Assets/bg_works_list.jpg.webp) fixed;
     background-size: cover;
   }
-}
+} */
