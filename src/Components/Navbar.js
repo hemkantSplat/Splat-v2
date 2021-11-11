@@ -3,6 +3,8 @@ import Logo from '../Assets/Logo.png'
 import './Navbar.css'
 import { NavLink } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { IoCloseSharp } from 'react-icons/io5'
+
 const Navbar = ({ setToggleOpen, toggleOpen }) => {
   return (
     <nav>
@@ -58,10 +60,17 @@ const Navbar = ({ setToggleOpen, toggleOpen }) => {
             </NavLink>
           </li>
         </ul>
-        <GiHamburgerMenu
-          className='toggle'
-          onClick={() => setToggleOpen(!toggleOpen)}
-        />
+        {toggleOpen ? (
+          <IoCloseSharp
+            className='toggle'
+            onClick={() => setToggleOpen(false)}
+          />
+        ) : (
+          <GiHamburgerMenu
+            className='toggle'
+            onClick={() => setToggleOpen(true)}
+          />
+        )}
       </div>
     </nav>
   )
