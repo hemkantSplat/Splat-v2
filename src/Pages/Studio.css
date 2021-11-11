@@ -340,6 +340,10 @@ h3 {
     display: none;
   }
 
+  .studio-header {
+    background-size: 100% 100%;
+  }
+
   .studio-header-center h1 {
     text-align: center;
   }
@@ -361,12 +365,13 @@ h3 {
     font-size: 28px;
   }
 
-  .studio-header {
-    background-size: contain;
-  }
-
   .studio-center {
     width: 90vw;
+  }
+
+  .studio-header {
+    background-size: cover;
+    background-position: center center;
   }
 
   .studio-header-center h1,
