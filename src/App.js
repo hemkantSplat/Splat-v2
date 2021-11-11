@@ -19,7 +19,7 @@ function App() {
   const location = useLocation()
 
   return (
-    <>
+    <div className='main-wrapper'>
       <Navbar setToggleOpen={setToggleOpen} toggleOpen={toggleOpen} />
       <Sidebar toggleOpen={toggleOpen} setToggleOpen={setToggleOpen} />
       <ScrollToTop />
@@ -52,7 +52,7 @@ function App() {
         </Switch>
       </AnimatePresence>
       <Footer />
-    </>
+    </div>
   )
 }
 
