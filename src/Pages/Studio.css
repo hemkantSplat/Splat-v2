@@ -414,6 +414,7 @@ h3 {
 
   .clients {
     grid-template-columns: repeat(2, 1fr);
+    place-items: center;
   }
 
   .teams {
