@@ -23,36 +23,36 @@ function App() {
       <Navbar setToggleOpen={setToggleOpen} toggleOpen={toggleOpen} />
       <Sidebar toggleOpen={toggleOpen} setToggleOpen={setToggleOpen} />
       <ScrollToTop />
-      <div className='main-wrapper'>
-        <AnimatePresence exitBeforeEnter>
-          <Switch location={location} key={location.pathname}>
-            <Route exact path='/'>
-              <Home />
-            </Route>
-            <Route exact path='/work'>
-              <Work />
-            </Route>
-            <Route exact path='/studio'>
-              <Studio />
-            </Route>
-            <Route exact path='/reels'>
-              <Reel />
-            </Route>
-            <Route exact path='/careers'>
-              <Carrers />
-            </Route>
-            <Route exact path='/contact'>
-              <Contact />
-            </Route>
-            <Route exact path='/work/:id'>
-              <ProjectTemplates />
-            </Route>
-            <Route exact path='/copyright'>
-              <Copyright />
-            </Route>
-          </Switch>
-        </AnimatePresence>
-      </div>
+      <div className='main-wrapper'></div>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route exact path='/work'>
+            <Work />
+          </Route>
+          <Route exact path='/studio'>
+            <Studio />
+          </Route>
+          <Route exact path='/reels'>
+            <Reel />
+          </Route>
+          <Route exact path='/careers'>
+            <Carrers />
+          </Route>
+          <Route exact path='/contact'>
+            <Contact />
+          </Route>
+          <Route exact path='/work/:id'>
+            <ProjectTemplates />
+          </Route>
+          <Route exact path='/copyright'>
+            <Copyright />
+          </Route>
+        </Switch>
+      </AnimatePresence>
+
       <Footer />
     </>
   )
