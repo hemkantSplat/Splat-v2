@@ -94,12 +94,12 @@
   }
 
   .projects-center h1 {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   .project-content p {
     line-height: 1.5;
     margin-bottom: 1rem;
-    font-size: 15px;
+    font-size: 18px;
   }
 }
