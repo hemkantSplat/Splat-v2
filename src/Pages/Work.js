@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Work.css'
 import { Link } from 'react-router-dom'
-import { BsChevronDown } from 'react-icons/bs'
+import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
 import Hero from '../Assets/projects/Hero MotoCorp 10 years celebration Projection Mapping, 2021.png'
 import IN5 from '../Assets/projects/IN5 Golden Temple Experium 2019.png'
 import Swachta from '../Assets/projects/Rashtriya Swachhta Kendra Experience Centre 2020.png'
@@ -11,6 +11,8 @@ import Mysuru from '../Assets/projects/Mysuru Townhall Projection Mapping Show 2
 import WorkData from '../Data/WorkData'
 import { motion } from 'framer-motion'
 import MetaTitle from '../Components/MetaTitle'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Work = () => {
   const [open, setOpen] = useState(false)
@@ -67,6 +69,11 @@ const Work = () => {
     },
   }
 
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
+
   return (
     <>
       <MetaTitle title='Splat Studio | Work' />
@@ -74,10 +81,17 @@ const Work = () => {
         <div className='container-center work-center'>
           <div className='mobile-filter-container'>
             <button className='filter-btn' onClick={() => setOpen(!open)}>
-              Filter By <BsChevronDown className='filter-down' />
+              FILTER BY{' '}
+              {open ? (
+                <BsChevronUp className='filter-down' />
+              ) : (
+                <BsChevronDown className='filter-down' />
+              )}
             </button>
             <div
-              className={`${open ? 'mobile-filters active' : 'mobile-filters'}`}
+              className={`${
+                open ? 'mobile-filters active-filter' : 'mobile-filters'
+              }`}
             >
               {filters.map((item, index) => {
                 return (
@@ -88,7 +102,10 @@ const Work = () => {
                         ? 'mobile-filter mobile-filter-active'
                         : 'mobile-filter'
                     }`}
-                    onClick={() => handleFilter(item, index)}
+                    onClick={() => {
+                      handleFilter(item, index)
+                      setOpen(false)
+                    }}
                   >
                     {item}
                   </button>
@@ -142,7 +159,13 @@ const Work = () => {
           >
             {data.map((item, index) => {
               return (
-                <motion.article className='project' variants={ItemVariant}>
+                <motion.article
+                  className='project'
+                  variants={ItemVariant}
+                  data-aos='zoom-in'
+                  data-aos-easing='ease-out-cubic'
+                  data-aos-duration='600'
+                >
                   <Link to={`/work/${item.slug}`} className='work-image'>
                     {' '}
                     <img src={item.thumbnail} alt={item.title} />

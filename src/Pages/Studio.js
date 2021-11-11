@@ -577,12 +577,7 @@ const Studio = () => {
         <div className='services-wrapper'>
           <div className='services-container'>
             <h1>SERVICES</h1>
-            <div
-              className='services'
-              data-aos='fade-up'
-              data-aos-easing='ease-out-cubic'
-              data-aos-duration='1000'
-            >
+            <div className='services'>
               {/* {ServicesData.map((item, index) => {
               return (
                 <article className='service' key={index}>
@@ -595,7 +590,13 @@ const Studio = () => {
             })} */}
               {ServicesData.map((item, index) => {
                 return (
-                  <article className='service' key={index}>
+                  <article
+                    className='service'
+                    key={index}
+                    data-aos='fade-up'
+                    data-aos-easing='ease-out-cubic'
+                    data-aos-duration='1000'
+                  >
                     <div className='service-title'>
                       <img src={item.img} alt='' />
                       <h2>{item.title}</h2>
@@ -621,14 +622,18 @@ const Studio = () => {
               })}
             </div>
           </div> */}
-            <div
-              className='clients'
-              data-aos='zoom-in-right'
-              data-aos-easing='ease-out-cubic'
-              data-aos-duration='600'
-            >
+            <div className='clients'>
               {ClientsData.map((item, index) => {
-                return <img src={item} key={index} alt='' />
+                return (
+                  <img
+                    src={item}
+                    key={index}
+                    alt=''
+                    data-aos='zoom-in-up'
+                    data-aos-easing='ease-out-cubic'
+                    data-aos-duration='600'
+                  />
+                )
               })}{' '}
               {/* <ImageGrid
               images={ClientsData}
@@ -648,7 +653,12 @@ const Studio = () => {
             <div className='teams'>
               {TeamsData.map((item, index) => {
                 return (
-                  <article className='team'>
+                  <article
+                    className='team'
+                    data-aos='zoom-in'
+                    data-aos-easing='ease-out-cubic'
+                    data-aos-duration='600'
+                  >
                     <img src={item.img} alt={item.name} />
                     <h2>{item.name}</h2>
                     <h3>{item.Designation}</h3>

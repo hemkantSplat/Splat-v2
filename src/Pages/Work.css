@@ -132,7 +132,6 @@
 
 .mobile-filter-container {
   position: relative;
-
   padding: 0.75rem 0;
   text-align: center;
   display: none;
@@ -145,7 +144,7 @@
   border: none;
   color: #ffffff;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: ponter;
   position: relative;
 }
@@ -158,9 +157,8 @@
 }
 
 .mobile-filters {
-  display: grid;
   margin-top: 1.5rem;
-  /* justify-content: center; */
+  justify-content: center;
   row-gap: 0.5rem;
   width: 100%;
   display: none;
@@ -182,7 +180,8 @@
 }
 
 .mobile-filter-active {
-  color: var(--accent);
+  border: 1px solid rgb(167, 165, 165);
+  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1100px) {
@@ -245,7 +244,7 @@
     display: block;
   }
 
-  .active {
-    display: block;
+  .active-filter {
+    display: grid;
   }
 }

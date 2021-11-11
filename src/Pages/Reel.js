@@ -5,6 +5,8 @@ import { FaTimes } from 'react-icons/fa'
 // import Hero from '../Assets/Reels/Spatial Design Showreel.jpg'
 import ReelsData from '../Data/ReelsData'
 import { motion } from 'framer-motion'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Reel = () => {
   const [data, setData] = useState('')
@@ -33,6 +35,11 @@ const Reel = () => {
     return () => {
       document.removeEventListener('mousedown', handleClick)
     }
+  }, [])
+
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
   }, [])
 
   const ContainerVariant = {
@@ -83,6 +90,9 @@ const Reel = () => {
                 data-id={item.url}
                 onClick={(e) => Click(e)}
                 variants={ItemVariant}
+                data-aos='zoom-in'
+                data-aos-easing='ease-out-cubic'
+                data-aos-duration='600'
               >
                 <img src={item.thumbnail} alt='' />
                 <div class='title'>{item.name}</div>

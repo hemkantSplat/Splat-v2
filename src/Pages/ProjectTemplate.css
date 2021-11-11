@@ -39,27 +39,24 @@
 
 .project-content p {
   line-height: 1.4;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 22px;
 }
 
 .project-content h4 {
   margin-bottom: 1rem;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .project-content h4 > span:first-child {
   color: rgb(167, 165, 165);
   margin-right: 0.2rem;
   font-size: 16px;
+  transform: translateY(2%);
 }
 
 .location {
   display: flex;
-}
-
-.location > span:first-child {
-  transform: translateY(4%);
 }
 
 .tags {
