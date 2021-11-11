@@ -361,6 +361,10 @@ h3 {
     font-size: 28px;
   }
 
+  .studio-header {
+    background-size: contain;
+  }
+
   .studio-center {
     width: 90vw;
   }

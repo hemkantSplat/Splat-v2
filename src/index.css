@@ -40,6 +40,8 @@
 
 html {
   font-family: 'Futura', sans-serif;
+  background: url('./Assets/bg_works_list.jpg.webp') no-repeat fixed;
+  background-size: cover;
 }
 
 body {
@@ -56,8 +58,6 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background: url('./Assets/bg_works_list.jpg.webp');
-  background-size: cover;
   overflow: scroll;
 }
 
@@ -100,7 +100,7 @@ button {
 }
 
 @media screen and (max-width: 450px) {
-  .main-wrapper {
-    background: url(./Assets/bg_works_list.jpg.webp);
+  html {
+    background: url(./Assets/bg_works_list.jpg.webp) no-repeat fixed;
   }
 }
