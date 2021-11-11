@@ -98,6 +98,9 @@ nav {
 }
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
+  nav {
+    width: auto;
+  }
   .nav-links {
     display: none;
   }
