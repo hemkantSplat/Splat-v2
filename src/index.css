@@ -93,5 +93,6 @@ button {
   body {
     background: url('./Assets/bg_works_list_mobile_view.png') no-repeat 0 0
       fixed;
+    background-size: cover;
   }
 }
