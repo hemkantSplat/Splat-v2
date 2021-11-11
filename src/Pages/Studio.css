@@ -183,13 +183,14 @@
   /* margin-top: 3rem; */
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  align-items: center;
   row-gap: 2rem;
   column-gap: 2rem;
 }
 
 .clients > img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  /* height: 50px; */
 }
 
 .teams-wrapper {

@@ -17,9 +17,6 @@ const Carrers = () => {
               {CareersData.map((item, index) => {
                 return <Accordion key={index} item={item} />
               })}
-              {/* <Accordion />
-          <Accordion />
-        <Accordion /> */}
             </div>
           </AnimateSharedLayout>
         </div>
