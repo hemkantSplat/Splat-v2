@@ -91,8 +91,8 @@ button {
 
 @media screen and (max-width: 450px) {
   body {
-    background: url('./Assets/bg_works_list_mobile_view.png') no-repeat 0 0
-      fixed;
-    background-size: initial;
+    background: url(./Assets/bg_works_list_mobile_view.png) no-repeat 0 0 fixed;
+    background-size: cover;
+    background-position: center;
   }
 }
