@@ -33,14 +33,14 @@
 .filter {
   outline: none;
   background: transparent;
-  border: none;
+  border: transparent;
   text-align: left;
   font-size: 14px;
   color: rgb(167, 165, 165);
   margin-bottom: 0.6rem;
   padding: 0.3rem 0.5rem;
   display: block;
-  transition: all 0.3s linear;
+  transition: all 0.1s ease-in;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -48,6 +48,7 @@
 
 .filter:hover {
   border: 1px solid var(--primary);
+  color: #ffffff;
 }
 
 .filter-active {
@@ -121,12 +122,10 @@
   transform-origin: 50% 0;
   /* text-align: center; */
 }
-.flip-animate:hover span,
-.flip-animate:focus span {
+.project:hover .flip-animate span {
   transform: rotateX(90deg) translateY(-22px);
 }
-.flip-animate:hover span:before,
-.flip-animate:focus span:before {
+.project:hover .flip-animate span::before {
   color: #ee7739;
   opacity: 1;
 }

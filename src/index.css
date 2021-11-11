@@ -88,3 +88,9 @@ button {
   max-width: 1492px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 450px) {
+  body {
+    background: url('./Assets/bg_works_list.jpg.webp') no-repeat fixed;
+  }
+}
