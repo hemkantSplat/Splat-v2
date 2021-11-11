@@ -82,16 +82,16 @@ const ProjectTemplates = () => {
                   animate='show'
                 >
                   <motion.p variants={ItemVariant}>{data.description}</motion.p>
-                  <motion.h4 variants={ItemVariant}>
-                    <span>CLIENT: </span>
+                  <motion.h4 variants={ItemVariant} className='heading'>
+                    <span>Client: </span>
                     <span>{data.client}</span>
                   </motion.h4>
                   <motion.h4 variants={ItemVariant} className='location'>
-                    <span>LOCATION: </span>
+                    <span>Location: </span>
                     <span>{data.location}</span>
                   </motion.h4>
                   <motion.h4 className='tags' variants={ItemVariant}>
-                    <span>TAGS: </span>
+                    <span>Tags: </span>
                     <span>
                       {' '}
                       <Stack
