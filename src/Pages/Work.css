@@ -200,7 +200,7 @@
   }
 
   .project h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
@@ -209,7 +209,7 @@
     /* width: 330px; */
   }
   .project h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
@@ -229,7 +229,7 @@
 
   .projects {
     grid-template-columns: 1fr;
-    row-gap: 6rem;
+    row-gap: 10rem;
     padding-top: 2rem;
   }
 
@@ -238,7 +238,7 @@
   }
 
   .project h2 {
-    font-size: 14px;
+    font-size: 22px;
   }
 
   .mobile-filter-container {
