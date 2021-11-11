@@ -102,5 +102,6 @@ button {
 @media screen and (max-width: 450px) {
   html {
     background: url(./Assets/bg_works_list.jpg.webp) no-repeat fixed;
+    background-size: cover;
   }
 }
