@@ -191,6 +191,8 @@
   }
   .work-center {
     display: grid;
+    width: 70vw;
+    margin: 0 auto;
     grid-template-columns: 1fr;
   }
 
@@ -201,7 +203,7 @@
   .projects {
     grid-template-columns: 1fr;
     padding-top: 2rem;
-    row-gap: 20rem;
+    row-gap: 18rem;
   }
 
   .project {
@@ -234,8 +236,8 @@
   }
 
   .projects {
-    column-gap: 2rem;
-    row-gap: 8rem;
+    column-gap: 1rem;
+    row-gap: 6rem;
   }
 
   .project {

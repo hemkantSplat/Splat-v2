@@ -154,17 +154,18 @@
   }
 }
 
-@media screen and (min-width: 740px) and (max-width: 868px) {
+@media screen and (min-width: 740px) and (max-width: 1100px) {
   .reels-center {
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 2rem 1rem;
   }
 
   .reels-title > p {
     width: 100%;
+    font-size: 18.72px;
   }
 
-  .show-reels > .title {
-    font-size: 18px;
+  .show-reels > img {
+    object-fit: contain;
   }
 }
