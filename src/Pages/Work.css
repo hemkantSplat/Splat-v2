@@ -187,7 +187,7 @@
 @media screen and (min-width: 766px) and (max-width: 868px) {
   .work {
     height: auto;
-    padding: 5rem 0 0 0;
+    padding: 5rem 0 5rem 0;
   }
   .work-center {
     display: grid;
