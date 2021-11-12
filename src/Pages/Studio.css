@@ -311,7 +311,7 @@ h3 {
   margin-bottom: 0rem;
 }
 
-@media screen and (min-width: 540px) and (max-width: 1200px) {
+@media screen and (min-width: 540px) and (max-width: 866px) {
   .service-title h2 {
     font-size: 18px;
   }
@@ -330,6 +330,62 @@ h3 {
 
   .teams {
     grid-template-columns: repeat(2, auto);
+    column-gap: 2rem;
+  }
+
+  .mobile-snapshot {
+    display: block;
+  }
+
+  .desktop-snapshot {
+    display: none;
+  }
+
+  .studio-snapshots {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .studio-header {
+    background-size: 100% 100%;
+    height: 65vh;
+  }
+
+  .studio-header-center h1 {
+    text-align: center;
+  }
+
+  .service-content h3 {
+    text-align: center;
+  }
+  .team > h3 {
+    text-align: center;
+  }
+
+  .team {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 866px) and (max-width: 1200px) {
+  .service-title h2 {
+    font-size: 18px;
+  }
+
+  .service-title > img {
+    width: 80px;
+  }
+
+  .service-content {
+    column-gap: 2rem;
+  }
+
+  .clients {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .teams {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 2rem;
   }
 
   .mobile-snapshot {
@@ -360,7 +416,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (min-width: 300px) and (max-width: 540px) {
   .studio > h1 {
     font-size: 28px;
   }
@@ -370,7 +426,7 @@ h3 {
   }
 
   .studio-header {
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
   }
 
