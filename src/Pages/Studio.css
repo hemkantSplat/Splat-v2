@@ -312,6 +312,16 @@ h3 {
 }
 
 @media screen and (min-width: 540px) and (max-width: 866px) {
+  .studio > h1 {
+    font-size: 24px;
+  }
+
+  .studio-header-center h1,
+  h3 {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
   .studio-about > p {
     font-size: 22px;
   }
@@ -375,6 +385,16 @@ h3 {
 }
 
 @media screen and (min-width: 866px) and (max-width: 1200px) {
+  .studio > h1 {
+    font-size: 24px;
+  }
+
+  .studio-header-center h1,
+  h3 {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
   .studio-about > p {
     font-size: 22px;
   }
