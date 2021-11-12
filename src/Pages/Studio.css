@@ -376,8 +376,16 @@ h3 {
 
   .studio-header-center h1,
   h3 {
-    text-align: left;
+    text-align: center;
     margin-top: 0.5rem;
+  }
+
+  .studio-about > p {
+    font-size: 22px;
+  }
+
+  .studio-about p > span {
+    font-size: 24px;
   }
 
   .studio-snapshot-container {

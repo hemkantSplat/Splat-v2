@@ -125,6 +125,7 @@
 
   .reels-title > p {
     width: 100%;
+    font-size: 18.72px;
   }
 
   .reels-center {
@@ -138,7 +139,7 @@
   }
 
   .show-reels > .title {
-    font-size: 16px;
+    font-size: 26px;
   }
 
   .modal-show-reel {

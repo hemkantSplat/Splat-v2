@@ -27,6 +27,11 @@
   font-size: 32px;
 }
 
+.sidebar-links > li > a {
+  font-family: 'Futura', sans-serif;
+  font-weight: 100;
+}
+
 .active {
   left: 0%;
 }
