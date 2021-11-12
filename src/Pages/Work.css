@@ -191,11 +191,16 @@
   }
 
   .projects {
-    grid-template-columns: 1fr;
+    column-gap: 2rem;
+    row-gap: 8rem;
   }
 
   .project {
     width: 100%;
+  }
+
+  .project img {
+    height: auto;
   }
 
   .project h2 {
@@ -204,11 +209,20 @@
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1400px) {
+  .projects {
+    column-gap: 2rem;
+    row-gap: 8rem;
+  }
+
   .project {
-    /* width: 330px; */
+    width: auto;
   }
   .project h2 {
     font-size: 22px;
+  }
+
+  .project img {
+    height: auto;
   }
 }
 
@@ -232,7 +246,11 @@
   }
 
   .project {
-    width: 100%;
+    width: auto;
+  }
+
+  .project img {
+    object-fit: contain;
   }
 
   .project h2 {
