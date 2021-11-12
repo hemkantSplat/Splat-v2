@@ -61,7 +61,7 @@ body {
   bottom: 0;
   right: 0;
   /* overflow: scroll; */
-  background: url('./Assets/bg_works_list.jpg.webp') no-repeat;
+  background: url('./Assets/bg_works_list.jpg.png') no-repeat;
   background-size: cover;
 }
 
@@ -103,9 +103,17 @@ button {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
+  .main-wrapper {
+    background: url(./Assets/bg_works_list_mobile_view.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* @media screen and (max-width: 450px) {
   .main-wrapper {
     background: url(./Assets/bg_works_list.jpg.webp);
     background-size: cover;
   }
-}
+} */
