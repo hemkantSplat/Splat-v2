@@ -312,8 +312,11 @@ h3 {
 }
 
 @media screen and (min-width: 540px) and (max-width: 866px) {
-  .studio > h1 {
-    font-size: 24px;
+  .studio-header-center h1 {
+    font-size: 40px;
+  }
+  .studio-header-center h3 {
+    font-size: 16px;
   }
 
   .studio-header-center h1,
