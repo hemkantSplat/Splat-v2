@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import MetaTitle from '../Components/MetaTitle'
 import './Studio.css'
 import AOS from 'aos'
+import { motion } from 'framer-motion'
 import 'aos/dist/aos.css'
 import VisibilitySensor from 'react-visibility-sensor'
 import CountUp, { startAnimation } from 'react-countup'
@@ -295,7 +296,13 @@ const Studio = () => {
   return (
     <>
       <MetaTitle title='Splat Studio | Studio' />
-      <div className='container studio'>
+      <motion.div
+        className='container studio'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: 'easeIn', duration: 0.5 }}
+        exit={{ opacity: 0, duration: 0.5 }}
+      >
         <div className='studio-header'>
           <div className='container-center studio-header-center'>
             {/* <img src={Home} alt="" /> */}
@@ -361,7 +368,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={2014}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -379,7 +386,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={200}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -397,7 +404,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={3000}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -415,7 +422,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={6000}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -433,7 +440,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={5}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -451,7 +458,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={55}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -469,7 +476,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={50}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -487,7 +494,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={10}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -505,7 +512,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={18}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -523,7 +530,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={75}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -541,7 +548,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={6}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -559,7 +566,7 @@ const Studio = () => {
                     <CountUp
                       start={focus ? 0 : null}
                       end={35}
-                      duration={2}
+                      duration={1}
                       redraw={true}
                     >
                       {({ countUpRef }) => (
@@ -720,7 +727,7 @@ const Studio = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

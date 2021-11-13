@@ -77,7 +77,13 @@ const Work = () => {
   return (
     <>
       <MetaTitle title='Splat Studio | Work' />
-      <div className='container work'>
+      <motion.div
+        className='container work'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: 'easeIn' }}
+        exit={{ opacity: 0, duration: 0.5 }}
+      >
         <div className='container-center work-center'>
           <div className='mobile-filter-container'>
             <button className='filter-btn' onClick={() => setOpen(!open)}>
@@ -218,7 +224,7 @@ const Work = () => {
           </article> */}
           </motion.div>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

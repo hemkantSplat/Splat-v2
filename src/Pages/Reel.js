@@ -65,7 +65,13 @@ const Reel = () => {
   return (
     <>
       <MetaTitle title='Splat Studio | Reels' />
-      <div className='container reels'>
+      <motion.div
+        className='container reels'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: 'easeIn', duration: 0.5 }}
+        exit={{ opacity: 0, duration: 0.5 }}
+      >
         <div className='container-center'>
           <div className='reels-title'>
             <h1>SHOWREELS</h1>
@@ -155,7 +161,7 @@ const Reel = () => {
             ></iframe>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

@@ -65,6 +65,19 @@ body {
   background-size: cover;
 }
 
+.bg-wrapper {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* overflow: scroll; */
+  background: url('./Assets/bg_recent_work_circle.png.webp') no-repeat;
+  background-size: 500px;
+  background-position: center;
+}
+
 h1,
 h2,
 h3,

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 import './Contact.css'
 import GoogleMapReact from 'google-map-react'
 import MetaTitle from '../Components/MetaTitle'
@@ -24,7 +25,13 @@ const Contact = () => {
   return (
     <>
       <MetaTitle title='Splat Studio | Contact' />
-      <div className='container contacts'>
+      <motion.div
+        className='container contacts'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: 'easeIn', duration: 0.5 }}
+        exit={{ opacity: 0, duration: 0.5 }}
+      >
         <div className='container-center contact-center'>
           <h1 className='contact-title'>CONTACT US</h1>
           <div className='contact-header'>
@@ -140,7 +147,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }
