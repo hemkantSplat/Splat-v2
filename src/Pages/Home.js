@@ -105,8 +105,8 @@ const Home = () => {
           <div className="hero-title">
           <h1>We weave magic into <br />the stories</h1>
           <h3>
-            Whether it is Experience Centres, Museums, Shows or Films, we
-            thrill,<br/> surprise and amaze audiences
+            Whether it is Experience Centres, Museums, Shows or Films, <br/>  we
+            thrill,surprise and amaze audiences
           </h3>
           </div>
         </div>

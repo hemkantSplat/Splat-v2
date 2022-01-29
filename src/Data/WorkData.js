@@ -59,7 +59,7 @@ const WorkData = [
     tags: [
       'Spatial Design',
       'Live Events & Projection Shows',
-      'Experential Technology',
+      'Experiential Technology',
       '2D & 3D Animation',
       'Documnetary & Films',
     ],
@@ -78,7 +78,7 @@ const WorkData = [
     tags: [
       'Spatial Design',
       'Live Events & Projection Shows',
-      'Experential Technology',
+      'Experiential Technology',
       '2D & 3D Animation',
       'Documnetary & Films',
     ],
