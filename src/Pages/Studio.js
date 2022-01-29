@@ -126,36 +126,28 @@ const Studio = () => {
       title: 'DESIGN',
       img: Service1,
       content: [
-        'Spatial Design',
-        'Content Creation',
-        'Motion Design',
-        'Storyboarding',
-        'Web Design',
-        'User Experience (UX)',
+        'Space',
+        'Experience',
+        'Entertainment',
       ],
     },
     {
       title: 'PRODUCTION',
       img: Service2,
       content: [
-        'Live Events',
-        'Projection Mapping Show',
-        'Virtual Events',
-        'VFX & CGI',
-        'Films & post-production',
-        'Audio Description',
+        'Festivals',
+        'Films',
+        'Videos',
+        'Events',
       ],
     },
     {
       title: 'TECHNOLOGY',
       img: Service3,
       content: [
-        '2D & 3D Animation',
-        'Sterioscopic 3D Content',
-        'AR Experiences',
-        'VR Experiences',
-        'Motion Graphics',
-        'Interactive Applications & Web Platforms',
+        'Augmented & Virtual Reality',
+        'Immersive & Interactive',
+        '3D Projection Mapping',
       ],
     },
   ]
@@ -305,16 +297,53 @@ const Studio = () => {
       >
         <div className='studio-header'>
           <div className='container-center studio-header-center'>
-            {/* <img src={Home} alt="" /> */}
             <h1>INNOVATORS : EXPERIENCE DESIGNERS : STORYTELLERS</h1>
             <h3>
-              We create unforgettable experiences by combining technology with
+              Creators of unforgettable experiences by combining technology with
               spaces
             </h3>
+            <p
+              data-aos='zoom-in'
+              data-aos-easing='ease-out-cubic'
+              data-aos-duration='600'
+            >
+              It all starts with the name. You hear something go splat and feel
+              it fall three dimensionally flat before you see it. The art we
+              make is like that. It's inside your head before its outside.
+              Stories bring people together. And that’s exactly what we want.
+              Connect people with never before experiences
+            </p>
+            <p
+              data-aos='zoom-in'
+              data-aos-easing='ease-out-cubic'
+              data-aos-duration='600'
+            >
+              We are a multi-disciplinary <span>New Media Design Studio</span>,
+              and our service offerings remain core to our mission - design to
+              make your idea/concept/content sing through well-informed content
+              strategy, research-backed design, and forward-thinking development
+              that excludes no one.
+               <span style={{marginLeft:'0.2rem'}}>
+                This is where everything comes together, from concept to
+                delivery. All under one roof
+              </span>
+              .
+            </p>
+            <p
+              data-aos='zoom-in'
+              data-aos-easing='ease-out-cubic'
+              data-aos-duration='600'
+            >
+              Behind the complex technology and artistic wizardry all we are
+              really doing with our work is making sure you are on an emotional
+              journey, a sentimental journey, a warm and fuzzy place you're not
+              quite sure how to describe, except in the most basic childlike
+              way, <span>Splat</span>.
+            </p>
           </div>
         </div>
         <div className='container-center studio-center'>
-          <div className='studio-about'>
+          {/* <div className='studio-about'>
             <h1>ABOUT SPLAT</h1>
             <p
               data-aos='zoom-in'
@@ -334,7 +363,7 @@ const Studio = () => {
               With an integrated workflow from Idea-Concept-Design-Solution
               we’ll help you craft your message.
             </p>
-          </div>
+          </div> */}
         </div>
         <div className='studio-snapshot-wrapper'>
           <div className='studio-snapshot-container'>
@@ -584,7 +613,12 @@ const Studio = () => {
         <div className='services-wrapper'>
           <div className='services-container'>
             <h1>SERVICES</h1>
-            <div className='services'>
+            <div
+              className='services'
+              data-aos='fade-up'
+              data-aos-easing='ease-out-cubic'
+              data-aos-duration='1000'
+            >
               {/* {ServicesData.map((item, index) => {
               return (
                 <article className='service' key={index}>
@@ -600,13 +634,13 @@ const Studio = () => {
                   <article
                     className='service'
                     key={index}
-                    data-aos='fade-up'
-                    data-aos-easing='ease-out-cubic'
-                    data-aos-duration='1000'
+                    // data-aos='fade-up'
+                    // data-aos-easing='ease-out-cubic'
+                    // data-aos-duration='1000'
                   >
                     <div className='service-title'>
-                      <img src={item.img} alt='' />
                       <h2>{item.title}</h2>
+                      <img src={item.img} alt='' />
                     </div>
                     <div className='service-content'>
                       {item.content.map((content, index) => {
@@ -656,7 +690,7 @@ const Studio = () => {
         </div>
         <div className='teams-wrapper'>
           <div className='teams-container'>
-            <h1>TEAM</h1>
+            <h1>BOARD</h1>
             <div className='teams'>
               {TeamsData.map((item, index) => {
                 return (

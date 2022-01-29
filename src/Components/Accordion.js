@@ -22,7 +22,7 @@ const Accordion = ({ item }) => {
         </h2>
         <div>
           <button className='career-btn'>
-            <a href={item.link}>Apply Now</a>
+            <a target="_blank" href={item.link}>Apply Now</a>
           </button>
         </div>
       </div>

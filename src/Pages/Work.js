@@ -2,12 +2,6 @@ import React, { useState, useEffect } from 'react'
 import './Work.css'
 import { Link } from 'react-router-dom'
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
-import Hero from '../Assets/projects/Hero MotoCorp 10 years celebration Projection Mapping, 2021.png'
-import IN5 from '../Assets/projects/IN5 Golden Temple Experium 2019.png'
-import Swachta from '../Assets/projects/Rashtriya Swachhta Kendra Experience Centre 2020.png'
-import Diwas from '../Assets/projects/Rajasthan Diwas Projection Mapping Show 2016.png'
-import Lakme from '../Assets/projects/Lakme Fashion Week, Projection Mapping for Rohit Bal 2016.png'
-import Mysuru from '../Assets/projects/Mysuru Townhall Projection Mapping Show 2018.png'
 import WorkData from '../Data/WorkData'
 import { motion } from 'framer-motion'
 import MetaTitle from '../Components/MetaTitle'
@@ -35,7 +29,7 @@ const Work = () => {
     if (item === 'All Projects') {
       setData(WorkData)
     } else {
-      const filter = WorkData.filter((i) => i.category === item)
+      const filter = WorkData.filter((i) => i.tags.includes(item))
       setData(filter)
     }
   }

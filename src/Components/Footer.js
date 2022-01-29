@@ -62,7 +62,7 @@ const Footer = () => {
             <FaYoutube className='footer-icon' />
           </a>
           <a
-            href='https://www.youtube.com/user/Splatoscope'
+            href='https://vimeo.com/user12066933'
             target='_blank'
             rel='noreferrer'
           >

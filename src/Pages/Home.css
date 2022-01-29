@@ -39,10 +39,9 @@
   /* background: red; */
 }
 
-.hero-title {
+/* .hero-title {
   position: absolute;
   top: 50%;
-  /* margin: 0 auto; */
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
@@ -50,17 +49,53 @@
   font-size: 68px;
   line-height: 1.1;
   font-weight: 400;
-  /* background: red; */
+} */
+
+.hero-title{
+  position: relative;
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.hero-title > h1{
+  color: var(--secondary);
+  font-size: 68px;
+  line-height: 1.1;
+  font-weight: 400;
+  z-index: 999;
+  text-align: center;
+}
+
+.hero-title > h3{
+  margin-top: 3rem;
+    color: var(--secondary);
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 300;
+  z-index: 999;
+  text-align: center;
 }
 
 .gradient {
   background-image: radial-gradient(
     circle at 36% 48%,
     #000000,
-    rgba(11, 39, 65, 0.32) 87%,
+    rgba(11, 39, 65, 0.32) 50%,
     rgba(0, 0, 0, 0)
   );
   z-index: 99;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 @media screen and (min-width: 540px) and (max-width: 1200px) {
@@ -84,10 +119,13 @@
     display: none !important;
   }
 
-  .hero-title {
+  .hero-title > h1 {
     font-size: 38px;
-    left: 50%;
-    top: 50%;
+
+  }
+
+  .hero-title > h3 {
+    font-size: 20px;
   }
 
   .home {

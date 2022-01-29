@@ -100,7 +100,9 @@ const Reel = () => {
                 data-aos-easing='ease-out-cubic'
                 data-aos-duration='600'
               >
+                <div className="show-reels-img">
                 <img src={item.thumbnail} alt='' />
+                </div>
                 <div class='title'>{item.name}</div>
               </motion.div>
             )

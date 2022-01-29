@@ -19,6 +19,7 @@ const ProjectTemplates = () => {
     setData(filteredData[0])
   }, [])
 
+
   const ContainerVariant = {
     initial: {
       opacity: 0,
@@ -81,11 +82,16 @@ const ProjectTemplates = () => {
                   initial='initial'
                   animate='show'
                 >
-                  <motion.p variants={ItemVariant}>{data.description}</motion.p>
-                  <motion.h4 variants={ItemVariant} className='heading'>
+            {data?.description?.map((item, index) => {
+              return (
+                <motion.p key={index} variants={ItemVariant}>{item}</motion.p>
+              ) 
+            })}
+                  {/* <motion.p variants={ItemVariant}>{data.description}</motion.p> */}
+                  {/* <motion.h4 variants={ItemVariant} className='heading'>
                     <span>Client: </span>
                     <span>{data.client}</span>
-                  </motion.h4>
+                  </motion.h4> */}
                   <motion.h4 variants={ItemVariant} className='location'>
                     <span>Location: </span>
                     <span>{data.location}</span>

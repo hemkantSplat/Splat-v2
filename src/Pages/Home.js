@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import Video from '../Assets/bg2.mp4'
+import Video from '../Assets/Video.mp4'
 import MetaTitle from '../Components/MetaTitle'
 import { motion } from 'framer-motion'
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
         transition={{ ease: 'easeIn', duration: 0.5 }}
         exit={{ opacity: 0, duration: 0.5 }}
       >
-        <div id='video1'>
+        {/* <div id='video1'>
           <div
             style={{
               position: 'absolute',
@@ -48,8 +48,8 @@ const Home = () => {
               <source src={Video} type='video/mp4' />
             </video>
           </div>
-        </div>
-        <div id='video2'>
+        </div> */}
+        {/* <div id='video2'>
           <div
             style={{
               position: 'absolute',
@@ -90,11 +90,11 @@ const Home = () => {
               />
             </video>
           </div>
-        </div>
-        {/* <video autoPlay muted loop id='myVideo'>
+        </div> */}
+        <video autoPlay muted loop id='myVideo'>
           <source src={Video} type='video/mp4' />
         </video>
-        <video autoPlay muted loop id='myVideo2'>
+        {/* <video autoPlay muted loop id='myVideo2'>
           <source
             src='https://monopo.co.jp/wp-content/themes/monopo/video/circle4.mp4'
             type='video/mp4'
@@ -102,7 +102,13 @@ const Home = () => {
         </video> */}
         <div className='gradient'></div>
         <div className='container-center home-center'>
-          <h1 className='hero-title'>Home</h1>
+          <div className="hero-title">
+          <h1>We weave magic into <br />the stories</h1>
+          <h3>
+            Whether it is Experience Centres, Museums, Shows or Films, we
+            thrill,<br/> surprise and amaze audiences
+          </h3>
+          </div>
         </div>
       </motion.div>
     </>

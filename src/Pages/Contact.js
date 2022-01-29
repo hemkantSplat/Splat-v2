@@ -78,7 +78,7 @@ const Contact = () => {
                   Road, Devara Bisanahalli, Bengaluru 560035.
                 </p>
                 <p>
-                  <span>CONTACT NUMBER:</span> +91 98712 19992, +91 98106 09992
+                  <span>CONTACT NUMBER:</span> +91 9659787318
                 </p>
               </div>
             </div>
@@ -138,7 +138,7 @@ const Contact = () => {
                 <FaYoutube className='icon' />
               </a>
               <a
-                href='https://www.youtube.com/user/Splatoscope'
+                href='https://vimeo.com/user12066933'
                 target='_blank'
                 rel='noreferrer'
               >

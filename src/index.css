@@ -61,7 +61,7 @@ body {
   bottom: 0;
   right: 0;
   /* overflow: scroll; */
-  background: url('./Assets/bg_works_list.jpg.png') no-repeat;
+  background: url('./Assets/bg_works_list.png') no-repeat;
   background-size: cover;
 }
 
