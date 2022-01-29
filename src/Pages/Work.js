@@ -17,7 +17,7 @@ const Work = () => {
     'All Projects',
     'Spatial Design',
     'Live Events & Projection Shows',
-    'Experential Technology',
+    'Experiential Technology',
     'Virtual Events',
     'Visual Effects',
     '2D & 3D Animation',
