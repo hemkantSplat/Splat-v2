@@ -100,7 +100,7 @@ const Home = () => {
             type='video/mp4'
           />
         </video> */}
-        <div className='gradient'></div>
+        {/* <div className='gradient'></div> */}
         <div className='container-center home-center'>
           <div className="hero-title">
           <h1>We weave magic into <br />the stories</h1>

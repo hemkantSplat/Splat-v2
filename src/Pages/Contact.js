@@ -78,7 +78,7 @@ const Contact = () => {
                   Road, Devara Bisanahalli, Bengaluru 560035.
                 </p>
                 <p>
-                  <span>CONTACT NUMBER:</span> +91 9659787318
+                  <span>CONTACT NUMBER:</span> +91 9650787318
                 </p>
               </div>
             </div>
