@@ -14,7 +14,7 @@ const Home = () => {
         transition={{ ease: 'easeIn', duration: 0.5 }}
         exit={{ opacity: 0, duration: 0.5 }}
       >
-        {/* <div id='video1'>
+        <div id='video1'>
           <div
             style={{
               position: 'absolute',
@@ -48,7 +48,7 @@ const Home = () => {
               <source src={Video} type='video/mp4' />
             </video>
           </div>
-        </div> */}
+        </div>
         {/* <div id='video2'>
           <div
             style={{
@@ -91,9 +91,9 @@ const Home = () => {
             </video>
           </div>
         </div> */}
-        <video autoPlay muted loop id='myVideo'>
+        {/* <video autoPlay muted loop id='myVideo'>
           <source src={Video} type='video/mp4' />
-        </video>
+        </video> */}
         {/* <video autoPlay muted loop id='myVideo2'>
           <source
             src='https://monopo.co.jp/wp-content/themes/monopo/video/circle4.mp4'
