@@ -640,7 +640,7 @@ const Studio = () => {
                   >
                     <div className='service-title'>
                       <h2>{item.title}</h2>
-                      <img src={item.img} alt='' />
+                      <img className='service-icon' src={item.img} alt='' />
                     </div>
                     <div className='service-content'>
                       {item.content.map((content, index) => {

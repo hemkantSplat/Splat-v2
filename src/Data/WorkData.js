@@ -53,7 +53,7 @@ const WorkData = [
     video: 'https://www.youtube.com/embed/pw6hzF_F4XY',
     description: [
       'Rashtriya Swachhta Kendra is a magnificent interactive experience centre, established at Rajghat in New Delhi, inaugurated on 8th August 2020, by the Prime Minister Shri Narendra Modi.',
-      'We designed & produced  over 400 sq. mt of technology driven experiences like a unique 360° audiovisual immersive holographic show with revolving audience seating, Immersive LED zones, Interactive Dome projection, Immersive 270-degree projections, Holographic screen installations, a series of captivating sensor-based interactive projections, interactive games through touchless sensor-based interactions, mobile apps, a website and much more, to actively engage with citizens to impart information, awareness, and education around Swachhata in an interactive format',
+      'We designed & produced  over 400 sq. mt of technology driven experiences like a unique 360° audiovisual immersive holographic show with revolving audience seating, Immersive LED zones, Interactive Dome projection, Immersive 270-degree projections, Holographic screen installations, a series of captivating sensor-based interactive projections, interactive games through touchless sensor-based interactions, mobile apps, a website and much more, to actively engage with citizens to impart information, awareness, and education around Swachhata in an interactive format.',
     ],
     location: 'Gandhi Smriti and Darshan Samiti, Rajghat, New Delhi',
     tags: [
@@ -94,9 +94,7 @@ const WorkData = [
     ],
     location: ' Vigyan Bhawan, New Delhi',
     tags: [
-      'Spatial Design',
       'Live Events & Projection Shows',
-      'Experential Technology',
       '2D & 3D Animation',
       'Documnetary & Films',
     ],
@@ -121,7 +119,7 @@ const WorkData = [
     slug: 'odisha-parba2021',
     video: 'https://www.youtube.com/embed/3IIkb5J8Q5Y',
     description: [
-      'TAfter 3 successful years of celebration in Delhi and Surat, the mega ‘International Odisha Parba’ was celebrated in a spectacular and unique manner, on a virtual platform. The two-day long grand event showcased the unique art, culture, heritage & tradition of Odisha. The magnificent 3D landing page had an abstract rendition of the virtual odisha, and each section had round the clock engagement, including live webcasts. Splat curated and executed this online stage for all Odias worldwide to tune-in and experience the marvelous extravaganza of Odia culture.',
+      'After 3 successful years of celebration in Delhi and Surat, the mega ‘International Odisha Parba’ was celebrated in a spectacular and unique manner, on a virtual platform. The two-day long grand event showcased the unique art, culture, heritage & tradition of Odisha. The magnificent 3D landing page had an abstract rendition of the virtual odisha, and each section had round the clock engagement, including live webcasts. Splat curated and executed this online stage for all Odias worldwide to tune-in and experience the marvelous extravaganza of Odia culture.',
     ],
     location: 'Virtual Event',
     tags: ['Virtual Events', 'Visual Effects'],
@@ -166,7 +164,7 @@ const WorkData = [
       ' A brilliant amalgamation of the Vizrt based Real Time Virtual Production, animated high octane visuals and VFX driven product feature films, the Hero MotoCorp National Dealers Conclave 2020 was a massive project with multiple challenges, but equally brilliant opportunities to experiment more. The live Vizrt shoot was creatively conceptualized and directed by Splat, while parallelly working on getting the product VFX shots being handled separately on another studio floor. Total 40 minutes of virtual production was handled within less than 15 days.',
     ],
     location: 'Virtual Event',
-    tags: ['Visual Effects', '2D & 3D Animation'],
+    tags: ['Visual Effects', 'Virtual Events'],
     category: 'Visual Effects',
   },
   {
@@ -177,7 +175,7 @@ const WorkData = [
     description: [
       'For an electric vehicle, promising to be at the forefront of technology intervention, we suggested to have a AR product brochure as an interactive screen based application which was aesthetically pleasing and very engaging. The visitors to the sales dealerships could engage with the AR screen and explore the inner workings of this fabulous vehicle. The solution provided by Splat, became a point of interest for the visitors and it also increased the brand value by this technology intervention.',
     ],
-    location: 'Mysore Town Hall, Karnataka',
+    location: 'Installed at Revolt Showroom, New Delhi',
     tags: ['Experiential Technology', '2D & 3D Animation'],
     category: 'Experiential Technology',
   },

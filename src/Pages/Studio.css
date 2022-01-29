@@ -156,13 +156,18 @@
   align-items: center;
 }
 
-
+/* 
 .service-title > img {
   width: 100px;
   margin-top: 1rem;
+} */
 
-  /* margin-right: 20px; */
+.service-icon{
+  width: 80px;
+    margin-top: 1rem;
 }
+
+
 
 .service-content {
   display: flex;
