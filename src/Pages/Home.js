@@ -8,6 +8,7 @@ const Home = () => {
     <>
       <MetaTitle title='Splat Studio | Home' />
       <motion.div
+      style={{overFlow:'hidden'}}
         className='container home'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -101,8 +102,8 @@ const Home = () => {
           />
         </video> */}
         {/* <div className='gradient'></div> */}
-        <div className='container-center home-center'>
-          <div className="hero-title">
+        <div className='container-center home-center' style={{overFlow:'hidden'}}>
+          <div className="hero-title" style={{overFlow:'hidden'}}>
           <h1>We weave magic into <br />the stories</h1>
           <h3>
             Experience Centres, Museums, Shows or Films, <br/>  we
