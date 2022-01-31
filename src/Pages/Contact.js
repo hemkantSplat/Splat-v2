@@ -62,10 +62,8 @@ const Contact = () => {
             <div className='contact'>
               <div className='contact-info'>
                 <p>
-                  <span>DELHI STUDIO:</span> Splat Studio, Behind Triveni
-                  Commercial Complex, B-103, Fourth, Khirki Ext Rd, Panchsheel
-                  Vihar, Sheikh Sarai Village, Malviya Nagar, New Delhi, Delhi
-                  110017
+                  <span>DELHI: </span>B-103, Behind Triveni Commercial Complex
+                  Panchsheel Vihar,New Delhi, Delhi 110017
                 </p>
                 {/* <p>
                 <span>Contact Number:</span> +91 98712 19992, +91 98106 09992
@@ -73,9 +71,8 @@ const Contact = () => {
               </div>
               <div className='contact-info'>
                 <p>
-                  <span>BENGALURU STUDIO:</span> Splat Studio, #7, Second Floor,
-                  SJR Commercial Complex, Near Gear Innovative School, Gear
-                  Road, Devara Bisanahalli, Bengaluru 560035.
+                  <span>BENGALURU: </span>#7, Second Floor, SJR Commercial
+                  Complex, Devara Bisanahalli, Bengaluru 560035.
                 </p>
                 <p>
                   <span>CONTACT NUMBER:</span> +91 9650787318

@@ -76,9 +76,11 @@ const Reel = () => {
           <div className='reels-title'>
             <h1>SHOWREELS</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-              et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-              exercitationem vero optio neque quia quam!
+              Here is a short glimpse of the varied work we have done in the
+              past, neatly grouped together into different categories. However,
+              you’d clearly see the possibilities with us. And nothing excites
+              us more than combining multitude of crafts together, because
+              that's what New Media is all about.
             </p>
           </div>
         </div>
@@ -100,8 +102,8 @@ const Reel = () => {
                 data-aos-easing='ease-out-cubic'
                 data-aos-duration='600'
               >
-                <div className="show-reels-img">
-                <img src={item.thumbnail} alt='' />
+                <div className='show-reels-img'>
+                  <img src={item.thumbnail} alt='' />
                 </div>
                 <div class='title'>{item.name}</div>
               </motion.div>

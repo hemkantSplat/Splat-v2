@@ -68,25 +68,27 @@ import Group1 from '../Assets/Splat Group Logos/Splat_studio.png'
 import Group2 from '../Assets/Splat Group Logos/Tangio_Yellow.png'
 import Group3 from '../Assets/Splat Group Logos/TOC logo_V02.png'
 import Group4 from '../Assets/Splat Group Logos/Howwl Design Logo White.png'
+import Group5 from "../Assets/Splat Group Logos/VarahaLogo_white.png"
+import Group6 from "../Assets/Splat Group Logos/Art_Illume_logo_White.png"
 
 const Studio = () => {
   const snapshotData = [
-    {
-      title: 'Year Founded',
-      content: 2014,
-    },
-    {
-      title: 'Years Of Collective Team Experience',
-      content: 200,
-    },
-    {
-      title: 'Tonnes Of Data Flow',
-      content: 3000,
-    },
-    {
-      title: 'Workhours',
-      content: 6000,
-    },
+    // {
+    //   title: 'Year Founded',
+    //   content: 2014,
+    // },
+    // {
+    //   title: 'Years Of Collective Team Experience',
+    //   content: 200,
+    // },
+    // {
+    //   title: 'Tonnes Of Data Flow',
+    //   content: 3000,
+    // },
+    // {
+    //   title: 'Workhours',
+    //   content: 6000,
+    // },
     {
       title: 'Spatial Design Projects',
       content: 5,
@@ -323,7 +325,7 @@ const Studio = () => {
               make your idea/concept/content sing through well-informed content
               strategy, research-backed design, and forward-thinking development
               that excludes no one.
-               <span style={{marginLeft:'0.2rem'}}>
+              <span style={{ marginLeft: '0.2rem' }}>
                 This is where everything comes together, from concept to
                 delivery. All under one roof
               </span>
@@ -390,9 +392,8 @@ const Studio = () => {
                     </article>
                   )
                 })}
-                <article className='snapshot desktop-snapshot'>
+                {/* <article className='snapshot desktop-snapshot'>
                   <h5>Year Founded</h5>
-                  {/* <h1>{item.content}</h1> */}
                   <h1 className='first' style={{ marginTop: '2rem' }}>
                     <CountUp
                       start={focus ? 0 : null}
@@ -407,10 +408,9 @@ const Studio = () => {
                       )}
                     </CountUp>
                   </h1>
-                </article>
-                <article className='snapshot desktop-snapshot'>
+                </article> */}
+                {/* <article className='snapshot desktop-snapshot'>
                   <h5>Years Of Collective Team Experience</h5>
-                  {/* <h1>{item.content}</h1> */}
                   <h1>
                     <CountUp
                       start={focus ? 0 : null}
@@ -425,10 +425,9 @@ const Studio = () => {
                       )}
                     </CountUp>
                   </h1>
-                </article>
-                <article className='snapshot desktop-snapshot'>
+                </article> */}
+                {/* <article className='snapshot desktop-snapshot'>
                   <h5>Tonnes of Data Flow</h5>
-                  {/* <h1>{item.content}</h1> */}
                   <h1 className='first' style={{ marginTop: '2rem' }}>
                     <CountUp
                       start={focus ? 0 : null}
@@ -443,10 +442,9 @@ const Studio = () => {
                       )}
                     </CountUp>
                   </h1>
-                </article>
-                <article className='snapshot desktop-snapshot'>
+                </article> */}
+                {/* <article className='snapshot desktop-snapshot'>
                   <h5>Workhours</h5>
-                  {/* <h1>{item.content}</h1> */}
                   <h1 className='first' style={{ marginTop: '2rem' }}>
                     <CountUp
                       start={focus ? 0 : null}
@@ -461,7 +459,7 @@ const Studio = () => {
                       )}
                     </CountUp>
                   </h1>
-                </article>
+                </article> */}
                 <article className='snapshot desktop-snapshot'>
                   <h5>Spatial Design Projects</h5>
                   {/* <h1>{item.content}</h1> */}
@@ -741,12 +739,8 @@ const Studio = () => {
         </div>
         <div className='groups-container'>
           <div className='groups-center'>
-            <h1>And we have more ...</h1>
+            <h1>And the partner group, where still more magic happens</h1>
             <div className='groups'>
-              <a href='/'>
-                {' '}
-                <img src={Group1} alt='' className='group-img group-first' />
-              </a>
               <a href='https://www.howwldesign.com'>
                 {' '}
                 <img src={Group4} alt='' className='group-img group-second' />
@@ -757,6 +751,12 @@ const Studio = () => {
               </a>
               <a href='https://toccombine.in'>
                 <img src={Group3} alt='' className='group-img group-fourth' />
+              </a>
+              <a href='https://varahaworld.com'>
+                <img src={Group5} alt='' className='group-img  group-five' />
+              </a>
+              <a href='https://www.artillume.org'>
+                <img src={Group6} alt='' className='group-img group-six' />
               </a>
             </div>
           </div>
