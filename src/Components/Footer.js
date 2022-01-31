@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import { useLocation } from 'react-router-dom'
 import {
   FaInstagram,
   FaLinkedinIn,
@@ -10,8 +11,20 @@ import {
 import './Footer.css'
 
 const Footer = () => {
+const [state, setState] = useState()
+const location = useLocation();
+
+useEffect(() => {
+if(window?.location?.pathname === '/'){
+  setState(true)
+}else{
+  setState(false)
+}
+},[window?.location?.pathname])
+
+
   return (
-    <footer>
+    <footer style={{position:state ? 'fixed' : null}}>
       <div className='container-center footer-center'>
         {/* <div className='footer-links'>
           <h5>
