@@ -631,6 +631,7 @@ height: 100px;
 
  .groups img {
     width: 100%;
+    margin-bottom: -3rem;
   }
 
  /* .group-third{
