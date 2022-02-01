@@ -346,10 +346,7 @@ height: 100px;
   height: auto;
 }
 
-.group-five{
-  width: 70px;
-  height: 70px;
-}
+
 
 .group-six{
   width: 160px;
@@ -360,6 +357,10 @@ height: 100px;
 /* .groups img:last-child {
   width: 100px;
 } */
+
+.group-five{
+  margin-left: -2rem;
+}
 
 .groups-center h1 {
   text-align: center;
