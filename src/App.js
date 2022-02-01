@@ -63,7 +63,7 @@ function App() {
             </Route>
           </Switch>
         </AnimatePresence>
-        <Footer />
+        {/* <Footer /> */}
       </>
     </>
   )

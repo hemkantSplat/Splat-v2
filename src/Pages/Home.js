@@ -92,7 +92,7 @@ const Home = () => {
             </video>
           </div>
         </div> */}
-        {/* <video
+        <video
           autoPlay
           muted
           loop
@@ -102,7 +102,7 @@ const Home = () => {
           data-object-fit='cover'
         >
           <source src={Video} type='video/mp4' data-wf-ignore='true' />
-        </video> */}
+        </video>
         {/* <video autoPlay muted loop id='myVideo2'>
           <source
             src='https://monopo.co.jp/wp-content/themes/monopo/video/circle4.mp4'
