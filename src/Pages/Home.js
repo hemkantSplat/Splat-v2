@@ -110,7 +110,7 @@ const Home = () => {
           />
         </video> */}
         {/* <div className='gradient'></div> */}
-        {/* <div
+        <div
           className='container-center home-center'
           style={{minHeight:'100vh', display:'grid', placeItems:'center' }}
         >
@@ -124,7 +124,7 @@ const Home = () => {
               thrill,surprise and amaze audiences
             </h3>
           </div>
-        </div> */}
+        </div>
       </motion.div>
     </>
   )
