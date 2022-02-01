@@ -112,9 +112,14 @@ const Home = () => {
         {/* <div className='gradient'></div> */}
         <div
           // className='container-center home-center'
-          style={{display:'grid', placeItems:'center' }}
+          style={{position: 'absolute',
+          width:'100%',
+top: '50%',
+left: '50%',
+transform: 'translate(-50%, -50%)',
+zIndex: '99'}}
         >
-          <div className='hero-title' style={{ overFlow: 'hidden', pointerEvents:'none' }}>
+          <div className='hero-title' style={{ overFlow: 'hidden' }}>
             <h1>
               We weave magic into <br />
               the stories
