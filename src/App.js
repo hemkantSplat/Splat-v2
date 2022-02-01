@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Work from './Pages/Work'
 import Studio from './Pages/Studio'
 import Reel from './Pages/Reel'
+import Team from "./Pages/Team"
 import Carrers from './Pages/Careers'
 import Contact from './Pages/Contact'
 import ProjectTemplates from './Pages/ProjectTemplates'
@@ -48,6 +49,9 @@ function App() {
             </Route>
             <Route exact path='/reels'>
               <Reel />
+            </Route>
+            <Route exact path='/team'>
+              <Team />
             </Route>
             <Route exact path='/careers'>
               <Carrers />

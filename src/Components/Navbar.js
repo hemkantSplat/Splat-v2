@@ -45,6 +45,15 @@ const Navbar = ({ setToggleOpen, toggleOpen }) => {
             <NavLink
               className='nav-link flip-animate-1'
               activeStyle={{ borderBottom: '1px solid #ee7739' }}
+              to='/team'
+            >
+              <span data-hover='Team'>Team</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className='nav-link flip-animate-1'
+              activeStyle={{ borderBottom: '1px solid #ee7739' }}
               to='/careers'
             >
               <span data-hover='Careers'>Careers</span>
