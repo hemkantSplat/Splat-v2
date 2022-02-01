@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <MetaTitle title='Splat Studio | Home' />
       <motion.div
-        style={{ overFlow: 'hidden' }}
+        style={{ overFlow: 'hidden', width:'100%', minHeight:'100vh' }}
         // className='container home'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
