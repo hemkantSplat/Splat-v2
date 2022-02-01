@@ -41,7 +41,7 @@ const Navbar = ({ setToggleOpen, toggleOpen }) => {
               <span data-hover='Reels'>Reels</span>
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               className='nav-link flip-animate-1'
               activeStyle={{ borderBottom: '1px solid #ee7739' }}
@@ -49,7 +49,7 @@ const Navbar = ({ setToggleOpen, toggleOpen }) => {
             >
               <span data-hover='Team'>Team</span>
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               className='nav-link flip-animate-1'
