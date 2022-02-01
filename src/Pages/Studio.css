@@ -321,7 +321,7 @@ h3 {
   height: 120px;
 }
 
-.group-img {
+/* .group-img {
   width: 100px;
 }
 .group-first {
@@ -355,7 +355,7 @@ height: 100px;
   width: 160px;
   height: 80px;
   margin-left: 1rem;
-}
+} */
 
 /* .groups img:last-child {
   width: 100px;
@@ -629,7 +629,7 @@ height: 100px;
     margin-top: 1rem;
   }
 
-  .groups img {
+  /* .groups img {
     width: 80px;
   }
 
@@ -639,7 +639,7 @@ height: 100px;
 
   .group-five{
     height: 80px;
-  }
+  } */
 
   /* .groups img:last-child {
     width: 100px;
