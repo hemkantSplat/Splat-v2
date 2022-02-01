@@ -112,7 +112,7 @@ const Home = () => {
         {/* <div className='gradient'></div> */}
         <div
           className='container-center home-center'
-          style={{ overFlow: 'hidden', minHeight:'100vh', display:'grid', placeItems:'center' }}
+          style={{minHeight:'50vh', display:'grid', placeItems:'center' }}
         >
           <div className='hero-title' style={{ overFlow: 'hidden', pointerEvents:'none' }}>
             <h1>
