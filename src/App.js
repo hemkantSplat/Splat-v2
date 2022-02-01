@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <div className='main-wrapper'></div>
+      {/* <div className='main-wrapper'></div> */}
       <>
         {/* bg circle like monopo */}
         {/* <div className='bg-wrapper'></div> */}

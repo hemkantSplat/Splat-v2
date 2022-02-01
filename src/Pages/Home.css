@@ -4,8 +4,6 @@
   bottom: 0;
   left: 0;
   top: 0;
-  /* min-width: 100%; */
-  /* min-height: 100%; */
   z-index: 1;
   overflow: hidden;
   object-fit: cover;
@@ -15,7 +13,7 @@
 
 
 
-#myVideo2 {
+/* #myVideo2 {
   margin: auto;
   position: absolute;
   z-index: 2;
@@ -27,7 +25,7 @@
   width: auto;
   height: 502px;
   border-radius: 50%;
-}
+} */
 
 .home {
   width: 100%;
