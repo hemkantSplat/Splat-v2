@@ -9,7 +9,7 @@ const Home = () => {
       <MetaTitle title='Splat Studio | Home' />
       <motion.div
         style={{ overFlow: 'hidden' }}
-        className='container home'
+        // className='container home'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: 'easeIn', duration: 0.5 }}
@@ -92,7 +92,7 @@ const Home = () => {
             </video>
           </div>
         </div> */}
-        <video
+        {/* <video
           autoPlay
           muted
           loop
@@ -102,7 +102,7 @@ const Home = () => {
           data-object-fit='cover'
         >
           <source src={Video} type='video/mp4' data-wf-ignore='true' />
-        </video>
+        </video> */}
         {/* <video autoPlay muted loop id='myVideo2'>
           <source
             src='https://monopo.co.jp/wp-content/themes/monopo/video/circle4.mp4'
@@ -110,21 +110,21 @@ const Home = () => {
           />
         </video> */}
         {/* <div className='gradient'></div> */}
-        {/* <div
+        <div
           className='container-center home-center'
           style={{minHeight:'100vh', display:'grid', placeItems:'center' }}
         >
           <div className='hero-title' style={{ overFlow: 'hidden', pointerEvents:'none' }}>
-            <h1>
+            <h1  style={{color:'black'}}>
               We weave magic into <br />
               the stories
             </h1>
-            <h3>
+            <h3 style={{color:'black'}}>
               Experience Centres, Museums, Shows or Films, <br /> we
               thrill,surprise and amaze audiences
             </h3>
           </div>
-        </div> */}
+        </div>
       </motion.div>
     </>
   )
