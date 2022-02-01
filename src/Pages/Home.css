@@ -49,6 +49,7 @@
 
 .home-center{
   overflow: hidden;
+  -webkit-overflow:hidden
 }
 
 /* .hero-title {
