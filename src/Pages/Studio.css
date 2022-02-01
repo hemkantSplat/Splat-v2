@@ -358,9 +358,9 @@ height: 100px;
   width: 100px;
 } */
 
-/* .group-five{
+.group-five{
   margin-left: -2rem;
-} */
+}
 
 .groups-center h1 {
   text-align: center;
@@ -634,6 +634,10 @@ height: 100px;
     width: 100%;
     margin-bottom: -3rem;
   }
+
+.group-five{
+  margin-left: 0rem;
+}
 
  /* .group-third{
     margin-left: 0;
