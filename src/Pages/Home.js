@@ -111,7 +111,7 @@ const Home = () => {
         </video> */}
         {/* <div className='gradient'></div> */}
         <div
-          className='container-center home-center'
+          // className='container-center home-center'
           style={{minHeight:'100vh', display:'grid', placeItems:'center' }}
         >
           <div className='hero-title' style={{ overFlow: 'hidden', pointerEvents:'none' }}>
