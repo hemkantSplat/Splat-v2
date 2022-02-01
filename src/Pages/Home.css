@@ -47,6 +47,10 @@
   overflow: hidden;
  }  */
 
+.home-center{
+  overflow: hidden;
+}
+
 /* .hero-title {
   position: absolute;
   top: 50%;
