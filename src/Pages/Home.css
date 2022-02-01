@@ -37,16 +37,14 @@
   background-size: cover; */
 }
 
-.home-center {
+/* .home-center {
   min-width: 100%;
   min-height: 100vh;
   margin: 0 auto;
   top: 0;
   left: 0;
   overflow: hidden;
-  /* position: absolute; */
-  /* background: red; */
-}
+ }  */
 
 /* .hero-title {
   position: absolute;
