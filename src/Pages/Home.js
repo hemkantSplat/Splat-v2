@@ -112,7 +112,7 @@ const Home = () => {
         {/* <div className='gradient'></div> */}
         <div
           // className='container-center home-center'
-          style={{position: 'absolute',
+          style={{position: 'fixed',
           width:'100%',
 top: '50%',
 left: '50%',
