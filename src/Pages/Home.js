@@ -92,7 +92,7 @@ const Home = () => {
             </video>
           </div>
         </div> */}
-        {/* <video
+        <video
           autoPlay
           muted
           loop
@@ -102,7 +102,7 @@ const Home = () => {
           data-object-fit='cover'
         >
           <source src={Video} type='video/mp4' data-wf-ignore='true' />
-        </video> */}
+        </video>
         {/* <video autoPlay muted loop id='myVideo2'>
           <source
             src='https://monopo.co.jp/wp-content/themes/monopo/video/circle4.mp4'
@@ -115,11 +115,11 @@ const Home = () => {
           style={{display:'grid', placeItems:'center' }}
         >
           <div className='hero-title' style={{ overFlow: 'hidden', pointerEvents:'none' }}>
-            <h1  style={{color:'black'}}>
+            <h1>
               We weave magic into <br />
               the stories
             </h1>
-            <h3 style={{color:'black'}}>
+            <h3>
               Experience Centres, Museums, Shows or Films, <br /> we
               thrill,surprise and amaze audiences
             </h3>
