@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <MetaTitle title='Splat Studio | Home' />
       <motion.div
-      style={{overFlow:'hidden'}}
+        style={{ overFlow: 'hidden' }}
         className='container home'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -92,8 +92,16 @@ const Home = () => {
             </video>
           </div>
         </div> */}
-        <video autoPlay muted loop id='myVideo'>
-          <source src={Video} type='video/mp4' />
+        <video
+          autoPlay
+          muted
+          loop
+          id='myVideo'
+          playsInline
+          data-wf-ignore='true'
+          data-object-fit='cover'
+        >
+          <source src={Video} type='video/mp4' data-wf-ignore='true' />
         </video>
         {/* <video autoPlay muted loop id='myVideo2'>
           <source
@@ -102,13 +110,19 @@ const Home = () => {
           />
         </video> */}
         {/* <div className='gradient'></div> */}
-        <div className='container-center home-center' style={{overFlow:'hidden'}}>
-          <div className="hero-title" style={{overFlow:'hidden'}}>
-          <h1>We weave magic into <br />the stories</h1>
-          <h3>
-            Experience Centres, Museums, Shows or Films, <br/>  we
-            thrill,surprise and amaze audiences
-          </h3>
+        <div
+          className='container-center home-center'
+          style={{ overFlow: 'hidden' }}
+        >
+          <div className='hero-title' style={{ overFlow: 'hidden', pointerEvents:'none' }}>
+            <h1>
+              We weave magic into <br />
+              the stories
+            </h1>
+            <h3>
+              Experience Centres, Museums, Shows or Films, <br /> we
+              thrill,surprise and amaze audiences
+            </h3>
           </div>
         </div>
       </motion.div>
