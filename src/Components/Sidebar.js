@@ -27,6 +27,11 @@ const Sidebar = ({ toggleOpen, setToggleOpen }) => {
             </Link>
           </li>
           <li>
+            <Link to='/tean' onClick={() => setToggleOpen(false)}>
+              Team
+            </Link>
+          </li>
+          <li>
             <Link to='/careers' onClick={() => setToggleOpen(false)}>
               Careers
             </Link>
