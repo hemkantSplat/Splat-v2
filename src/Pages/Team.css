@@ -202,8 +202,8 @@ transition:all 2s cubic-bezier(0.25, 1, 0.25, 1);
 }
 @media screen and (min-width: 1366px) and (max-width: 1600px) {
   .team-center {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2rem 1rem;
+    width: 80%;
+    grid-template-columns: 280px 280px 280px 280px;
   }
 
   /* .show-team-reels{
