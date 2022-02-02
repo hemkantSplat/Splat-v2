@@ -659,4 +659,13 @@ height: 100px;
   .groups-container {
     margin-bottom: 2rem;
   }
+
+  .team-link{
+    float: none !important;
+    margin-top: 1rem;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+  display: flex;
+justify-content: center;
+  }
 }

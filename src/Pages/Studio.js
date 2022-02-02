@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import MetaTitle from '../Components/MetaTitle'
 import './Studio.css'
+import { NavLink } from 'react-router-dom'
 import AOS from 'aos'
 import { motion } from 'framer-motion'
 import 'aos/dist/aos.css'
@@ -735,6 +736,18 @@ const Studio = () => {
               <h2>Co-Founder</h2>
             </article> */}
             </div>
+            <NavLink
+              to='/team'
+              className="team-link"
+              style={{
+                fontWeight: 700,
+                paddingRight: '3.5rem',
+                paddingBottom:'0.5rem',
+                float: 'right',
+              }}
+            >
+              + <span style={{textDecoration:'underline'}}>MORE</span>
+            </NavLink>
           </div>
         </div>
         <div className='groups-container'>

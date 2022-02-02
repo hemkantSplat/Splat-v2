@@ -26,11 +26,11 @@ const Sidebar = ({ toggleOpen, setToggleOpen }) => {
               Reels
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to='/tean' onClick={() => setToggleOpen(false)}>
               Team
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to='/careers' onClick={() => setToggleOpen(false)}>
               Careers
