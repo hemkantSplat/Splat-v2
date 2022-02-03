@@ -75,7 +75,7 @@ thumbnail:Sagar
    },
   {
    name:'Arjun Sunar',
-   thumbnail:Apratim
+   thumbnail:Arjun
   },
   {
    name:'Saksham Verma',
