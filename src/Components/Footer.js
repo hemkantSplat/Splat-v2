@@ -15,7 +15,7 @@ const [state, setState] = useState()
 const location = useLocation();
 
 useEffect(() => {
-if(window?.location?.pathname === '/'){
+if(window?.location?.pathname === '/contact'){
   setState(true)
 }else{
   setState(false)
@@ -24,7 +24,7 @@ if(window?.location?.pathname === '/'){
 
 
   return (
-    <footer style={{position:state ? 'fixed' : null}}>
+    <footer style={{position:state ? 'absolute' : 'fixed'}}>
       <div className='container-center footer-center'>
         {/* <div className='footer-links'>
           <h5>

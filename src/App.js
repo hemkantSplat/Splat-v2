@@ -17,12 +17,15 @@ import ScrollToTop from './Components/ScrollToTop'
 import { AnimatePresence } from 'framer-motion'
 function App() {
   const [toggleOpen, setToggleOpen] = useState(false)
+  const [activeClass, setActiveClass] = useState(false)
   const location = useLocation()
   // const [loader, setLoader] = useState(true)
 
   // useEffect(() => {
   //   setTimeout(() => setLoader(false), 8000)
   // }, [loader])
+
+
 
   return (
     <>
