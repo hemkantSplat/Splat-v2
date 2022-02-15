@@ -15,6 +15,8 @@ import Dhanshree from "../Assets/Teams/Dhanshree Gawde.png"
 import Punit from "../Assets/Teams/Punit Singh.png"
 import Divyai from "../Assets/Teams/Divyai Krishan.png"
 import Gaurav from "../Assets/Teams/Gaurav Srivastav.png"
+import Digvijay from "../Assets/Teams/Digvijay Ghosh.jpg"
+import Naresh from "../Assets/Teams/Naresh Singh.png"
 import Anshika from "../Assets/Teams/Anshika Rani.png"
 import Kaushal from "../Assets/Teams/Kaushal Gupta.png"
 import Vonika from "../Assets/Teams/Vonica Taunk.png"
@@ -97,6 +99,14 @@ thumbnail:Sagar
    name:'Gaurav Srivastav',
    thumbnail:Gaurav
   },
+  {
+    name:'Digvijay Ghosh',
+    thumbnail:Digvijay
+   },
+  {
+    name:'Naresh Singh',
+    thumbnail:Naresh
+   },
   {
    name:'Anshika Rani',
    thumbnail:Anshika

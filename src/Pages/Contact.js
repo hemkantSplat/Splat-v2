@@ -74,8 +74,13 @@ const Contact = () => {
                   <span>BENGALURU: </span>#7, Second Floor, SJR Commercial
                   Complex, Devara Bisanahalli, Bengaluru 560035.
                 </p>
+              </div>
+              <div className='contact-info'>
                 <p>
-                  <span>CONTACT NUMBER:</span> +91 9650787318
+                  <span>CANADA: </span>#7, Mabelle Ave, Etobicoke, Toronto ON
+                </p>
+                <p className='contact-number'>
+                  <span>CONTACT NUMBER: </span><span className='numbers'>+91 9650787318 (INDIA) <br /> +1 (647) 865-1045 (CANADA)</span>
                 </p>
               </div>
             </div>

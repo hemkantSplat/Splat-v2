@@ -45,6 +45,14 @@
   margin-top: 1.5rem;
 }
 
+.contact-info:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+
 .contact-info p {
   line-height: 1.4;
 }
@@ -54,7 +62,7 @@
   margin-top: 1rem;
 }
 
-.contact-info > p > span {
+.contact-info > p > span:first-child {
   font-weight: 500;
   font-size: 16px;
   color: rgb(167, 165, 165);
@@ -125,6 +133,16 @@
   transform: scale(1.1);
 }
 
+
+.contact-number{
+  display: flex;
+  align-items: baseline;
+}
+
+.numbers{
+  margin-left: 0.2rem;
+}
+
 @media screen and (min-width: 540px) and (max-width: 1200px) {
   .contact-header {
     grid-template-columns: 1fr;
@@ -182,5 +200,8 @@
   .contact-info:last-child p:last-child {
     width: 100%;
     margin-top: 1rem;
+  }
+  .contact-number{
+    display: block;
   }
 }

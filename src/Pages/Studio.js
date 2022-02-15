@@ -752,7 +752,7 @@ const Studio = () => {
         </div>
         <div className='groups-container'>
           <div className='groups-center'>
-            <h1>And the partner group, where still more magic happens</h1>
+            <h1>And the partner group, where more magic happens</h1>
             <div className='groups'>
               <a href='https://www.howwldesign.com'>
                 {' '}
