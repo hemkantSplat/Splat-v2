@@ -1,5 +1,5 @@
 import '../Pages/Careers.js'
-import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
+import { BsChevronRight } from 'react-icons/bs'
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -9,15 +9,7 @@ const Accordion = ({ item }) => {
     <div className='career' layout>
       <div className='career-title' onClick={() => setOpen(!open)} layout>
         <h2>
-          {' '}
-          {open ? (
-            <BsChevronUp className='down-btn' onClick={() => setOpen(!open)} />
-          ) : (
-            <BsChevronDown
-              className='down-btn'
-              onClick={() => setOpen(!open)}
-            />
-          )}
+            <BsChevronRight className='down-btn' onClick={() => setOpen(!open)} />
           {item.title}
         </h2>
         <div>

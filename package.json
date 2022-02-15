@@ -1,5 +1,6 @@
 {
   "name": "splat-main",
+  "homepage": "http://splatstudio.in",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
