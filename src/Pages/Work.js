@@ -68,6 +68,10 @@ const Work = () => {
     AOS.refresh()
   }, [])
 
+  useEffect(() =>{
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  },[])
+
   return (
     <>
       <MetaTitle title='Splat Studio | Work' />
