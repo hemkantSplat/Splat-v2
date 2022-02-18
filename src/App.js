@@ -28,7 +28,7 @@ function App() {
   //   setTimeout(() => setLoader(false), 8000)
   // }, [loader])
 
-const TRACKING_ID = "UA-220933661-1"; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = "UA-101088288-2"; // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 
