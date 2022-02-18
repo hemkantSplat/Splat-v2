@@ -15,6 +15,9 @@ import Sidebar from './Components/Sidebar'
 import Loader from './Components/Loader'
 import ScrollToTop from './Components/ScrollToTop'
 import { AnimatePresence } from 'framer-motion'
+import ReactGA from 'react-ga';
+import RouteChangeTracker from "./Components/RouteChangeTracker"
+
 function App() {
   const [toggleOpen, setToggleOpen] = useState(false)
   const [activeClass, setActiveClass] = useState(false)
@@ -25,10 +28,13 @@ function App() {
   //   setTimeout(() => setLoader(false), 8000)
   // }, [loader])
 
+const TRACKING_ID = "UA-220933661-1"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 
   return (
     <>
+    <RouteChangeTracker />
       <div className='main-wrapper'></div>
       <>
         {/* bg circle like monopo */}
