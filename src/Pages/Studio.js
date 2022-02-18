@@ -135,22 +135,21 @@ const Studio = () => {
       ],
     },
     {
-      title: 'PRODUCTION',
-      img: Service2,
-      content: [
-        'Festivals',
-        'Films',
-        'Videos',
-        'Events',
-      ],
-    },
-    {
       title: 'TECHNOLOGY',
       img: Service3,
       content: [
         'Augmented & Virtual Reality',
         'Immersive & Interactive',
         '3D Projection Mapping',
+      ],
+    },
+    {
+      title: 'PRODUCTION',
+      img: Service2,
+      content: [
+        'Festivals',
+        'AV & Films',
+        'Events',
       ],
     },
   ]
