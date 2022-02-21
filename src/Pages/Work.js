@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import './Work.css'
 import { Link } from 'react-router-dom'
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
-import WorkData from '../Data/WorkData'
 import { motion } from 'framer-motion'
 import MetaTitle from '../Components/MetaTitle'
 import AOS from 'aos'
@@ -198,6 +197,7 @@ const Work = () => {
             initial='initial'
             animate='show'
             exit='exit'
+            layout
           >
             {data?.map((item, index) => {
               return (
@@ -207,6 +207,8 @@ const Work = () => {
                   data-aos='zoom-in'
                   data-aos-easing='ease-out-cubic'
                   data-aos-duration='600'
+                  layout
+                  key={index}
                 >
                   <Link to={`/work/${item?.slug?.current}`} className='work-image'>
                     {' '}
