@@ -11,7 +11,6 @@ import sanityClient from "../Client"
 
 
 const ProjectTemplates = () => {
-  const pills = ['Live Event & Projection Shows', 'Testing', 'Testing2']
   const { id } = useParams()
   const [data, setData] = useState([])
 

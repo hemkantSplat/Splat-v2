@@ -50,12 +50,12 @@ import Logo39 from '../Assets/Client Logos/Logo39.png'
 import Logo40 from '../Assets/Client Logos/Logo40.png'
 
 // teams
-import Team3 from '../Assets/Team Photos/Hemkant Tripathi (1080x1080px).jpg'
-import Team2 from '../Assets/Team Photos/Ayush Nagpal (1080x1080px).jpg'
-import Team1 from '../Assets/Team Photos/Hitesh Kumar (1080x1080px).jpg'
-import Team4 from '../Assets/Team Photos/Narendra Joshi (1080x1080px).JPG'
-import Team5 from '../Assets/Team Photos/Shohna Dwivedi (1080x1080px).JPG'
-import Team6 from '../Assets/Team Photos/Arun Samrah (1080x1080px).jpg'
+import Team3 from '../Assets/Board Photos/Hemkant Tripathi (1080x1080px).jpg'
+import Team2 from '../Assets/Board Photos/Ayush Nagpal (1080x1080px).jpg'
+import Team1 from '../Assets/Board Photos/Hitesh Kumar (1080x1080px).jpg'
+import Team4 from '../Assets/Board Photos/Narendra Joshi (1080x1080px).JPG'
+import Team5 from '../Assets/Board Photos/Shohna Dwivedi (1080x1080px).JPG'
+import Team6 from '../Assets/Board Photos/Arun Samrah (1080x1080px).jpg'
 
 // services
 

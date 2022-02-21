@@ -4,7 +4,6 @@ import MetaTitle from '../Components/MetaTitle'
 import { motion } from 'framer-motion'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import TeamsData from '../Data/TeamsData';
 import sanityClient from "../Client"
 
 
