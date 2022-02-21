@@ -10,7 +10,7 @@ const Accordion = ({ item }) => {
       <div className='career-title' onClick={() => setOpen(!open)} layout>
         <h2>
             <BsChevronRight className='down-btn' onClick={() => setOpen(!open)} />
-          {item.title}
+          {item?.name}
         </h2>
         <div>
           <button className='career-btn'>
@@ -29,7 +29,7 @@ const Accordion = ({ item }) => {
           >
             <h3>Roles & Requirements</h3>
             <ul className='roles'>
-              {item.description.map((content, index) => {
+              {item?.roles?.map((content, index) => {
                 return (
                   <li key={index}>
                     <span>- </span>

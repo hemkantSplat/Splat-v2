@@ -7,6 +7,8 @@ import Chip from '@mui/material/Chip'
 import Stack from '@mui/material/Stack'
 import WorkData from '../Data/WorkData'
 import MetaTitle from '../Components/MetaTitle'
+import sanityClient from "../Client"
+
 
 const ProjectTemplates = () => {
   const pills = ['Live Event & Projection Shows', 'Testing', 'Testing2']
@@ -14,10 +16,37 @@ const ProjectTemplates = () => {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    const filteredData = WorkData.filter((item) => item.slug === id)
-    console.log(filteredData)
-    setData(filteredData[0])
-  }, [])
+    sanityClient
+      .fetch(
+        `*[_type == "work"]{
+        name,
+        number,
+        slug,
+        description,
+        location,
+        image{
+          asset->{
+          _id,
+          url
+        },
+      },
+        url,
+        Tags
+    }`
+      )
+      .then((data) => {   
+        setData(data?.filter(item => item.slug.current === id)[0])
+        console.log(data.filter(item => item.slug.current === id))
+      })
+      .catch(console.error);
+  }, []);
+
+
+  // useEffect(() => {
+  //   const filteredData = WorkData.filter((item) => item.slug === id)
+  //   console.log(filteredData)
+  //   setData(filteredData[0])
+  // }, [])
 
 
   const ContainerVariant = {
@@ -51,7 +80,7 @@ const ProjectTemplates = () => {
 
   return (
     <>
-      <MetaTitle title={`Splat Studio | ${data.title}`} />
+      <MetaTitle title={`Splat Studio | ${data?.name}`} />
       <div className='container projects-container'>
         <div className='container-center projects-center'>
           <Link to='/work'>
@@ -64,13 +93,13 @@ const ProjectTemplates = () => {
                 animate={{ opacity: 1 }}
                 transition={{ ease: 'easeIn', delay: 0.05, duration: 0.2 }}
               >
-                {data.title}
+                {data?.name}
               </motion.h1>
               <div className='projects-detail-container'>
                 <iframe
                   width='100%'
                   height='400px'
-                  src={data.video}
+                  src={data?.url}
                   title='YouTube video player'
                   frameBorder='0'
                   allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -94,7 +123,7 @@ const ProjectTemplates = () => {
                   </motion.h4> */}
                   <motion.h4 variants={ItemVariant} className='location'>
                     <span>Location: </span>
-                    <span>{data.location}</span>
+                    <span>{data?.location}</span>
                   </motion.h4>
                   <motion.h4 className='tags' variants={ItemVariant}>
                     <span>Tags: </span>
@@ -106,8 +135,8 @@ const ProjectTemplates = () => {
                         spacing={1}
                         style={{ flexWrap: 'wrap' }}
                       >
-                        {data.tags &&
-                          data.tags.map((item) => {
+                        {data.Tags &&
+                          data.Tags.map((item) => {
                             return <Chip label={item} className='tag' />
                           })}
                       </Stack>

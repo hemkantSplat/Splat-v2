@@ -1,17 +1,45 @@
-import React,{useEffect} from 'react';
+import React,{useState, useEffect} from 'react';
 import "./Team.css"
 import MetaTitle from '../Components/MetaTitle'
 import { motion } from 'framer-motion'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import TeamsData from '../Data/TeamsData';
+import sanityClient from "../Client"
+
 
 const Team = () => {
+const [teamsData, setTeamsData] = useState([])
 
   useEffect(() => {
     AOS.init()
     AOS.refresh()
   }, [])
+
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "team"]{
+        name,
+        number,
+        image{
+          asset->{
+          _id,
+          url
+        },
+      },
+    }`
+      )
+      .then((data) => {   
+        setTeamsData(data.sort((a, b) => a.number - b.number))
+        console.log(data)
+      })
+      .catch(console.error);
+  }, []);
+
+
+
 
 const ContainerVariant = {
   initial: {
@@ -59,7 +87,7 @@ const ItemVariant = {
           initial='initial'
           animate='show'
         >
-          {TeamsData.map((item, index) => {
+          {teamsData?.map((item, index) => {
             return (
               <motion.div
                 key={index}
@@ -77,9 +105,9 @@ const ItemVariant = {
 </div>
                 </div> */}
                 <div className='show-team-reels-img'>
-                  <img src={item.thumbnail} alt='' />
+                  <img src={item?.image?.asset?.url} alt='' />
                 </div>
-                <div class='team-title'>{item.name}</div>
+                <div class='team-title'>{item?.name}</div>
               </motion.div>
             )
           })}

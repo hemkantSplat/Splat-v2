@@ -7,12 +7,39 @@ import ReelsData from '../Data/ReelsData'
 import { motion } from 'framer-motion'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import sanityClient from "../Client"
+
 
 const Reel = () => {
+  const [reelsData, setReelsData] = useState([])
   const [data, setData] = useState('')
   const [active, setActive] = useState(false)
 
   const node = useRef()
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "reels"]{
+        name,
+        number,
+        image{
+          asset->{
+          _id,
+          url
+        },
+      },
+        url,
+    }`
+      )
+      .then((data) => {   
+        setReelsData(data.sort((a, b) => a.number - b.number))
+      })
+      .catch(console.error);
+  }, []);
+
+
+
 
   const Click = (e) => {
     console.log(e.currentTarget.dataset.id)
@@ -90,7 +117,7 @@ const Reel = () => {
           initial='initial'
           animate='show'
         >
-          {ReelsData.map((item, index) => {
+          {reelsData?.map((item, index) => {
             return (
               <motion.div
                 key={index}
@@ -103,7 +130,7 @@ const Reel = () => {
                 data-aos-duration='600'
               >
                 <div className='show-reels-img'>
-                  <img src={item.thumbnail} alt='' />
+                  <img src={item.image?.asset?.url} alt={item.name} />
                 </div>
                 <div class='title'>{item.name}</div>
               </motion.div>

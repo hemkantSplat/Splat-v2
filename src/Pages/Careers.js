@@ -1,12 +1,34 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Careers.css'
 import { motion } from 'framer-motion'
 import Accordion from '../Components/Accordion'
-import CareersData from '../Data/CareersData'
+// import CareersData from '../Data/CareersData'
 import { AnimateSharedLayout } from 'framer-motion'
 import MetaTitle from '../Components/MetaTitle'
+import sanityClient from "../Client"
+
 
 const Carrers = () => {
+const [careersData, setCareersData] = useState([]);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "careers"]{
+        name,
+        roles,
+        link,
+    }`
+      )
+      .then((data) => {   
+        setCareersData(data.sort((a, b) => a.number - b.number));
+      })
+      .catch(console.error);
+  }, []);
+  
+
+
+
   return (
     <>
       <MetaTitle title='Splat Studio | Careers' />
@@ -20,8 +42,8 @@ const Carrers = () => {
         <div className='container-center career-center'>
           <h1>JOIN US</h1>
           <AnimateSharedLayout>
-            <div className='career-container' layout>
-              {CareersData.map((item, index) => {
+            <div className='career-container'>
+              {careersData?.map((item, index) => {
                 return <Accordion key={index} item={item} />
               })}
             </div>

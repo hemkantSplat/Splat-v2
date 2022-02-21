@@ -7,11 +7,49 @@ import { motion } from 'framer-motion'
 import MetaTitle from '../Components/MetaTitle'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import sanityClient from "../Client"
+
 
 const Work = () => {
+  const [worksData, setWorksData] = useState([])
   const [open, setOpen] = useState(false)
-  const [data, setData] = useState(WorkData)
+  const [data, setData] = useState(worksData)
   const [selected, setSelected] = useState(0)
+
+
+
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "work"]{
+        name,
+        number,
+        slug,
+        description,
+        location,
+        image{
+          asset->{
+          _id,
+          url
+        },
+      },
+        url,
+        Tags
+    }`
+      )
+      .then((data) => {   
+        setWorksData(data.sort((a, b) => a.number - b.number))
+        setData(data.sort((a, b) => a.number - b.number))
+        console.log(data)
+      })
+      .catch(console.error);
+  }, []);
+
+
+
+
+
 
   const filters = [
     'All Projects',
@@ -27,9 +65,9 @@ const Work = () => {
   const handleFilter = (item, index) => {
     setSelected(index)
     if (item === 'All Projects') {
-      setData(WorkData)
+      setData(worksData)
     } else {
-      const filter = WorkData.filter((i) => i.tags.includes(item))
+      const filter = worksData.filter((i) => i.Tags.includes(item))
       setData(filter)
     }
   }
@@ -161,7 +199,7 @@ const Work = () => {
             animate='show'
             exit='exit'
           >
-            {data.map((item, index) => {
+            {data?.map((item, index) => {
               return (
                 <motion.article
                   className='project'
@@ -170,13 +208,13 @@ const Work = () => {
                   data-aos-easing='ease-out-cubic'
                   data-aos-duration='600'
                 >
-                  <Link to={`/work/${item.slug}`} className='work-image'>
+                  <Link to={`/work/${item?.slug?.current}`} className='work-image'>
                     {' '}
-                    <img src={item.thumbnail} alt={item.title} />
+                    <img src={item?.image?.asset?.url} alt={item?.name} />
                   </Link>
                   <h2>
-                    <Link to={`/work/${item.slug}`} className='flip-animate'>
-                      <span data-hover={item.title}>{item.title}</span>
+                    <Link to={`/work/${item?.slug?.current}`} className='flip-animate'>
+                      <span data-hover={item?.name}>{item?.name}</span>
                     </Link>
                   </h2>
                 </motion.article>
