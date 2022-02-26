@@ -72,6 +72,10 @@ import Group4 from '../Assets/Splat Group Logos/Howwl Design Logo White.png'
 import Group5 from "../Assets/Splat Group Logos/VarahaLogo_white.png"
 import Group6 from "../Assets/Splat Group Logos/Art_Illume_logo_White.png"
 
+import sanityClient from "../Client"
+
+
+
 const Studio = () => {
   const snapshotData = [
     // {
@@ -281,11 +285,37 @@ const Studio = () => {
 
   const [focus, setFocus] = React.useState(false)
   const [carousel, setCarousel] = useState(0)
-
+  const [boardData, setBoardData] = useState([])
   useEffect(() => {
     AOS.init()
     AOS.refresh()
   }, [])
+
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "board"]{
+        name,
+        designation,
+        number,
+        image{
+          asset->{
+          _id,
+          url
+        },
+      },
+    }`
+      )
+      .then((data) => {   
+        setBoardData(data.sort((a, b) => a.number - b.number))
+      })
+      .catch(console.error);
+  }, []);
+
+
+
+
 
   return (
     <>
@@ -690,7 +720,7 @@ const Studio = () => {
           <div className='teams-container'>
             <h1>BOARD</h1>
             <div className='teams'>
-              {TeamsData.map((item, index) => {
+              {boardData?.map((item, index) => {
                 return (
                   <article
                     className='team'
@@ -698,9 +728,9 @@ const Studio = () => {
                     data-aos-easing='ease-out-cubic'
                     data-aos-duration='600'
                   >
-                    <img src={item.img} alt={item.name} />
-                    <h2>{item.name}</h2>
-                    <h3>{item.Designation}</h3>
+                    <img src={item?.image?.asset?.url} alt={item?.name} />
+                    <h2>{item?.name}</h2>
+                    <h3>{item?.designation}</h3>
                   </article>
                 )
               })}

@@ -32,7 +32,6 @@ const [teamsData, setTeamsData] = useState([])
       )
       .then((data) => {   
         setTeamsData(data.sort((a, b) => a.number - b.number))
-        console.log(data)
       })
       .catch(console.error);
   }, []);
@@ -104,7 +103,7 @@ const ItemVariant = {
 </div>
                 </div> */}
                 <div className='show-team-reels-img'>
-                  <img src={item?.image?.asset?.url} alt='' />
+                  <img src={item?.image?.asset?.url} alt={item?.title} />
                 </div>
                 <div class='team-title'>{item?.name}</div>
               </motion.div>

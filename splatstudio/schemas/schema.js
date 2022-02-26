@@ -4,6 +4,7 @@ import work from './work'
 import reels from "./reels"
 import teams from "./team"
 import careers from "./careers"
+import board from "./board"
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
@@ -19,6 +20,7 @@ export default createSchema({
     work,
     reels,
     teams,
+    board,
     careers
   ]),
 })
