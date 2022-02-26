@@ -49,13 +49,6 @@ import Logo38 from '../Assets/Client Logos/Logo38.png'
 import Logo39 from '../Assets/Client Logos/Logo39.png'
 import Logo40 from '../Assets/Client Logos/Logo40.png'
 
-// teams
-import Team3 from '../Assets/Board Photos/Hemkant Tripathi (1080x1080px).jpg'
-import Team2 from '../Assets/Board Photos/Ayush Nagpal (1080x1080px).jpg'
-import Team1 from '../Assets/Board Photos/Hitesh Kumar (1080x1080px).jpg'
-import Team4 from '../Assets/Board Photos/Narendra Joshi (1080x1080px).JPG'
-import Team5 from '../Assets/Board Photos/Shohna Dwivedi (1080x1080px).JPG'
-import Team6 from '../Assets/Board Photos/Arun Samrah (1080x1080px).jpg'
 
 // services
 
@@ -248,39 +241,6 @@ const Studio = () => {
       Logo31,
       Logo32,
     ],
-  ]
-
-  const TeamsData = [
-    {
-      name: 'Hitesh Kumar',
-      Designation: 'Managing Director & Creative Director, Splat Studio',
-      img: Team1,
-    },
-    {
-      name: 'Hemkant Tripathi',
-      Designation: 'Director & CTO, Splat Studio',
-      img: Team3,
-    },
-    {
-      name: 'Shobhna Dwivedi',
-      Designation: 'Chief Financial Officer, Splat Studio',
-      img: Team5,
-    },
-    {
-      name: 'Narendra Joshi',
-      Designation: 'CEO, TOC Combine Pvt. Ltd',
-      img: Team4,
-    },
-    {
-      name: 'Ayush Nagpal',
-      Designation: 'Director, Tangio Brand Solutions Pvt. Ltd',
-      img: Team2,
-    },
-    {
-      name: 'Moon Arun',
-      Designation: 'Director, Howwl Design',
-      img: Team6,
-    },
   ]
 
   const [focus, setFocus] = React.useState(false)
