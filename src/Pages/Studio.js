@@ -273,7 +273,7 @@ const Studio = () => {
       img: Team2,
     },
     {
-      name: 'Arun Samrah',
+      name: 'Moon Arun',
       Designation: 'Director, Howwl Design',
       img: Team6,
     },

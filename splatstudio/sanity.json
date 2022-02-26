@@ -1,7 +1,9 @@
 {
   "root": true,
   "project": {
-    "name": "Splat Studio"
+    "name": "Splat Studio",
+    "basePath": "/admin"
+
   },
   "api": {
     "projectId": "lir6j5mc",
