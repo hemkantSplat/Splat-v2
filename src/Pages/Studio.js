@@ -743,22 +743,22 @@ const Studio = () => {
           <div className='groups-center'>
             <h1>And the partner group, where more magic happens</h1>
             <div className='groups'>
-              <a href='https://www.howwldesign.com'>
+              <a href='https://www.behance.net/howwldesign' target="_blank">
                 {' '}
-                <img src={Group4} alt='' className='group-img group-second' />
+                <img src={Group4} alt='' className='group-img group-second' target="_blank" />
               </a>
               <a href='https://tangio.in'>
                 {' '}
-                <img src={Group2} alt='' className='group-img group-third' />
+                <img src={Group2} alt='' className='group-img group-third' target="_blank" />
               </a>
               <a href='https://toccombine.in'>
-                <img src={Group3} alt='' className='group-img group-fourth' />
+                <img src={Group3} alt='' className='group-img group-fourth' target="_blank" />
               </a>
               <a href='https://varahaworld.com'>
-                <img src={Group5} alt='' className='group-img  group-five' />
+                <img src={Group5} alt='' className='group-img  group-five' target="_blank" />
               </a>
               <a href='https://www.artillume.org'>
-                <img src={Group6} alt='' className='group-img group-six' />
+                <img src={Group6} alt='' className='group-img group-six' target="_blank" />
               </a>
             </div>
           </div>
