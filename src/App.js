@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Route, Switch, useLocation } from 'react-router-dom'
+import { Redirect, Route, Switch, useLocation } from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
 import Work from './Pages/Work'
@@ -11,6 +11,7 @@ import Contact from './Pages/Contact'
 import ProjectTemplates from './Pages/ProjectTemplates'
 import Copyright from './Pages/Copyright'
 import Footer from './Components/Footer'
+
 import Sidebar from './Components/Sidebar'
 import Loader from './Components/Loader'
 import ScrollToTop from './Components/ScrollToTop'
@@ -74,6 +75,7 @@ ReactGA.initialize(TRACKING_ID);
             <Route exact path='/copyright'>
               <Copyright />
             </Route>
+            <Route exact path='/signature'><Redirect to="/signature/index.html"></Redirect></Route>
           </Switch>
         </AnimatePresence>
         <Footer />
