@@ -33,7 +33,7 @@ if(window?.location?.pathname === '/contact'){
         </div> */}
         <div className='footer-name'>
           <h4>
-            <a href='/copyright'>&copy; Splat Media Pvt Ltd 2021</a>
+            <a href='/copyright'>&copy; Splat Media Pvt Ltd {new Date().getFullYear()}</a>
           </h4>
         </div>
         <div className='footer-social-links'>
