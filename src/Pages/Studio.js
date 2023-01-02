@@ -52,9 +52,9 @@ import Logo40 from '../Assets/Client Logos/Logo40.png'
 
 // services
 
-import Service1 from '../Assets/Services /Design.png'
-import Service2 from '../Assets/Services /Production.png'
-import Service3 from '../Assets/Services /Technology.png'
+import Service1 from '../Assets/Services/Design.png'
+import Service2 from '../Assets/Services/Production.png'
+import Service3 from '../Assets/Services/Technology.png'
 
 // splat group
 
