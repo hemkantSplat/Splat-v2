@@ -32,10 +32,16 @@ const Reel = () => {
         url,
     }`
       )
-      .then((data) => {   
+      .then((data) => {  
+        console.log("ReelsData"); 
+        console.log(data);  
         setReelsData(data.sort((a, b) => a.number - b.number))
       })
-      .catch(console.error);
+      .catch(()=>{
+         console.log("ErrorReelsData"); 
+          console.error;
+      } 
+        );
   }, []);
 
 
