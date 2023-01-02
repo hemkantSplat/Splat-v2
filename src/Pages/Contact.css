@@ -1,0 +1,207 @@
+.contact-center {
+  padding: 10rem 0 5rem 0;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 50px;
+  font-family: 'Trump';
+}
+
+.map {
+  width: 100%;
+}
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  background: red;
+}
+
+.main-map {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  align-self: center;
+}
+
+.contact-info:last-child {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+.contact-info:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+
+.contact-info p {
+  line-height: 1.4;
+}
+
+.contact-info:last-child p:last-child {
+  width: 33rem;
+  margin-top: 1rem;
+}
+
+.contact-info > p > span:first-child {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(167, 165, 165);
+}
+
+.contact-mail-info {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.mail-info {
+  border-right: 1px solid var(--accent);
+  padding: 0 8rem;
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.mail-info h4 {
+  color: rgb(167, 165, 165);
+}
+
+.mail-info > p {
+  font-size: 24px;
+}
+
+.mail-info:last-child {
+  padding: 0;
+  border: transparent;
+}
+
+.social-icons-wrapper {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.social-icons-wrapper h4 {
+  font-size: 24px;
+}
+
+.social-icons-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 20%;
+  justify-content: center;
+  column-gap: 0.5rem;
+  margin: 2rem auto 0 auto;
+}
+
+.social-icons-container > a {
+  width: 40px;
+  height: 40px;
+  /* background: #ffffff; */
+  border: 1px solid #ffffff;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+
+.icon {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.social-icons-container > a:hover {
+  transform: scale(1.1);
+}
+
+
+.contact-number{
+  display: flex;
+  align-items: baseline;
+}
+
+.numbers{
+  margin-left: 0.2rem;
+}
+
+@media screen and (min-width: 540px) and (max-width: 1200px) {
+  .contact-header {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .contact-mail-info {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    row-gap: 1rem;
+  }
+
+  .mail-info {
+    border-right: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 540px) {
+  .contact-title {
+    font-size: 40px;
+  }
+
+  .contact-header {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .contact-mail-info {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    row-gap: 1rem;
+  }
+
+  .mail-info {
+    border-right: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .contact-info p:first-child {
+    width: 100%;
+  }
+
+  .social-icons-container {
+    width: 100%;
+  }
+  .contact-info:last-child p:last-child {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .contact-number{
+    display: block;
+  }
+}

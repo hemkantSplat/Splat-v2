@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Zen+Maru+Gothic:wght@300&display=swap');
+
+@font-face {
+  font-family: 'Futura';
+  src: url(./Assets/Futura/FuturaPTLight.otf);
+}
+
+@font-face {
+  font-family: 'FuturaBold';
+  src: url(./Assets/Futura/FuturaPTBold.otf);
+}
+
+@font-face {
+  font-family: 'FuturaSemi';
+  src: url(./Assets/Futura/FuturaPTMedium.otf);
+}
+
+@font-face {
+  font-family: 'Trump';
+  src: url(./Assets/font/TrumpGothicPro-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'TrumpBold';
+  src: url(./Assets/font/TrumpGothicPro-Bold.woff2);
+}
+
+:root {
+  --background: #141414;
+  --primary: #ffffff;
+  --accent: #ee7739;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Futura', sans-serif;
+  /* background: url('./Assets/bg_works_list.jpg.webp') no-repeat fixed;
+  background-size: cover; */
+}
+
+body {
+  font-family: 'Futura', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--primary);
+  position: relative;
+}
+
+.main-wrapper {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* overflow: scroll; */
+  background: url('./Assets/bg_works_list.png') no-repeat;
+  background-size: cover;
+}
+
+.bg-wrapper {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* overflow: scroll; */
+  background: url('./Assets/bg_recent_work_circle.png.webp') no-repeat;
+  background-size: 500px;
+  background-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-family: 'FuturaSemi';
+  font-weight: 500;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+button {
+  font-family: 'Futura', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container-center {
+  width: 90vw;
+  max-width: 1492px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .main-wrapper {
+    background: url(./Assets/bg_works_list_mobile_view.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* @media screen and (max-width: 450px) {
+  .main-wrapper {
+    background: url(./Assets/bg_works_list.jpg.webp);
+    background-size: cover;
+  }
+} */
