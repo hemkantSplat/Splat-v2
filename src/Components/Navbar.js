@@ -65,7 +65,7 @@ const Navbar = ({ setToggleOpen, toggleOpen }) => {
 							activeStyle={{ borderBottom: "1px solid #ee7739" }}
 							to="/press"
 						>
-							<span data-hover="Press">Careers</span>
+							<span data-hover="Press">Press</span>
 						</NavLink>
 					</li>
 					<li>
