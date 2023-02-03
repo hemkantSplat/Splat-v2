@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoCloseSharp } from 'react-icons/io5'
 
+
 const Navbar = ({ setToggleOpen, toggleOpen }) => {
   return (
 		<nav>
