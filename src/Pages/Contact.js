@@ -80,7 +80,7 @@ const Contact = () => {
                   <span>CANADA: </span>#7, Mabelle Ave, Etobicoke, Toronto ON
                 </p>
                 <p className='contact-number'>
-                  <span>CONTACT NUMBER: </span><span className='numbers'>+91 99101 14975 (INDIA) <br /> +1 (647) 865-1045 (CANADA)</span>
+                  <span>CONTACT NUMBER: </span><span className='numbers'>+91 98915 43666 (INDIA) <br /> +1 (647) 865-1045 (CANADA)</span>
                 </p>
               </div>
             </div>
