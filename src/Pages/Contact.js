@@ -62,8 +62,8 @@ const Contact = () => {
             <div className="contact">
               <div className="contact-info">
                 <p>
-                  <span>DELHI: </span>B-103, Behind Triveni Commercial Complex
-                  Panchsheel Vihar,New Delhi, Delhi 110017
+                  B-103, Behind Triveni Commercial Complex Panchsheel Vihar,New
+                  Delhi, Delhi 110017
                 </p>
                 {/* <p>
                 <span>Contact Number:</span> +91 98712 19992, +91 98106 09992
