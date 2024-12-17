@@ -10,7 +10,7 @@ import {
   FaTwitter,
   FaYoutube,
   FaVimeoV,
-} from "react-icons/all";
+} from "react-icons/fa";
 import "leaflet/dist/leaflet.css";
 import Logo from "../Assets/Favicon for map.png";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
