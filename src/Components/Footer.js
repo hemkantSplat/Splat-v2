@@ -12,15 +12,12 @@ import "./Footer.css";
 
 const Footer = () => {
   const [state, setState] = useState();
+
   const location = useLocation();
 
   useEffect(() => {
-    if (window?.location?.pathname === "/contact") {
-      setState(true);
-    } else {
-      setState(false);
-    }
-  }, [window?.location?.pathname]);
+    setState(location.pathname === "/contact");
+  }, [location.pathname]);
 
   return (
     <footer style={{ position: state ? "absolute" : "fixed" }}>
