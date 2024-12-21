@@ -8,6 +8,8 @@ import "aos/dist/aos.css";
 import VisibilitySensor from "react-visibility-sensor";
 import CountUp, { startAnimation } from "react-countup";
 import ImageGrid from "react-image-grid-animator";
+
+import { BoardData } from "../Data/BoardData";
 import Logo1 from "../Assets/Client Logos/Logo1.png";
 import Logo2 from "../Assets/Client Logos/Logo2.png";
 import Logo3 from "../Assets/Client Logos/Logo3.png";
@@ -663,7 +665,7 @@ const Studio = () => {
           <div className="teams-container">
             <h1>BOARD</h1>
             <div className="teams">
-              {boardData?.map((item, index) => {
+              {BoardData?.map((item, index) => {
                 return (
                   <article
                     className="team"
@@ -671,7 +673,7 @@ const Studio = () => {
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="600"
                   >
-                    <img src={item?.image?.asset?.url} alt={item?.name} />
+                    <img src={item?.thumbnail} alt={item?.name} />
                     <h2>{item?.name}</h2>
                     <h3>{item?.designation}</h3>
                   </article>
