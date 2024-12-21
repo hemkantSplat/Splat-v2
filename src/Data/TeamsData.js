@@ -25,7 +25,7 @@ const TeamsData = [
   },
 
   {
-    name: "Manish Pardasaney",
+    name: "Manish Brijwal",
     thumbnail: Manish,
   },
 
