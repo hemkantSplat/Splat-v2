@@ -1,34 +1,17 @@
-// import Aditya from "../Assets/Teams/Aditya.webp";
-// import Amit from "../Assets/Teams/amit.webp";
 import Anshul from "../Assets/Teams/anshul.webp";
-// import Atlanta from "../Assets/Teams/Atlanta.webp";
-// import Dhruv from "../Assets/Teams/Dhruv.webp";
-// import Dimple from "../Assets/Teams/Dimple.webp";
 import Gagandeep from "../Assets/Teams/Gagandeep.webp";
-// import Gaurav from "../Assets/Teams/Gaurav.webp";
-// import Harsh from "../Assets/Teams/harsh.webp";
-// import Harshit from "../Assets/Teams/Harshit.webp";
-// import Kuldeep from "../Assets/Teams/Kuldeep.webp";
 import Kunal from "../Assets/Teams/Kunal.webp";
 import Manika from "../Assets/Teams/Manika.webp";
 import Manish from "../Assets/Teams/Manish.webp";
 import Mihir from "../Assets/Teams/Mihir.webp";
 import Mukesh from "../Assets/Teams/Mukesh.webp";
 import Naveen from "../Assets/Teams/naveen.webp";
-// import Neha from "../Assets/Teams/Neha.webp";
-// import Pawan from "../Assets/Teams/Pawan.webp";
 import Pooja from "../Assets/Teams/Pooja.webp";
-// import Praveen from "../Assets/Teams/Praveen.webp";
-import Rajender from "../Assets/Teams/Rajendra.webp";
-// import Rishi from "../Assets/Teams/Rishi.webp";
+import Rajinder from "../Assets/Teams/Rajinder.webp";
 import Sagar from "../Assets/Teams/sagar.webp";
-// import Sahil from "../Assets/Teams/Sahil.webp";
 import Saksham from "../Assets/Teams/Saksham.webp";
-// import Sanjana from "../Assets/Teams/Sanjana.webp";
 import Shrenik from "../Assets/Teams/Shrenik.webp";
-// import Vikash from "../Assets/Teams/Vikash.webp";
 import Vikram from "../Assets/Teams/vikram.webp";
-// import Yogesh from "../Assets/Teams/Yogesh.webp";
 
 const TeamsData = [
   {
@@ -69,8 +52,8 @@ const TeamsData = [
   },
 
   {
-    name: "Rajender Prasad",
-    thumbnail: Rajender,
+    name: "Rajinder Prasad",
+    thumbnail: Rajinder,
   },
 
   {
