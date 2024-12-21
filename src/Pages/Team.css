@@ -127,6 +127,10 @@
   .show-team-reels-img {
     height: 320px;
   }
+
+  .show-team-reels-img::before {
+    background: transparent;
+  }
 }
 
 @media screen and (min-width: 451px) and (max-width: 747px) {

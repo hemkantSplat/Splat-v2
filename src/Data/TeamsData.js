@@ -47,7 +47,7 @@ const TeamsData = [
   },
 
   {
-    name: "Pooja jinda",
+    name: "Pooja Jindal",
     thumbnail: Pooja,
   },
 
