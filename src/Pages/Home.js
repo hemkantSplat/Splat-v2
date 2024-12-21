@@ -1,18 +1,18 @@
-import React from 'react'
-import './Home.css'
-import Video from '../Assets/Video.mp4'
-import MetaTitle from '../Components/MetaTitle'
-import { motion } from 'framer-motion'
+import React from "react";
+import "./Home.css";
+import Video from "../Assets/Video.mp4";
+import MetaTitle from "../Components/MetaTitle";
+import { motion } from "framer-motion";
 const Home = () => {
   return (
     <>
-      <MetaTitle title='Splat Studio | Home' />
+      <MetaTitle title="Splat Studio | Home" />
       <motion.div
-        style={{ overFlow: 'hidden', width:'100%', minHeight:'100vh' }}
+        style={{ overFlow: "hidden", width: "100%", minHeight: "100vh" }}
         // className='container home'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ ease: 'easeIn', duration: 0.5 }}
+        transition={{ ease: "easeIn", duration: 0.5 }}
         exit={{ opacity: 0, duration: 0.5 }}
       >
         {/* <div id='video1'>
@@ -96,12 +96,12 @@ const Home = () => {
           autoPlay
           muted
           loop
-          id='myVideo'
+          id="myVideo"
           playsInline
-          data-wf-ignore='true'
-          data-object-fit='cover'
+          data-wf-ignore="true"
+          data-object-fit="cover"
         >
-          <source src={Video} type='video/mp4' data-wf-ignore='true' />
+          <source src={Video} type="video/mp4" data-wf-ignore="true" />
         </video>
         {/* <video autoPlay muted loop id='myVideo2'>
           <source
@@ -112,14 +112,18 @@ const Home = () => {
         {/* <div className='gradient'></div> */}
         <div
           // className='container-center home-center'
-          style={{position: 'fixed',
-          width:'100%',
-top: '50%',
-left: '50%',
-transform: 'translate(-50%, -50%)',
-zIndex: '99'}}
+          style={{
+            position: "fixed",
+            width: "100%",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            zIndex: "99",
+          }}
         >
-          <div className='hero-title' style={{ overFlow: 'hidden' }}>
+          <h1 className="tags">3D Design</h1>
+
+          <div className="hero-title" style={{ overFlow: "hidden" }}>
             <h1>
               We weave magic into <br />
               the stories
@@ -132,7 +136,7 @@ zIndex: '99'}}
         </div>
       </motion.div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,149 +1,101 @@
-// import Namita from "../Assets/Teams/Namita Rawat.png"
-// import Krutika from "../Assets/Teams/Krutika Tandon.png"
-// import Harshit from "../Assets/Teams/Harshit Singh.png"
-// import Divya from "../Assets/Teams/Divya Narain.png"
-// import Shreyansh from "../Assets/Teams/Shreyansh Dhauniyal.png"
-// import Sagar from "../Assets/Teams/Sagar Arora.png"
-// import Brijesh from "../Assets/Teams/Brijesh Mor.png"
-// import Manish from "../Assets/Teams/Manish Pardasaney.png"
-// import Shivam from "../Assets/Teams/Shivam Tiwari.png"
-// import Mohit from "../Assets/Teams/Mohit Kattar.png"
-// import Apratim from "../Assets/Teams/Apratim Verma.png"
-// import Arjun from  "../Assets/Teams/Arjun Sunar.png"
-// import Saksham from "../Assets/Teams/Saksham Sharma.png"
-// import Dhanshree from "../Assets/Teams/Dhanshree Gawde.png"
-// import Punit from "../Assets/Teams/Punit Singh.png"
-// import Divyai from "../Assets/Teams/Divyai Krishan.png"
-// import Gaurav from "../Assets/Teams/Gaurav Srivastav.png"
-// import Digvijay from "../Assets/Teams/Digvijay Ghosh.jpg"
-// import Naresh from "../Assets/Teams/Naresh Singh.png"
-// import Anshika from "../Assets/Teams/Anshika Rani.png"
-// import Kaushal from "../Assets/Teams/Kaushal Gupta.png"
-// import Vonika from "../Assets/Teams/Vonica Taunk.png"
-// import Arma from "../Assets/Teams/Arma Bano.png"
-// import ManishK from "../Assets/Teams/Manish Kashyap.png"
-// import Rajinder from "../Assets/Teams/Rajinder Prasad.png"
-// import Mukesh from "../Assets/Teams/Mukesh Kumar.png"
-// import Kunti from "../Assets/Teams/Kunti Devi.png"
-// import Abhishek from "../Assets/Teams/Abhishek Kumar.png"
+// import Aditya from "../Assets/Teams/Aditya.webp";
+// import Amit from "../Assets/Teams/amit.webp";
+import Anshul from "../Assets/Teams/anshul.webp";
+// import Atlanta from "../Assets/Teams/Atlanta.webp";
+// import Dhruv from "../Assets/Teams/Dhruv.webp";
+// import Dimple from "../Assets/Teams/Dimple.webp";
+import Gagandeep from "../Assets/Teams/Gagandeep.webp";
+// import Gaurav from "../Assets/Teams/Gaurav.webp";
+// import Harsh from "../Assets/Teams/harsh.webp";
+// import Harshit from "../Assets/Teams/Harshit.webp";
+// import Kuldeep from "../Assets/Teams/Kuldeep.webp";
+import Kunal from "../Assets/Teams/Kunal.webp";
+import Manika from "../Assets/Teams/Manika.webp";
+import Manish from "../Assets/Teams/Manish.webp";
+import Mihir from "../Assets/Teams/Mihir.webp";
+import Mukesh from "../Assets/Teams/Mukesh.webp";
+import Naveen from "../Assets/Teams/naveen.webp";
+// import Neha from "../Assets/Teams/Neha.webp";
+// import Pawan from "../Assets/Teams/Pawan.webp";
+import Pooja from "../Assets/Teams/Pooja.webp";
+// import Praveen from "../Assets/Teams/Praveen.webp";
+import Rajender from "../Assets/Teams/Rajendra.webp";
+// import Rishi from "../Assets/Teams/Rishi.webp";
+import Sagar from "../Assets/Teams/sagar.webp";
+// import Sahil from "../Assets/Teams/Sahil.webp";
+import Saksham from "../Assets/Teams/Saksham.webp";
+// import Sanjana from "../Assets/Teams/Sanjana.webp";
+import Shrenik from "../Assets/Teams/Shrenik.webp";
+// import Vikash from "../Assets/Teams/Vikash.webp";
+import Vikram from "../Assets/Teams/vikram.webp";
+// import Yogesh from "../Assets/Teams/Yogesh.webp";
 
+const TeamsData = [
+  {
+    name: "Anshul Khatri",
+    thumbnail: Anshul,
+  },
 
+  {
+    name: "Gagandeep Singh",
+    thumbnail: Gagandeep,
+  },
 
+  {
+    name: "Manish Pardasaney",
+    thumbnail: Manish,
+  },
 
-// const TeamsData = [
-//   {
-//     name: 'Namita Rawat',
-//     thumbnail: Namita,
-//   },
-//   {
-//     name: 'Krutika Tandon',
-//     thumbnail: Krutika,
-//   },
-//   {
-//     name: 'Harshit Singh',
-//     thumbnail:Harshit
-//   },
-//   {
-//    name:'Divya Narain',
-//    thumbnail:Divya
-//   },
-//   {
-//    name:'Shreyansh Dhauniyal',
-//    thumbnail:Shreyansh
-//     },
-//     {
-// name:'Sagar Arora',
-// thumbnail:Sagar
-//     },
-//     {
-//      name:'Brijesh Mor',
-//      thumbnail:Brijesh
-//     },
-//     {
-//      name:'Manish Pardasaney',
-//      thumbnail:Manish
-//     },
-//     {
-//      name:'Shivam Tiwari',
-//      thumbnail:Shivam
-//    },
-//    {
-//     name:'Mohit Kattar',
-//     thumbnail:Mohit
-//    },
-//    {
-//     name:'Apratim Verma',
-//     thumbnail:Apratim
-//    },
-//   {
-//    name:'Arjun Sunar',
-//    thumbnail:Arjun
-//   },
-//   {
-//    name:'Saksham Verma',
-//    thumbnail:Saksham
-//   },
-//   {
-//    name:'Dhanashree Gawde',
-//    thumbnail:Dhanshree
-//   },
-//   {
-//    name:'Punit Singh',
-//    thumbnail:Punit
-//   },
-//   {
-//    name:'Divyai Krishan',
-//    thumbnail:Divyai
-//   },
-//   {
-//    name:'Gaurav Srivastav',
-//    thumbnail:Gaurav
-//   },
-//   {
-//     name:'Digvijay Ghosh',
-//     thumbnail:Digvijay
-//    },
-//   {
-//     name:'Naresh Singh',
-//     thumbnail:Naresh
-//    },
-//   {
-//    name:'Anshika Rani',
-//    thumbnail:Anshika
-//   },
-//   {
-//    name:'Kaushal Gupta',
-//    thumbnail:Kaushal
-//   },
-//   {
-//    name:'Vonika Taunk',
-//    thumbnail:Vonika
-//   },
-//   {
-//    name:'Arma Bano',
-//    thumbnail:Arma
-//   },
-//   {
-//    name:'Manish Kashyap',
-//    thumbnail:ManishK
-//   },
-//   {
-//    name:'Rajinder Prasad',
-//    thumbnail:Rajinder
-//   },
-//   {
-//    name:'Mukesh Kumar',
-//    thumbnail:Mukesh
-//   },
-//   {
-//    name:'Kunti Devi',
-//    thumbnail:Kunti
-//   },
-//   {
-//    name:'Abhishek Kumar',
-//    thumbnail:Abhishek
-//   }
-// ]
+  {
+    name: "Kunal Sharma",
+    thumbnail: Kunal,
+  },
+  {
+    name: "Manika",
+    thumbnail: Manika,
+  },
+  {
+    name: "Mihir Mukund",
+    thumbnail: Mihir,
+  },
+  {
+    name: "Naveen Kumar",
+    thumbnail: Naveen,
+  },
 
+  {
+    name: "Pooja jinda",
+    thumbnail: Pooja,
+  },
 
-//   export default TeamsData;
+  {
+    name: "Rajender Prasad",
+    thumbnail: Rajender,
+  },
+
+  {
+    name: "Sagar Arora",
+    thumbnail: Sagar,
+  },
+
+  {
+    name: "Saksham Sharma",
+    thumbnail: Saksham,
+  },
+  {
+    name: "Mukesh Kumar",
+    thumbnail: Mukesh,
+  },
+
+  {
+    name: "Shrenik jain",
+    thumbnail: Shrenik,
+  },
+
+  {
+    name: "Vikram Singh",
+    thumbnail: Vikram,
+  },
+];
+
+export default TeamsData;
