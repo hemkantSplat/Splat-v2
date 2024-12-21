@@ -4,12 +4,12 @@ import ShobhnaDwivedi from "../Assets/Board/Shobhna-Dwivedi.webp";
 
 export const BoardData = [
   {
-    name: "Hitesh Sir",
+    name: "Hitesh Kumar",
     thumbnail: Hitesh,
     designation: "Managing Director & Creative Director, Splat Studio",
   },
   {
-    name: "Hemkat Sir",
+    name: "Hemkant Tripathi",
     thumbnail: hemkat,
     designation: "Director & CTO, Splat Studio",
   },
