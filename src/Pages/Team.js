@@ -91,11 +91,10 @@ const Team = () => {
                 data-aos-duration="600"
               >
                 {/* <div className="team-wrap">
-<div className="bg-container">
-  <div className="bg-wrap">
-
-  </div>
-</div>
+                    <div className="bg-container">
+                    <div className="bg-wrap">
+                    </div>
+                    </div>
                 </div> */}
                 <div className="show-team-reels-img">
                   <img src={item.thumbnail} alt={item?.title} />
