@@ -13,11 +13,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    width: 70vw;
+  width: 70vw;
 }
 
 .studio-header-center h1 {
-  font-family: 'Trump';
+  font-family: "Trump";
   font-size: 40px;
 }
 /* .studio-header > img {
@@ -30,21 +30,19 @@
   margin-bottom: 2rem;
 }
 
-
 .studio-header p {
   line-height: 1.6;
   font-size: 24px;
   margin-top: 1rem;
-  font-family: 'Futura';
+  font-family: "Futura";
 }
 
 .studio-header p > span {
   font-weight: 600;
   font-size: 26px;
-  font-family: 'FuturaSemi';
-    color: var(--accent);
+  font-family: "FuturaSemi";
+  color: var(--accent);
 }
-
 
 .studio-center {
   padding: 0rem 0 5rem 0;
@@ -65,7 +63,7 @@
   line-height: 1.6;
   font-size: 24px;
   margin-top: 1rem;
-  font-family: 'Futura';
+  font-family: "Futura";
 }
 
 .studio-about p > span {
@@ -162,12 +160,10 @@
   margin-top: 1rem;
 } */
 
-.service-icon{
+.service-icon {
   width: 80px;
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
-
-
 
 .service-content {
   display: flex;
@@ -194,7 +190,7 @@
   font-size: 23px;
 }
 
-.service-content > h3:last-child{
+.service-content > h3:last-child {
   border: none;
 }
 
@@ -249,9 +245,12 @@
 
 .teams {
   margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  /* grid-template-columns: repeat(3, 1fr);
+  row-gap: 1.2rem; */
 }
 
 .team {
@@ -321,7 +320,7 @@ h3 {
   height: 120px;
 }
 
- .group-img {
+.group-img {
   width: 120px;
 }
 /* .group-first {
@@ -358,7 +357,7 @@ height: 100px;
   width: 100px;
 } */
 
-.group-five{
+.group-five {
   margin-left: -2rem;
 }
 
@@ -389,11 +388,11 @@ height: 100px;
     font-size: 24px;
   }
 
-  .services{
+  .services {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .service-title{
+  .service-title {
     justify-content: center;
   }
 
@@ -561,18 +560,18 @@ height: 100px;
     width: 100%;
   }
 
-.services{
-  grid-template-columns: 1fr;
-}
+  .services {
+    grid-template-columns: 1fr;
+  }
 
   .service {
     grid-template-columns: 1fr;
   }
 
-  .service-title{
+  .service-title {
     justify-content: center;
   }
-  
+
   .service-content {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -630,16 +629,16 @@ height: 100px;
     margin-top: 1rem;
   }
 
- .groups img {
+  .groups img {
     width: 100%;
     margin-bottom: -3rem;
   }
 
-.group-five{
-  margin-left: 0rem;
-}
+  .group-five {
+    margin-left: 0rem;
+  }
 
- /* .group-third{
+  /* .group-third{
     margin-left: 0;
   }
 
@@ -660,12 +659,12 @@ height: 100px;
     margin-bottom: 2rem;
   }
 
-  .team-link{
+  .team-link {
     float: none !important;
     margin-top: 1rem;
     padding-right: 0 !important;
     padding-bottom: 0 !important;
-  display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 }

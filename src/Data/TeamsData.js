@@ -1,17 +1,17 @@
-import Anshul from "../Assets/Teams/anshul.webp";
-import Gagandeep from "../Assets/Teams/Gagandeep.webp";
-import Kunal from "../Assets/Teams/Kunal.webp";
+import Anshul from "../Assets/Teams/Anshul Khatri.webp";
+import Gagandeep from "../Assets/Teams/Gagandeep Singh.webp";
+import Kunal from "../Assets/Teams/Kunal Sharma.webp";
 import Manika from "../Assets/Teams/Manika.webp";
-import Manish from "../Assets/Teams/Manish.webp";
-import Mihir from "../Assets/Teams/Mihir.webp";
-import Mukesh from "../Assets/Teams/Mukesh.webp";
-import Naveen from "../Assets/Teams/naveen.webp";
-import Pooja from "../Assets/Teams/Pooja.webp";
-import Rajinder from "../Assets/Teams/Rajinder.webp";
-import Sagar from "../Assets/Teams/sagar.webp";
-import Saksham from "../Assets/Teams/Saksham.webp";
-import Shrenik from "../Assets/Teams/Shrenik.webp";
-import Vikram from "../Assets/Teams/vikram.webp";
+import Manish from "../Assets/Teams/Manish Brijwal.webp";
+import Mihir from "../Assets/Teams/Mihir Mukund.webp";
+import Mukesh from "../Assets/Teams/Mukesh Kumar.webp";
+import Naveen from "../Assets/Teams/Naveen Kumar.webp";
+import Pooja from "../Assets/Teams/Pooja Jindal.webp";
+import Rajinder from "../Assets/Teams/Rajendra Prasad.webp";
+import Sagar from "../Assets/Teams/Sagar Arora.webp";
+import Saksham from "../Assets/Teams/Saksham Sharma.webp";
+import Shrenik from "../Assets/Teams/Shrenik Jain.webp";
+// import Vikram from "../Assets/Teams/vikram.webp";
 
 const TeamsData = [
   {
@@ -75,10 +75,10 @@ const TeamsData = [
     thumbnail: Shrenik,
   },
 
-  {
-    name: "Vikram Singh",
-    thumbnail: Vikram,
-  },
+  // {
+  //   name: "Vikram Singh",
+  //   thumbnail: Vikram,
+  // },
 ];
 
 export default TeamsData;
