@@ -55,7 +55,7 @@ const Team = () => {
   };
   return (
     <>
-      <MetaTitle title="Splat Studio | Reels" />
+      <MetaTitle title="Splat Studio | Teams" />
       <motion.div
         className="container team-container"
         initial={{ opacity: 0 }}
