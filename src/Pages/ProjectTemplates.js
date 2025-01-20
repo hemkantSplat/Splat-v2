@@ -1,18 +1,17 @@
-import React, { useState, useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
-import { BsChevronLeft } from 'react-icons/bs'
-import { motion } from 'framer-motion'
-import './ProjectTemplate.css'
-import Chip from '@mui/material/Chip'
-import Stack from '@mui/material/Stack'
-import WorkData from '../Data/WorkData'
-import MetaTitle from '../Components/MetaTitle'
-import sanityClient from "../Client"
-
+import React, { useState, useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import { BsChevronLeft } from "react-icons/bs";
+import { motion } from "framer-motion";
+import "./ProjectTemplate.css";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
+import WorkData from "../Data/WorkData";
+import MetaTitle from "../Components/MetaTitle";
+import sanityClient from "../Client";
 
 const ProjectTemplates = () => {
-  const { id } = useParams()
-  const [data, setData] = useState([])
+  const { id } = useParams();
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     sanityClient
@@ -33,13 +32,12 @@ const ProjectTemplates = () => {
         Tags
     }`
       )
-      .then((data) => {   
-        setData(data?.filter(item => item.slug.current === id)[0])
-        console.log(data.filter(item => item.slug.current === id))
+      .then((data) => {
+        setData(data?.filter((item) => item.slug.current === id)[0]);
+        // console.log(data.filter(item => item.slug.current === id))
       })
       .catch(console.error);
   }, []);
-
 
   // useEffect(() => {
   //   const filteredData = WorkData.filter((item) => item.slug === id)
@@ -47,22 +45,21 @@ const ProjectTemplates = () => {
   //   setData(filteredData[0])
   // }, [])
 
-
   const ContainerVariant = {
     initial: {
       opacity: 0,
     },
     show: {
       opacity: 1,
-      transition: { ease: 'easeIn', staggerChildren: 0.1 },
+      transition: { ease: "easeIn", staggerChildren: 0.1 },
     },
     exit: {
       opacity: 0,
       transition: {
-        ease: 'easeOut',
+        ease: "easeOut",
       },
     },
-  }
+  };
 
   const ItemVariant = {
     initial: {
@@ -70,73 +67,76 @@ const ProjectTemplates = () => {
     },
     show: {
       opacity: 1,
-      transition: { ease: 'easeIn' },
+      transition: { ease: "easeIn" },
     },
     exit: {
       opacity: 0,
     },
-  }
+  };
 
   return (
     <>
       <MetaTitle title={`Splat Studio | ${data?.name}`} />
-      <div className='container projects-container'>
-        <div className='container-center projects-center'>
-          <Link to='/work'>
-            <BsChevronLeft className='back-btn' />
+      <div className="container projects-container">
+        <div className="container-center projects-center">
+          <Link to="/work">
+            <BsChevronLeft className="back-btn" />
           </Link>
           {data && (
             <>
               <motion.h1
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ ease: 'easeIn', delay: 0.05, duration: 0.2 }}
+                transition={{ ease: "easeIn", delay: 0.05, duration: 0.2 }}
               >
                 {data?.name}
               </motion.h1>
-              <div className='projects-detail-container'>
+              <div className="projects-detail-container">
                 <iframe
-                  width='100%'
-                  height='400px'
+                  width="100%"
+                  height="400px"
                   src={data?.url}
-                  title='YouTube video player'
-                  frameBorder='0'
-                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
                 <motion.div
-                  className='project-content'
+                  className="project-content"
                   variants={ContainerVariant}
-                  initial='initial'
-                  animate='show'
+                  initial="initial"
+                  animate="show"
                 >
-            {data?.description?.map((item, index) => {
-              return (
-                <motion.p key={index} variants={ItemVariant}>{item}</motion.p>
-              ) 
-            })}
+                  {data?.description?.map((item, index) => {
+                    return (
+                      <motion.p key={index} variants={ItemVariant}>
+                        {item}
+                      </motion.p>
+                    );
+                  })}
                   {/* <motion.p variants={ItemVariant}>{data.description}</motion.p> */}
                   {/* <motion.h4 variants={ItemVariant} className='heading'>
                     <span>Client: </span>
                     <span>{data.client}</span>
                   </motion.h4> */}
-                  <motion.h4 variants={ItemVariant} className='location'>
+                  <motion.h4 variants={ItemVariant} className="location">
                     <span>Location: </span>
                     <span>{data?.location}</span>
                   </motion.h4>
-                  <motion.h4 className='tags' variants={ItemVariant}>
+                  <motion.h4 className="tags" variants={ItemVariant}>
                     <span>Tags: </span>
                     <span>
-                      {' '}
+                      {" "}
                       <Stack
-                        className='pills'
-                        direction='row'
+                        className="pills"
+                        direction="row"
                         spacing={1}
-                        style={{ flexWrap: 'wrap' }}
+                        style={{ flexWrap: "wrap" }}
                       >
                         {data.Tags &&
-                          data.Tags.map((item) => {
-                            return <Chip label={item} className='tag' />
+                          data.Tags.map((item, index) => {
+                            return <Chip key={index}
+                             label={item} className="tag" />;
                           })}
                       </Stack>
                     </span>
@@ -192,7 +192,7 @@ const ProjectTemplates = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ProjectTemplates
+export default ProjectTemplates;

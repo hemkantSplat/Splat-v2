@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MetaTitle from "../Components/MetaTitle";
 import "./Studio.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import AOS from "aos";
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
@@ -668,6 +668,7 @@ const Studio = () => {
               {BoardData?.map((item, index) => {
                 return (
                   <article
+                    key={index}
                     className="team"
                     data-aos="zoom-in"
                     data-aos-easing="ease-out-cubic"
@@ -698,7 +699,11 @@ const Studio = () => {
           <div className="groups-center">
             <h1>And the partner group, where more magic happens</h1>
             <div className="groups">
-              <a href="https://www.behance.net/howwldesign" target="_blank">
+              <a
+                href="https://www.behance.net/howwldesign"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {" "}
                 <img
                   src={Group4}
@@ -724,13 +729,12 @@ const Studio = () => {
                   target="_blank"
                 />
               </a>
-              <a href="https://varahaworld.com">
-                <img
-                  src={Group5}
-                  alt=""
-                  className="group-img  group-five"
-                  target="_blank"
-                />
+              <a
+                href="https://varahaworld.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Group5} alt="" className="group-img  group-five" />
               </a>
               <a href="https://www.artillume.org">
                 <img

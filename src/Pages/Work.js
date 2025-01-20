@@ -1,22 +1,18 @@
-import React, { useState, useEffect } from 'react'
-import './Work.css'
-import { Link } from 'react-router-dom'
-import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
-import { motion } from 'framer-motion'
-import MetaTitle from '../Components/MetaTitle'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import sanityClient from "../Client"
-
+import React, { useState, useEffect } from "react";
+import "./Work.css";
+import { Link } from "react-router-dom";
+import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+import { motion } from "framer-motion";
+import MetaTitle from "../Components/MetaTitle";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import sanityClient from "../Client";
 
 const Work = () => {
-  const [worksData, setWorksData] = useState([])
-  const [open, setOpen] = useState(false)
-  const [data, setData] = useState(worksData)
-  const [selected, setSelected] = useState(0)
-
-
-
+  const [worksData, setWorksData] = useState([]);
+  const [open, setOpen] = useState(false);
+  const [data, setData] = useState(worksData);
+  const [selected, setSelected] = useState(0);
 
   useEffect(() => {
     sanityClient
@@ -37,39 +33,34 @@ const Work = () => {
         Tags
     }`
       )
-      .then((data) => {   
-        setWorksData(data.sort((a, b) => a.number - b.number))
-        setData(data.sort((a, b) => a.number - b.number))
-        console.log(data)
+      .then((data) => {
+        setWorksData(data.sort((a, b) => a.number - b.number));
+        setData(data.sort((a, b) => a.number - b.number));
+        // console.log(data)
       })
       .catch(console.error);
   }, []);
 
-
-
-
-
-
   const filters = [
-    'All Projects',
-    'Spatial Design',
-    'Live Events & Projection Shows',
-    'Experiential Technology',
-    'Virtual Events',
-    'Visual Effects',
-    '2D & 3D Animation',
-    'Documentary & Films',
-  ]
+    "All Projects",
+    "Spatial Design",
+    "Live Events & Projection Shows",
+    "Experiential Technology",
+    "Virtual Events",
+    "Visual Effects",
+    "2D & 3D Animation",
+    "Documentary & Films",
+  ];
 
   const handleFilter = (item, index) => {
-    setSelected(index)
-    if (item === 'All Projects') {
-      setData(worksData)
+    setSelected(index);
+    if (item === "All Projects") {
+      setData(worksData);
     } else {
-      const filter = worksData.filter((i) => i.Tags.includes(item))
-      setData(filter)
+      const filter = worksData.filter((i) => i.Tags.includes(item));
+      setData(filter);
     }
-  }
+  };
 
   const ContainerVariant = {
     initial: {
@@ -77,15 +68,15 @@ const Work = () => {
     },
     show: {
       opacity: 1,
-      transition: { ease: 'easeIn', duration: 0.5, staggerChildren: 0.35 },
+      transition: { ease: "easeIn", duration: 0.5, staggerChildren: 0.35 },
     },
     exit: {
       opacity: 0,
       transition: {
-        ease: 'easeOut',
+        ease: "easeOut",
       },
     },
-  }
+  };
 
   const ItemVariant = {
     initial: {
@@ -93,45 +84,45 @@ const Work = () => {
     },
     show: {
       opacity: 1,
-      transition: { ease: 'easeIn' },
+      transition: { ease: "easeIn" },
     },
     exit: {
       opacity: 0,
     },
-  }
+  };
 
   useEffect(() => {
-    AOS.init()
-    AOS.refresh()
-  }, [])
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
-  useEffect(() =>{
-    document.addEventListener('contextmenu', event => event.preventDefault());
-  },[])
+  useEffect(() => {
+    document.addEventListener("contextmenu", (event) => event.preventDefault());
+  }, []);
 
   return (
     <>
-      <MetaTitle title='Splat Studio | Work' />
+      <MetaTitle title="Splat Studio | Work" />
       <motion.div
-        className='container work'
+        className="container work"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ ease: 'easeIn' }}
+        transition={{ ease: "easeIn" }}
         exit={{ opacity: 0, duration: 0.5 }}
       >
-        <div className='container-center work-center'>
-          <div className='mobile-filter-container'>
-            <button className='filter-btn' onClick={() => setOpen(!open)}>
-              FILTER BY{' '}
+        <div className="container-center work-center">
+          <div className="mobile-filter-container">
+            <button className="filter-btn" onClick={() => setOpen(!open)}>
+              FILTER BY{" "}
               {open ? (
-                <BsChevronUp className='filter-down' />
+                <BsChevronUp className="filter-down" />
               ) : (
-                <BsChevronDown className='filter-down' />
+                <BsChevronDown className="filter-down" />
               )}
             </button>
             <div
               className={`${
-                open ? 'mobile-filters active-filter' : 'mobile-filters'
+                open ? "mobile-filters active-filter" : "mobile-filters"
               }`}
             >
               {filters.map((item, index) => {
@@ -140,17 +131,17 @@ const Work = () => {
                     key={index}
                     className={`${
                       index === selected
-                        ? 'mobile-filter mobile-filter-active'
-                        : 'mobile-filter'
+                        ? "mobile-filter mobile-filter-active"
+                        : "mobile-filter"
                     }`}
                     onClick={() => {
-                      handleFilter(item, index)
-                      setOpen(false)
+                      handleFilter(item, index);
+                      setOpen(false);
                     }}
                   >
                     {item}
                   </button>
-                )
+                );
               })}
               {/* <button className='mobile-filter'>All</button>
             <button className='mobile-filter'>Spatial Design</button>
@@ -164,21 +155,21 @@ const Work = () => {
             <button className='mobile-filter'>Documentary and Films</button> */}
             </div>
           </div>
-          <div className='filter-container'>
+          <div className="filter-container">
             <h4>FILTER BY</h4>
-            <div className='filters'>
+            <div className="filters">
               {filters.map((item, index) => {
                 return (
                   <button
                     key={index}
                     className={`${
-                      index === selected ? 'filter filter-active' : 'filter'
+                      index === selected ? "filter filter-active" : "filter"
                     }`}
                     onClick={() => handleFilter(item, index)}
                   >
                     {item}
                   </button>
-                )
+                );
               })}
               {/* <button className='filter'>All</button>
             <button className='filter'>Spatial Design</button>
@@ -192,35 +183,41 @@ const Work = () => {
           </div>
           <div></div>
           <motion.div
-            className='projects'
+            className="projects"
             variants={ContainerVariant}
-            initial='initial'
-            animate='show'
-            exit='exit'
+            initial="initial"
+            animate="show"
+            exit="exit"
             layout
           >
             {data?.map((item, index) => {
               return (
                 <motion.article
-                  className='project'
+                  className="project"
                   variants={ItemVariant}
-                  data-aos='zoom-in'
-                  data-aos-easing='ease-out-cubic'
-                  data-aos-duration='600'
+                  data-aos="zoom-in"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="600"
                   layout
                   key={index}
                 >
-                  <Link to={`/work/${item?.slug?.current}`} className='work-image'>
-                    {' '}
+                  <Link
+                    to={`/work/${item?.slug?.current}`}
+                    className="work-image"
+                  >
+                    {" "}
                     <img src={item?.image?.asset?.url} alt={item?.name} />
                   </Link>
                   <h2>
-                    <Link to={`/work/${item?.slug?.current}`} className='flip-animate'>
+                    <Link
+                      to={`/work/${item?.slug?.current}`}
+                      className="flip-animate"
+                    >
                       <span data-hover={item?.name}>{item?.name}</span>
                     </Link>
                   </h2>
                 </motion.article>
-              )
+              );
             })}
             {/* <article className='project'>
             <Link to='/work/Hero'>
@@ -264,7 +261,7 @@ const Work = () => {
         </div>
       </motion.div>
     </>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;
