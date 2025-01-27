@@ -17,6 +17,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import { AnimatePresence } from "framer-motion";
 import ReactGA from "react-ga";
 import RouteChangeTracker from "./Components/RouteChangeTracker";
+import MediaCoverage from "./Pages/Media-Coverage";
 
 function App() {
   const [toggleOpen, setToggleOpen] = useState(false);
@@ -74,6 +75,9 @@ function App() {
             </Route>
             <Route exact path="/signature">
               <Redirect to="/signature/index.html"></Redirect>
+            </Route>
+            <Route exact path="/media-coverage">
+              <MediaCoverage />
             </Route>
           </Switch>
         </AnimatePresence>
